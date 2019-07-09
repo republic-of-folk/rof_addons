@@ -10,10 +10,10 @@ class rof_taki_o_soldier_base: Afghan_Civilian1
     respawnWeapons[] = {"Throw","Put"};
     magazines[] = {};
     respawnMagazines[] = {};
-    linkedItems[] = {'ItemMap','ItemCompass','ItemWatch','ItemRadio'};
-    respawnLinkedItems[] = {'ItemMap','ItemCompass','ItemWatch','ItemRadio'};
-    items[] = {};
-    respawnItems[] = {};
+    linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemRadio","rhsgref_chestrig"};
+    respawnLinkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemRadio","rhsgref_chestrig"};
+    items[] = {"FirstAidKit"};
+    respawnItems[] = {"FirstAidKit"};
     uniformClass = "U_Afghan01NH";
 
     threat[]={0.8,0.1,0.1};
@@ -41,7 +41,7 @@ class rof_taki_o_soldier_base: Afghan_Civilian1
             "U_Afghan01NH", 1,
             "U_Afghan02NH", 1,
             "U_Afghan03NH", 1,
-            "U_Afghan06NH", 1,
+            "U_Afghan06NH", 1
     };
 };
 
@@ -49,50 +49,79 @@ class rof_taki_o_soldier_unarmed: rof_taki_o_soldier_base
 {
     displayName = "Unarmed Combatant";
     scope = 2;
-    linkedItems[] += {"rhsgref_chestrig"};
-    respawnLinkedItems[] += {"rhsgref_chestrig"};
-    items[] = {"FirstAidKit"};
-    respawnItems[] = {"FirstAidKit"};
-
     threat[]={0.1,0.1,0.1};
 };
 
-class rof_taki_o_soldier: rof_taki_o_soldier_base
+class rof_taki_o_soldier: rof_taki_o_soldier_unarmed
 {
     displayName = "Rifleman (AKM)";
-    scope = 2;
-    weapons[] += {"rhs_weap_akms"};
-    respawnWeapons[] += {"rhs_weap_akms"};
-    magazines[] = {LIST_5("rhs_30Rnd_762x39mm")};
-    respawnMagazines[] = {LIST_5("rhs_30Rnd_762x39mm")};
-    linkedItems[] += {"rhsgref_chestrig"};
-    respawnLinkedItems[] += {"rhsgref_chestrig"};
-    items[] = {"FirstAidKit"};
-    respawnItems[] = {"FirstAidKit"};
+    weapons[] = {"rhs_weap_akms","Throw","Put"};
+    respawnWeapons[] = {"rhs_weap_akms","Throw","Put"};
+    magazines[] = {LIST_5("rhs_30Rnd_762x39mm"), LIST_2("rhs_mag_f1")};
+    respawnMagazines[] = {LIST_5("rhs_30Rnd_762x39mm"), LIST_2("rhs_mag_f1")};
 };
 
-class rof_taki_o_soldier_mosin: rof_taki_o_soldier_base
+class rof_taki_o_soldier_fal: rof_taki_o_soldier
+{
+    displayName = "Rifleman (FAL)";
+    weapons[] = {"hlc_rifle_SLR","Throw","Put"};
+    respawnWeapons[] = {"hlc_rifle_SLR","Throw","Put"};
+    magazines[] = {LIST_5("hlc_20Rnd_762x51_B_fal"),"rhs_mag_f1"};
+    respawnMagazines[] = {LIST_5("hlc_20Rnd_762x51_B_fal"),"rhs_mag_f1"};
+};
+
+class rof_taki_o_soldier_stg44: rof_taki_o_soldier
+{
+    displayName = "Rifleman (StG 44)";
+    weapons[] = {"rhs_weap_MP44","Throw","Put"};
+    respawnWeapons[] = {"rhs_weap_MP44","Throw","Put"};
+    magazines[] = {LIST_8("rhsgref_25Rnd_792x33_SmE_StG")};
+    respawnMagazines[] = {LIST_8("rhsgref_25Rnd_792x33_SmE_StG")};
+};
+
+class rof_taki_o_soldier_m3a1: rof_taki_o_soldier
+{
+    displayName = "Rifleman (M3A1)";
+    weapons[] = {"rhs_weap_m3a1","Throw","Put"};
+    respawnWeapons[] = {"rhs_weap_m3a1","Throw","Put"};
+    magazines[] = {LIST_6("rhsgref_30rnd_1143x23_M1911B_2mag_SMG"),"rhs_mag_f1"};
+    respawnMagazines[] = {LIST_6("rhsgref_30rnd_1143x23_M1911B_2mag_SMG"),"rhs_mag_f1"};
+};
+
+class rof_taki_o_soldier_aks74u: rof_taki_o_soldier
+{
+    displayName = "Rifleman (AKS-74U)";
+    weapons[] = {"rhs_weap_aks74u","Throw","Put"};
+    respawnWeapons[] = {"rhs_weap_aks74u","Throw","Put"};
+    magazines[] = {LIST_8("rhs_30Rnd_545x39_7N6_AK"),LIST_2("rhs_mag_f1")};
+    respawnMagazines[] = {LIST_8("rhs_30Rnd_545x39_7N6_AK"),LIST_2("rhs_mag_f1")};
+};
+
+class rof_taki_o_soldier_mosin: rof_taki_o_soldier_unarmed
 {
     displayName = "Rifleman (Mosin)";
-    scope = 2;
-    weapons[] += {"rhs_weap_m38"};
-    respawnWeapons[] += {"rhs_weap_m38"};
-    magazines[] = {LIST_10("rhsgref_5Rnd_762x54_m38")};
-    respawnMagazines[] = {LIST_10("rhsgref_5Rnd_762x54_m38")};
-    linkedItems[] += {"rhs_6sh92"};
-    respawnLinkedItems[] += {"rhs_6sh92"};
-    items[] = {"FirstAidKit"};
-    respawnItems[] = {"FirstAidKit"};
+    weapons[] = {"rhs_weap_m38","Throw","Put"};
+    respawnWeapons[] = {"rhs_weap_m38","Throw","Put"};
+    magazines[] = {LIST_10("rhsgref_5Rnd_762x54_m38"), "rhs_mag_f1"};
+    respawnMagazines[] = {LIST_10("rhsgref_5Rnd_762x54_m38"), "rhs_mag_f1"};
+};
+
+class rof_taki_o_soldier_kar98k: rof_taki_o_soldier_mosin
+{
+    displayName = "Rifleman (Kar98k)";
+    weapons[] = {"rhs_weap_kar98k","Throw","Put"};
+    respawnWeapons[] = {"rhs_weap_kar98k","Throw","Put"};
+    magazines[] = {LIST_10("rhsgref_5Rnd_792x57_kar98k"),"rhs_mag_f1"};
+    respawnMagazines[] = {LIST_10("rhsgref_5Rnd_792x57_kar98k"),"rhs_mag_f1"};
 };
 
 class rof_taki_o_soldier_tl: rof_taki_o_soldier
 {
     displayName = "Team Leader";
-    scope = 2;
     weapons[] = {"rhs_weap_akms_gp25","Throw","Put"};
     respawnWeapons[] = {"rhs_weap_akms_gp25","Throw","Put"};
-    magazines[] = {LIST_5("rhs_30Rnd_762x39mm"), LIST_6("rhs_VOG25")};
-    respawnMagazines[] = {LIST_5("rhs_30Rnd_762x39mm"), LIST_6("rhs_VOG25")};
+    magazines[] = {LIST_5("rhs_30Rnd_762x39mm"), LIST_6("rhs_VOG25"), "SmokeShell"};
+    respawnMagazines[] = {LIST_5("rhs_30Rnd_762x39mm"), LIST_6("rhs_VOG25"), "SmokeShell"};
     backpack = "B_FieldPack_khk";
 
     icon="iconManLeader";
@@ -101,8 +130,8 @@ class rof_taki_o_soldier_tl: rof_taki_o_soldier
 
 class rof_taki_o_soldier_lat: rof_taki_o_soldier_mosin
 {
-    displayName = "Rifleman (AT)";
-    weapons[] = {"rhs_weap_m38","rhs_weap_rpg7", "Throw","Put"};
+    displayName = "Rifleman (RPG-7)";
+    weapons[] = {"rhs_weap_m38","rhs_weap_rpg7","Throw","Put"};
     respawnWeapons[] = {"rhs_weap_m38","rhs_weap_rpg7","Throw","Put"};
     backpack = "rhs_rpg_vl";
 
@@ -130,25 +159,22 @@ class rof_taki_o_soldier_lat: rof_taki_o_soldier_mosin
     };
 };
 
-class rof_taki_o_soldier_pistol: rof_taki_o_soldier_base
+class rof_taki_o_soldier_pistol: rof_taki_o_soldier_unarmed
 {
-    displayName = "Rifleman (Pistol)";
-    scope = 2;
+    displayName = "Rebel (Pistol)";
     weapons[] = {"rhs_weap_makarov_pm","Throw","Put"};
     respawnWeapons[] = {"rhs_weap_makarov_pm","Throw","Put"};
     magazines[] = {LIST_5("rhs_mag_9x18_8_57N181S")};
     respawnMagazines[] = {LIST_5("rhs_mag_9x18_8_57N181S")};
-    linkedItems[] += {"rhs_vest_pistol_holster"};
-    respawnLinkedItems[] += {"rhs_vest_pistol_holster"};
-    items[] = {"FirstAidKit"};
-    respawnItems[] = {"FirstAidKit"};
+    linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemRadio","rhs_vest_pistol_holster"};
+    respawnLinkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemRadio","rhs_vest_pistol_holster"};
 
     threat[]={0.6,0.1,0.1};
 };
 
 class rof_taki_o_soldier_pistol_rpg: rof_taki_o_soldier_pistol
 {
-    displayName = "Rifleman (Pistol, RPG)";
+    displayName = "RPG Man (Pistol)";
     weapons[] = {"rhs_weap_makarov_pm","rhs_weap_rpg7", "Throw","Put"};
     respawnWeapons[] = {"rhs_weap_makarov_pm","rhs_weap_rpg7", "Throw","Put"};
     backpack = "rhs_rpg_vl";
@@ -177,18 +203,13 @@ class rof_taki_o_soldier_pistol_rpg: rof_taki_o_soldier_pistol
     };
 };
 
-class rof_taki_o_soldier_pk: rof_taki_o_soldier_base
+class rof_taki_o_soldier_pk: rof_taki_o_soldier_unarmed
 {
     displayName = "Machinegunner";
-    scope = 2;
     weapons[] = {"rhs_weap_pkm","Throw","Put"};
     respawnWeapons[] = {"rhs_weap_pkm"};
     magazines[] = {"rhs_100Rnd_762x54mmR"};
     respawnMagazines[] = {"rhs_100Rnd_762x54mmR"};
-    linkedItems[] += {"rhs_6sh92"};
-    respawnLinkedItems[] += {"rhs_6sh92"};
-    items[] = {"FirstAidKit"};
-    respawnItems[] = {"FirstAidKit"};
     backpack = "rhs_sidorMG";
 
     textSingular="$STR_A3_nameSound_veh_infantry_MG_s";
@@ -213,11 +234,21 @@ class rof_taki_o_soldier_pk: rof_taki_o_soldier_base
     };
 };
 
+class rof_taki_o_soldier_mg42: rof_taki_o_soldier_pk
+{
+    displayName = "Rifleman (MG 42)";
+    weapons[] = {"rhs_weap_mg42","Throw","Put"};
+    respawnWeapons[] = {"rhs_weap_mg42","Throw","Put"};
+    magazines[] = {LIST_5("rhsgref_50Rnd_792x57_SmK_drum")};
+    respawnMagazines[] = {LIST_5("rhsgref_50Rnd_792x57_SmK_drum")};
+    backpack = "";
+};
+
 class rof_taki_o_medic: rof_taki_o_soldier_pistol
 {
     displayName = "Medic";
-    magazines[] = {LIST_4("rhs_mag_9x18_8_57N181S"), LIST_2("rhs_mag_rdg2_white")};
-    respawnMagazines[] = {LIST_4("rhs_mag_9x18_8_57N181S"), LIST_2("rhs_mag_rdg2_white")};
+    magazines[] = {LIST_4("rhs_mag_9x18_8_57N181S"), LIST_2("SmokeShell")};
+    respawnMagazines[] = {LIST_4("rhs_mag_9x18_8_57N181S"), LIST_2("SmokeShell")};
     items[] = {LIST_2("FirstAidKit")};
     respawnItems[] = {LIST_2("FirstAidKit")};
     backpack = "rhs_medic_bag_filled";
@@ -256,4 +287,33 @@ class rof_taki_o_engineer: rof_taki_o_soldier_mosin
     icon="iconManEngineer";
     role="Sapper";
     picture="pictureRepair";
+};
+
+class rof_taki_o_sniper: rof_taki_o_soldier_unarmed
+{
+    displayName = "Sniper";
+    weapons[] = {"40th_weap_svd_wood_pso1","Throw","Put"};
+    respawnWeapons[] = {"40th_weap_svd_wood_pso1","Throw","Put"};
+    magazines[] = {LIST_5("ACE_10Rnd_762x54_Tracer_mag"),LIST_2("SmokeShell")};
+    respawnMagazines[] = {LIST_5("ACE_10Rnd_762x54_Tracer_mag"),LIST_2("SmokeShell")};
+
+    textSingular="$STR_A3_nameSound_veh_infantry_sniper_s";
+    textPlural="$STR_A3_nameSound_veh_infantry_sniper_p";
+    nameSound="veh_infantry_sniper_s";
+    role="Marksman";
+
+    class SpeechVariants
+    {
+        class Default
+        {
+            speechSingular[]=
+            {
+                "veh_infantry_sniper_s"
+            };
+            speechPlural[]=
+            {
+                "veh_infantry_sniper_p"
+            };
+        };
+    };
 };

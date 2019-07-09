@@ -16,7 +16,8 @@ class CfgPatches
             "rhs_c_weapons",
             "rhs_c_troops",
             "rhsgref_c_weapons",
-            "rhsgref_c_troops"
+            "rhsgref_c_troops",
+            "40th_weapons_cfg"
         };
     };
     class Taliban_fighters_rof_patch {};
@@ -52,9 +53,9 @@ class CfgVehicles
 
     #include "units_civ.hpp"
 
-    #include "units_opf.hpp"
+    #include "units_o.hpp"
 
-    #include "units_gue.hpp"
+    #include "units_g.hpp"
 
     // Remove old units (with wrong classnames) from the editor
     #include "units_deprecated.hpp"
