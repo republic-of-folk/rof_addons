@@ -60,3 +60,8 @@ class CfgVehicles
     // Remove old units (with wrong classnames) from the editor
     #include "units_deprecated.hpp"
 };
+
+class CfgWeapons
+{
+    #include "headgear.hpp"
+};

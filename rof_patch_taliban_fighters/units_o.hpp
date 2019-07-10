@@ -30,13 +30,6 @@ class rof_taki_o_soldier_base: Afghan_Civilian1
             "Afghan_05Hat", 1,
             "", 1
     };
-    allowedFacewear[] = {
-            "rhsusf_shemagh_od", 0.25,
-            "rhsusf_shemagh2_od", 0.25,
-            "rhsusf_shemagh_white", 0.25,
-            "rhsusf_shemagh2_white", 0.25,
-            "", 1
-    };
     rds_randomCloths[] = {
             "U_Afghan01NH", 1,
             "U_Afghan02NH", 1,
@@ -48,6 +41,7 @@ class rof_taki_o_soldier_base: Afghan_Civilian1
 class rof_taki_o_soldier_unarmed: rof_taki_o_soldier_base
 {
     displayName = "Unarmed Combatant";
+    editorPreview = "\rof_addons\rof_patch_taliban_fighters\data\ui\editorPreview\rof_taki_o_soldier_unarmed.jpg";
     scope = 2;
     threat[]={0.1,0.1,0.1};
 };
@@ -55,6 +49,7 @@ class rof_taki_o_soldier_unarmed: rof_taki_o_soldier_base
 class rof_taki_o_soldier: rof_taki_o_soldier_unarmed
 {
     displayName = "Rifleman (AKM)";
+    editorPreview = "\rof_addons\rof_patch_taliban_fighters\data\ui\editorPreview\rof_taki_o_soldier.jpg";
     weapons[] = {"rhs_weap_akms","Throw","Put"};
     respawnWeapons[] = {"rhs_weap_akms","Throw","Put"};
     magazines[] = {LIST_5("rhs_30Rnd_762x39mm"), LIST_2("rhs_mag_f1")};
@@ -64,6 +59,7 @@ class rof_taki_o_soldier: rof_taki_o_soldier_unarmed
 class rof_taki_o_soldier_fal: rof_taki_o_soldier
 {
     displayName = "Rifleman (FAL)";
+    editorPreview = "\rof_addons\rof_patch_taliban_fighters\data\ui\editorPreview\rof_taki_o_soldier_fal.jpg";
     weapons[] = {"hlc_rifle_SLR","Throw","Put"};
     respawnWeapons[] = {"hlc_rifle_SLR","Throw","Put"};
     magazines[] = {LIST_5("hlc_20Rnd_762x51_B_fal"),"rhs_mag_f1"};
@@ -73,6 +69,7 @@ class rof_taki_o_soldier_fal: rof_taki_o_soldier
 class rof_taki_o_soldier_stg44: rof_taki_o_soldier
 {
     displayName = "Rifleman (StG 44)";
+    editorPreview = "\rof_addons\rof_patch_taliban_fighters\data\ui\editorPreview\rof_taki_o_soldier_stg44.jpg";
     weapons[] = {"rhs_weap_MP44","Throw","Put"};
     respawnWeapons[] = {"rhs_weap_MP44","Throw","Put"};
     magazines[] = {LIST_8("rhsgref_25Rnd_792x33_SmE_StG")};
@@ -82,6 +79,7 @@ class rof_taki_o_soldier_stg44: rof_taki_o_soldier
 class rof_taki_o_soldier_m3a1: rof_taki_o_soldier
 {
     displayName = "Rifleman (M3A1)";
+    editorPreview = "\rof_addons\rof_patch_taliban_fighters\data\ui\editorPreview\rof_taki_o_soldier_m3a1.jpg";
     weapons[] = {"rhs_weap_m3a1","Throw","Put"};
     respawnWeapons[] = {"rhs_weap_m3a1","Throw","Put"};
     magazines[] = {LIST_6("rhsgref_30rnd_1143x23_M1911B_2mag_SMG"),"rhs_mag_f1"};
@@ -91,6 +89,7 @@ class rof_taki_o_soldier_m3a1: rof_taki_o_soldier
 class rof_taki_o_soldier_aks74u: rof_taki_o_soldier
 {
     displayName = "Rifleman (AKS-74U)";
+    editorPreview = "\rof_addons\rof_patch_taliban_fighters\data\ui\editorPreview\rof_taki_o_soldier_aks74u.jpg";
     weapons[] = {"rhs_weap_aks74u","Throw","Put"};
     respawnWeapons[] = {"rhs_weap_aks74u","Throw","Put"};
     magazines[] = {LIST_8("rhs_30Rnd_545x39_7N6_AK"),LIST_2("rhs_mag_f1")};
@@ -100,6 +99,7 @@ class rof_taki_o_soldier_aks74u: rof_taki_o_soldier
 class rof_taki_o_soldier_mosin: rof_taki_o_soldier_unarmed
 {
     displayName = "Rifleman (Mosin)";
+    editorPreview = "\rof_addons\rof_patch_taliban_fighters\data\ui\editorPreview\rof_taki_o_soldier_mosin.jpg";
     weapons[] = {"rhs_weap_m38","Throw","Put"};
     respawnWeapons[] = {"rhs_weap_m38","Throw","Put"};
     magazines[] = {LIST_10("rhsgref_5Rnd_762x54_m38"), "rhs_mag_f1"};
@@ -109,6 +109,7 @@ class rof_taki_o_soldier_mosin: rof_taki_o_soldier_unarmed
 class rof_taki_o_soldier_kar98k: rof_taki_o_soldier_mosin
 {
     displayName = "Rifleman (Kar98k)";
+    editorPreview = "\rof_addons\rof_patch_taliban_fighters\data\ui\editorPreview\rof_taki_o_soldier_kar98k.jpg";
     weapons[] = {"rhs_weap_kar98k","Throw","Put"};
     respawnWeapons[] = {"rhs_weap_kar98k","Throw","Put"};
     magazines[] = {LIST_10("rhsgref_5Rnd_792x57_kar98k"),"rhs_mag_f1"};
@@ -118,6 +119,7 @@ class rof_taki_o_soldier_kar98k: rof_taki_o_soldier_mosin
 class rof_taki_o_soldier_tl: rof_taki_o_soldier
 {
     displayName = "Team Leader";
+    editorPreview = "\rof_addons\rof_patch_taliban_fighters\data\ui\editorPreview\rof_taki_o_soldier_tl.jpg";
     weapons[] = {"rhs_weap_akms_gp25","Throw","Put"};
     respawnWeapons[] = {"rhs_weap_akms_gp25","Throw","Put"};
     magazines[] = {LIST_5("rhs_30Rnd_762x39mm"), LIST_6("rhs_VOG25"), "SmokeShell"};
@@ -131,6 +133,7 @@ class rof_taki_o_soldier_tl: rof_taki_o_soldier
 class rof_taki_o_soldier_lat: rof_taki_o_soldier_mosin
 {
     displayName = "Rifleman (RPG-7)";
+    editorPreview = "\rof_addons\rof_patch_taliban_fighters\data\ui\editorPreview\rof_taki_o_soldier_lat.jpg";
     weapons[] = {"rhs_weap_m38","rhs_weap_rpg7","Throw","Put"};
     respawnWeapons[] = {"rhs_weap_m38","rhs_weap_rpg7","Throw","Put"};
     backpack = "rhs_rpg_vl";
@@ -162,6 +165,7 @@ class rof_taki_o_soldier_lat: rof_taki_o_soldier_mosin
 class rof_taki_o_soldier_pistol: rof_taki_o_soldier_unarmed
 {
     displayName = "Rebel (Pistol)";
+    editorPreview = "\rof_addons\rof_patch_taliban_fighters\data\ui\editorPreview\rof_taki_o_soldier_pistol.jpg";
     weapons[] = {"rhs_weap_makarov_pm","Throw","Put"};
     respawnWeapons[] = {"rhs_weap_makarov_pm","Throw","Put"};
     magazines[] = {LIST_5("rhs_mag_9x18_8_57N181S")};
@@ -175,6 +179,7 @@ class rof_taki_o_soldier_pistol: rof_taki_o_soldier_unarmed
 class rof_taki_o_soldier_pistol_rpg: rof_taki_o_soldier_pistol
 {
     displayName = "RPG Man (Pistol)";
+    editorPreview = "\rof_addons\rof_patch_taliban_fighters\data\ui\editorPreview\rof_taki_o_soldier_pistol_rpg.jpg";
     weapons[] = {"rhs_weap_makarov_pm","rhs_weap_rpg7", "Throw","Put"};
     respawnWeapons[] = {"rhs_weap_makarov_pm","rhs_weap_rpg7", "Throw","Put"};
     backpack = "rhs_rpg_vl";
@@ -206,6 +211,7 @@ class rof_taki_o_soldier_pistol_rpg: rof_taki_o_soldier_pistol
 class rof_taki_o_soldier_pk: rof_taki_o_soldier_unarmed
 {
     displayName = "Machinegunner";
+    editorPreview = "\rof_addons\rof_patch_taliban_fighters\data\ui\editorPreview\rof_taki_o_soldier_pk.jpg";
     weapons[] = {"rhs_weap_pkm","Throw","Put"};
     respawnWeapons[] = {"rhs_weap_pkm"};
     magazines[] = {"rhs_100Rnd_762x54mmR"};
@@ -237,6 +243,7 @@ class rof_taki_o_soldier_pk: rof_taki_o_soldier_unarmed
 class rof_taki_o_soldier_mg42: rof_taki_o_soldier_pk
 {
     displayName = "Rifleman (MG 42)";
+    editorPreview = "\rof_addons\rof_patch_taliban_fighters\data\ui\editorPreview\rof_taki_o_soldier_mg42.jpg";
     weapons[] = {"rhs_weap_mg42","Throw","Put"};
     respawnWeapons[] = {"rhs_weap_mg42","Throw","Put"};
     magazines[] = {LIST_5("rhsgref_50Rnd_792x57_SmK_drum")};
@@ -247,6 +254,7 @@ class rof_taki_o_soldier_mg42: rof_taki_o_soldier_pk
 class rof_taki_o_medic: rof_taki_o_soldier_pistol
 {
     displayName = "Medic";
+    editorPreview = "\rof_addons\rof_patch_taliban_fighters\data\ui\editorPreview\rof_taki_o_medic.jpg";
     magazines[] = {LIST_4("rhs_mag_9x18_8_57N181S"), LIST_2("SmokeShell")};
     respawnMagazines[] = {LIST_4("rhs_mag_9x18_8_57N181S"), LIST_2("SmokeShell")};
     items[] = {LIST_2("FirstAidKit")};
@@ -278,7 +286,7 @@ class rof_taki_o_medic: rof_taki_o_soldier_pistol
 class rof_taki_o_engineer: rof_taki_o_soldier_mosin
 {
     displayName = "Engineer";
-    uniformClass = "U_Afghan06NH";
+    editorPreview = "\rof_addons\rof_patch_taliban_fighters\data\ui\editorPreview\rof_taki_o_engineer.jpg";
     backpack = "I_Fieldpack_oli_Repair";
 
     canDeactivateMines=1;
@@ -292,6 +300,7 @@ class rof_taki_o_engineer: rof_taki_o_soldier_mosin
 class rof_taki_o_sniper: rof_taki_o_soldier_unarmed
 {
     displayName = "Sniper";
+    editorPreview = "\rof_addons\rof_patch_taliban_fighters\data\ui\editorPreview\rof_taki_o_sniper.jpg";
     weapons[] = {"40th_weap_svd_wood_pso1","Throw","Put"};
     respawnWeapons[] = {"40th_weap_svd_wood_pso1","Throw","Put"};
     magazines[] = {LIST_5("ACE_10Rnd_762x54_Tracer_mag"),LIST_2("SmokeShell")};

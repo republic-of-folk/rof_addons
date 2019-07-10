@@ -1,126 +1,98 @@
     class rof_taki_civ_base: Afghan_Civilian1
     {
         scope = 0;
-        identityTypes[] = {"LanguagePER_F","Head_TK","G_IRAN_default"};
-        linkedItems[] = {'ItemMap'};
-        respawnLinkedItems[] = {'ItemMap'};
         faction = "rof_faction_civ_taki";
         side = 3;
+        identityTypes[] = {"LanguagePER_F","Head_TK","G_IRAN_default"};
+        linkedItems[] = {};
+        respawnLinkedItems[] = {};
+        items[] = {};
+        respawnItems[] = {};
         weapons[] = {"Throw","Put"};
         respawnWeapons[] = {"Throw","Put"};
     };
 
-
-
-    class rof_taki_civ_villager1: rof_taki_civ_base
+    class rof_taki_civ_villager: rof_taki_civ_base
     {
-        displayName = "Takistani Villager 1";
-        scope = 2;
-        linkedItems[] += {"Afghan_01Hat"};
-        respawnLinkedItems[] += {"Afghan_01Hat"};
-        uniformClass = "U_Afghan01NH";
-    };
-
-    class rof_taki_civ_villager1_nh: rof_taki_civ_base
-    {
-        displayName = "Takistani Villager 1 (no hat)";
+        displayName = "Takistani Villager";
+        editorPreview = "\rof_addons\rof_patch_taliban_fighters\data\ui\editorPreview\rof_taki_civ_villager.jpg";
         scope = 2;
         uniformClass = "U_Afghan01NH";
+
+        class EventHandlers
+        {
+            init = "if (local (_this select 0)) then { [(_this select 0), [], []] call BIS_fnc_unitHeadgear; _this call rds_fnc_randomUniform; };";
+        };
+
+        headgearList[] = {
+            "Afghan_01Hat_civ", 1,
+            "Afghan_02Hat_civ", 1,
+            "Afghan_04Hat_civ", 1,
+            "Afghan_05Hat_civ", 1,
+            "", 1
+        };
+        rds_randomCloths[] = {
+            "U_Afghan01NH", 1,
+            "U_Afghan02NH", 1,
+            "U_Afghan03NH", 1,
+            "U_Afghan06NH", 1
+        };
     };
 
-    class rof_taki_civ_villager2: rof_taki_civ_base
+    class rof_taki_civ_town : rof_taki_civ_base
     {
-        displayName = "Takistani Villager 2";
-        scope = 2;
-        linkedItems[] += {"Afghan_02Hat"};
-        respawnLinkedItems[] += {"Afghan_02Hat"};
-        uniformClass = "U_Afghan02NH";
-    };
-
-    class rof_taki_civ_villager2_nh: rof_taki_civ_base
-    {
-        displayName = "Takistani Villager 2 (no hat)";
-        scope = 2;
-        uniformClass = "U_Afghan02NH";
-    };
-
-    class rof_taki_civ_villager3: rof_taki_civ_base
-    {
-        displayName = "Takistani Villager 3";
-        scope = 2;
-        linkedItems[] += {"Afghan_03Hat"};
-        respawnLinkedItems[] += {"Afghan_03Hat"};
-        uniformClass = "U_Afghan03NH";
-    };
-
-    class rof_taki_civ_villager3_nh: rof_taki_civ_base
-    {
-        displayName = "Takistani Villager 3 (no hat)";
-        scope = 2;
-        uniformClass = "U_Afghan03NH";
-    };
-
-    class rof_taki_civ_villager4: rof_taki_civ_base
-    {
-        displayName = "Takistani Villager 4";
-        scope = 2;
-        uniformClass = "U_Afghan04";
-    };
-
-    class rof_taki_civ_villager5: rof_taki_civ_base
-    {
-        displayName = "Takistani Villager 5";
-        scope = 2;
-        uniformClass = "U_Afghan05";
-    };
-
-    class rof_taki_civ_villager6: rof_taki_civ_base
-    {
-        displayName = "Takistani Villager 6";
-        scope = 2;
-        linkedItems[] += {"Afghan_06Hat"};
-        respawnLinkedItems[] += {"Afghan_06Hat"};
-        uniformClass = "U_Afghan06NH";
-    };
-
-    class rof_taki_civ_villager6_nh: rof_taki_civ_base
-    {
-        displayName = "Takistani Villager 6 (no hat)";
-        scope = 2;
-        uniformClass = "U_Afghan06NH";
-    };
-
-    class rof_taki_civ_town1 : rof_taki_civ_base
-    {
-        displayName = "Takistani Civilian 1";
+        displayName = "Takistani Civilian";
+        editorPreview = "\rof_addons\rof_patch_taliban_fighters\data\ui\editorPreview\rof_taki_civ_town.jpg";
         scope = 2;
         uniformClass = "rds_uniform_citizen1";
+
+        class EventHandlers
+        {
+            init = "if (local (_this select 0)) then { [(_this select 0), [], []] call BIS_fnc_unitHeadgear; _this call rds_fnc_randomUniform; };";
+        };
+
+        headgearList[] = {
+            "rds_worker_cap1", 0.5,
+            "rds_worker_cap2", 0.5,
+            "rds_worker_cap3", 0.5,
+            "rds_worker_cap4", 0.5,
+            "Afghan_01Hat_civ", 0.5,
+            "Afghan_02Hat_civ", 0.5,
+            "Afghan_06Hat_civ", 0.5,
+            "H_Cap_red", 0.25,
+            "", 1
+        };
+
+        rds_randomCloths[] = {
+            "rds_uniform_citizen1", 1,
+            "rds_uniform_citizen2", 1,
+            "rds_uniform_citizen3", 1,
+            "rds_uniform_citizen4", 1
+        };
     };
 
-    class rof_taki_civ_town2 : rof_taki_civ_base
+    class rof_taki_civ_functionary : rof_taki_civ_base
     {
-        displayName = "Takistani Civilian 2";
+        displayName = "Takistani Functionary";
+        editorPreview = "\rof_addons\rof_patch_taliban_fighters\data\ui\editorPreview\rof_taki_civ_functionary.jpg";
         scope = 2;
-        uniformClass = "rds_uniform_citizen2";
-    };
+        uniformClass = "rds_uniform_Functionary1";
 
-    class rof_taki_civ_town3 : rof_taki_civ_base
-    {
-        displayName = "Takistani Civilian 3";
-        scope = 2;
-        uniformClass = "rds_uniform_citizen3";
-    };
+        class EventHandlers
+        {
+            init = "if (local (_this select 0)) then { _this call rds_fnc_randomUniform; };";
+        };
 
-    class rof_taki_civ_town4 : rof_taki_civ_base
-    {
-        displayName = "Takistani Civilian 4";
-        scope = 2;
-        uniformClass = "rds_uniform_citizen4";
+        rds_randomCloths[] = {
+            "rds_uniform_Functionary1", 1,
+            "rds_uniform_Functionary2", 1
+        };
     };
 
     class rof_taki_civ_doctor : rof_taki_civ_base
     {
         displayName = "Takistani Doctor";
+        editorPreview = "\rof_addons\rof_patch_taliban_fighters\data\ui\editorPreview\rof_taki_civ_doctor.jpg";
         scope = 2;
         uniformClass = "rds_uniform_doctor";
     };
@@ -128,6 +100,7 @@
     class rof_taki_civ_assistant : rof_taki_civ_base
     {
         displayName = "Takistani Assistant";
+        editorPreview = "\rof_addons\rof_patch_taliban_fighters\data\ui\editorPreview\rof_taki_civ_assistant.jpg";
         scope = 2;
         uniformClass = "rds_uniform_assistant";
     };
@@ -135,27 +108,15 @@
     class rof_taki_civ_schoolteacher : rof_taki_civ_base
     {
         displayName = "Takistani School teacher";
+        editorPreview = "\rof_addons\rof_patch_taliban_fighters\data\ui\editorPreview\rof_taki_civ_schoolteacher.jpg";
         scope = 2;
         uniformClass = "rds_uniform_schoolteacher";
-    };
-
-    class rof_taki_civ_functionary1 : rof_taki_civ_base
-    {
-        displayName = "Takistani Functionary 1";
-        scope = 2;
-        uniformClass = "rds_uniform_Functionary1";
-    };
-
-    class rof_taki_civ_functionary2 : rof_taki_civ_base
-    {
-        displayName = "Takistani Functionary 2";
-        scope = 2;
-        uniformClass = "rds_uniform_Functionary2";
     };
 
     class rof_taki_civ_policeman : rof_taki_civ_base
     {
         displayName = "Takistani Policeman";
+        editorPreview = "\rof_addons\rof_patch_taliban_fighters\data\ui\editorPreview\rof_taki_civ_policeman.jpg";
         scope = 2;
         uniformClass = "rds_uniform_Policeman";
         linkedItems[] = {"rds_police_cap","rds_police_holster",'ItemMap','ItemCompass','ItemWatch','ItemRadio'};
