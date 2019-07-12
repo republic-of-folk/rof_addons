@@ -516,7 +516,7 @@ class cfgweapons
 		class fullauto: fullauto
 		{
 			sounds[] = {"standardsound","silencedsound"};
-			class basesoundmodetype{};
+			class basesoundmodetype;
 			class standardsound: basesoundmodetype
 			{
 				soundsetshot[] = {"jsrs_rifle_shake_soundset","jsrs_ak74_shot_soundset","jsrs_ak74_shell_soundset","jsrs_7x62mm_reflector_1"};
@@ -529,7 +529,7 @@ class cfgweapons
 		class single: single
 		{
 			sounds[] = {"standardsound","silencedsound"};
-			class basesoundmodetype{};
+			class basesoundmodetype;
 			class standardsound: basesoundmodetype
 			{
 				soundsetshot[] = {"jsrs_rifle_shake_soundset","jsrs_ak74_shot_soundset","jsrs_ak74_shell_soundset","jsrs_7x62mm_reflector_1"};
@@ -967,7 +967,7 @@ class cfgweapons
 	{
 		class single: mode_semiauto
 		{
-			class basesoundmodetype{};
+			class basesoundmodetype;
 			class standardsound: basesoundmodetype
 			{
 				soundsetshot[] = {"jsrs_rifle_shake_soundset","jsrs_aug_shot_soundset","jsrs_aug_shell_soundset","jsrs_9mm_reflector_1"};
@@ -979,7 +979,7 @@ class cfgweapons
 		};
 		class fullauto: mode_fullauto
 		{
-			class basesoundmodetype{};
+			class basesoundmodetype;
 			class standardsound: basesoundmodetype
 			{
 				soundsetshot[] = {"jsrs_rifle_shake_soundset","jsrs_aug_shot_soundset","jsrs_aug_shell_soundset","jsrs_9mm_reflector_1"};
@@ -1005,7 +1005,7 @@ class cfgweapons
 		};
 		class fullauto: fullauto
 		{
-			class basesoundmodetype{};
+			class basesoundmodetype;
 			class standardsound: basesoundmodetype
 			{
 				soundsetshot[] = {"jsrs_rifle_shake_soundset","jsrs_aug_shot_soundset","jsrs_aug_shell_soundset","jsrs_9mm_reflector_1"};
@@ -1055,7 +1055,7 @@ class cfgweapons
 		class fullauto: mode_fullauto
 		{
 			sounds[] = {"standardsound","silencedsound"};
-			class basesoundmodetype{};
+			class basesoundmodetype;
 			class standardsound: basesoundmodetype
 			{
 				soundsetshot[] = {"jsrs_rifle_shake_soundset","jsrs_aug_smg_shot_soundset","jsrs_aug_smg_shell_soundset","jsrs_9mm_reflector_1"};
@@ -1068,7 +1068,7 @@ class cfgweapons
 		class single: mode_semiauto
 		{
 			sounds[] = {"standardsound","silencedsound"};
-			class basesoundmodetype{};
+			class basesoundmodetype;
 			class standardsound: basesoundmodetype
 			{
 				soundsetshot[] = {"jsrs_rifle_shake_soundset","jsrs_aug_smg_shot_soundset","jsrs_aug_smg_shell_soundset","jsrs_9mm_reflector_1"};
@@ -1084,7 +1084,7 @@ class cfgweapons
 		class fullauto: mode_fullauto
 		{
 			sounds[] = {"standardsound","silencedsound"};
-			class basesoundmodetype{};
+			class basesoundmodetype;
 			class standardsound: basesoundmodetype
 			{
 				soundsetshot[] = {"jsrs_rifle_shake_soundset","jsrs_aug_smg_shot_soundset","jsrs_aug_smg_shell_soundset","jsrs_9mm_reflector_1"};
@@ -1097,7 +1097,7 @@ class cfgweapons
 		class single: mode_semiauto
 		{
 			sounds[] = {"standardsound","silencedsound"};
-			class basesoundmodetype{};
+			class basesoundmodetype;
 			class standardsound: basesoundmodetype
 			{
 				soundsetshot[] = {"jsrs_rifle_shake_soundset","jsrs_aug_smg_shot_soundset","jsrs_aug_smg_shell_soundset","jsrs_9mm_reflector_1"};
@@ -1123,7 +1123,7 @@ class cfgweapons
 		};
 		class fullauto: fullauto
 		{
-			class basesoundmodetype{};
+			class basesoundmodetype;
 			class standardsound: basesoundmodetype
 			{
 				soundsetshot[] = {"jsrs_rifle_shake_soundset","jsrs_aug_shot_soundset","jsrs_aug_shell_soundset","jsrs_9mm_reflector_1"};
@@ -1908,6 +1908,7 @@ class cfgweapons
 	{
 		class single: single
 		{
+            class basesoundmodetype;
 			class standardsound: basesoundmodetype
 			{
 				soundsetshot[] = {"jsrs_rifle_shake_soundset","jsrs_protc_shot_soundset","jsrs_protc_shell_soundset","jsrs_9mm_reflector_1"};
@@ -1915,6 +1916,7 @@ class cfgweapons
 		};
 		class burst: burst
 		{
+            class basesoundmodetype;
 			class standardsound: basesoundmodetype
 			{
 				soundsetshot[] = {"jsrs_rifle_shake_soundset","jsrs_protc_shot_soundset","jsrs_protc_shell_soundset","jsrs_9mm_reflector_1"};
@@ -1922,6 +1924,7 @@ class cfgweapons
 		};
 		class fullauto: fullauto
 		{
+            class basesoundmodetype;
 			class standardsound: basesoundmodetype
 			{
 				soundsetshot[] = {"jsrs_rifle_shake_soundset","jsrs_protc_shot_soundset","jsrs_protc_shell_soundset","jsrs_9mm_reflector_1"};
@@ -1932,13 +1935,15 @@ class cfgweapons
 	{
 		class single: single
 		{
-			class standardsound: basesoundmodetype
+			class basesoundmodetype;
+            class standardsound: basesoundmodetype
 			{
 				soundsetshot[] = {"jsrs_rifle_shake_soundset","jsrs_protc_shot_soundset","jsrs_protc_shell_soundset","jsrs_9mm_reflector_1"};
 			};
 		};
 		class burst: burst
 		{
+            class basesoundmodetype;
 			class standardsound: basesoundmodetype
 			{
 				soundsetshot[] = {"jsrs_rifle_shake_soundset","jsrs_protc_shot_soundset","jsrs_protc_shell_soundset","jsrs_9mm_reflector_1"};
@@ -1946,7 +1951,8 @@ class cfgweapons
 		};
 		class fullauto: fullauto
 		{
-			class standardsound: basesoundmodetype
+			class basesoundmodetype;
+            class standardsound: basesoundmodetype
 			{
 				soundsetshot[] = {"jsrs_rifle_shake_soundset","jsrs_protc_shot_soundset","jsrs_protc_shell_soundset","jsrs_9mm_reflector_1"};
 			};
@@ -1956,21 +1962,24 @@ class cfgweapons
 	{
 		class single: single
 		{
-			class standardsound: basesoundmodetype
+			class basesoundmodetype;
+            class standardsound: basesoundmodetype
 			{
 				soundsetshot[] = {"jsrs_rifle_shake_soundset","jsrs_protc_shot_silenced_soundset","jsrs_protc_shell_soundset","jsrs_frame_caliber_7x62mm_silenced"};
 			};
 		};
 		class burst: burst
 		{
-			class standardsound: basesoundmodetype
+			class basesoundmodetype;
+            class standardsound: basesoundmodetype
 			{
 				soundsetshot[] = {"jsrs_rifle_shake_soundset","jsrs_protc_shot_silenced_soundset","jsrs_protc_shell_soundset","jsrs_frame_caliber_7x62mm_silenced"};
 			};
 		};
 		class fullauto: fullauto
 		{
-			class standardsound: basesoundmodetype
+			class basesoundmodetype;
+            class standardsound: basesoundmodetype
 			{
 				soundsetshot[] = {"jsrs_rifle_shake_soundset","jsrs_protc_shot_silenced_soundset","jsrs_protc_shell_soundset","jsrs_frame_caliber_7x62mm_silenced"};
 			};
