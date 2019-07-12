@@ -68,7 +68,7 @@ class r : baseMan
     hmd[] = {"NVGoggles_OPFOR"};
 
     vest[] = {"usm_vest_LBE_rmp"};
-    backpack[] = {"B_FieldPack_blk"};
+    backpack[] = {"B_simc_USMC65_M41"};
 
     primaryWeapon[] = {"hlc_smg_mp5a3"};
     silencer[] = {"muzzle_snds_L"};
@@ -430,7 +430,7 @@ class sn : r
         LIST_9("hlc_20Rnd_762x51_S_M14"),
         LIST_3("rhsusf_mag_17Rnd_9x19_FMJ")
     };
-    backpack[] = {};
+    backpack[] = {"B_simc_USMC65_M41"};
     backpackItems[] = {};
 };
 class sp : ftl

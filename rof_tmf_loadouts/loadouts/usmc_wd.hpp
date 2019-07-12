@@ -95,7 +95,7 @@ class g : r
 {
     displayName = "Grenadier";
     vest[] = {"usm_vest_pasgt_lbe_gr_m"};
-    primaryWeapon[] = {"rhs_weap_m16a4_carryhandle_M203"};
+    primaryWeapon[] = {"hlc_rifle_m203"};
     bipod[] = {};
     magazines[] +=
     {
@@ -212,12 +212,13 @@ class rat : car
 class dm : r
 {
     displayName = "Designated Marksman";
-    primaryWeapon[] = {"rhs_weap_sr25_ec"};
-    scope[] = {"rhsusf_acc_LEUPOLDMK4"};
-    bipod[] = {"rhsusf_acc_harris_bipod"};
+    vest[] = {"usm_vest_pasgt_lbv_rm"};
+    primaryWeapon[] = {"hlc_rifle_M21"};
+    scope[] = {"hlc_optic_artel_m14"};
+    bipod[] = {};
     magazines[] =
     {
-        LIST_10("rhsusf_20Rnd_762x51_m118_special_Mag"),
+        LIST_7("hlc_20Rnd_762x51_B_M14"),
         LIST_2("rhs_mag_m67"),
         LIST_2("rhs_mag_an_m8hc")
     };

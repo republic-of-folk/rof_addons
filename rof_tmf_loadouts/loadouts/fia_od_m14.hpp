@@ -90,7 +90,7 @@ class g : r_light
 {
     displayName = "Grenadier";
     vest[] = {"usm_vest_LBE_gr"};
-    primaryWeapon[] = {"rhs_weap_m4a1_carryhandle_m203"};
+    primaryWeapon[] = {"hlc_rifle_m203"};
     magazines[] =
     {
         LIST_6("mbg_mag_20Rnd_556x45_M855A1_Stanag"),
@@ -99,7 +99,7 @@ class g : r_light
         LIST_8("rhs_mag_M433_HEDP"),
         LIST_2("rhs_mag_m714_White")
     };
-    backpack[] = {"B_AssaultPack_rgr"};
+    backpack[] = {"B_simc_USMC65_M41", "B_simc_USMC65_M41_Roll", "B_simc_USMC65_M41_Roll2"};
 };
 class car : r
 {
@@ -127,7 +127,7 @@ class m : r_light
         LIST_6("ACE_bloodIV_500")
     };
     items[] = {};
-    backpack[] = {"B_AssaultPack_rgr"};
+    backpack[] = {"B_simc_USMC65_M41", "B_simc_USMC65_M41_Roll", "B_simc_USMC65_M41_Roll2"};
 };
 class smg : r
 {
@@ -209,7 +209,7 @@ class aar : r
 {
     displayName = "Assistant Automatic Rifleman";
     linkedItems[] += {"Binocular"};
-    backpack[] = {"B_AssaultPack_rgr"};
+    backpack[] = {"B_simc_USMC65_M41", "B_simc_USMC65_M41_Roll", "B_simc_USMC65_M41_Roll2"};
     backpackItems[] =
     {
         LIST_2("rhs_200rnd_556x45_M_SAW")
@@ -468,7 +468,7 @@ class vd : smg
 {
     displayName = "Vehicle Driver";
     traits[] += {"engineer"};
-    backpack[] = {"B_AssaultPack_rgr"};
+    backpack[] = {"B_simc_USMC65_M41", "B_simc_USMC65_M41_Roll", "B_simc_USMC65_M41_Roll2"};
     headgear[] = {"rhsusf_Bowman"};
     linkedItems[] += {"ItemGPS"};
     backpackItems[] = {"ToolKit"};
@@ -492,7 +492,7 @@ class pcc : smg
 
     displayName = "Helicopter Crew Chief";
     traits[] += {"engineer"};
-    backpack[] = {"B_AssaultPack_rgr"};
+    backpack[] = {"B_simc_USMC65_M41", "B_simc_USMC65_M41_Roll", "B_simc_USMC65_M41_Roll2"};
     headgear[] = {"rhs_gssh18"};
     goggles[] = {"G_Aviator"};
     linkedItems[] += {"ItemGPS"};

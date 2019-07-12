@@ -11,9 +11,11 @@ class baseMan {// Weaponless baseclass
         "H_Bandanna_khk"
     };
     goggles[] = {
-        "rhs_scarf",
+        "rhs_scarf"
     };
-    hmd[] = {};
+    hmd[] = {
+        "SAN_Headlamp_v1"
+    };
     // Leave empty to remove all. "Default" > leave original item.
 
     // All randomized
@@ -181,6 +183,7 @@ class aar : r
 {
     displayName = "Assistant Automatic Rifleman";
     linkedItems[] += {"Binocular"};
+    backpack[] = {"B_Carryall_khk"};
     backpackItems[] =
     {
         LIST_2("rhs_100Rnd_762x54mmR")

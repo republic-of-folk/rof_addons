@@ -169,27 +169,15 @@ class rat : r_light
     displayName = "Rifleman (AT)";
     secondaryWeapon[] = {"rhs_weap_rshg2"};
 };
-class dm : r
-{
-    displayName = "Designated Marksman";
-    primaryWeapon[] = {"rhs_weap_m14ebrri"};
-    scope[] = {"rhsusf_acc_ACOG3"};
-    magazines[] =
-    {
-        LIST_11("rhsusf_20Rnd_762x51_m118_special_Mag"),
-        LIST_2("rhs_mag_m67"),
-        LIST_2("rhs_mag_an_m8hc")
-    };
-};
 class mmgg : car
 {
     displayName = "MMG Gunner";
-    primaryWeapon[] = {"hlc_rifle_rpk74n"};
-    silencer[] = {"rhs_acc_dtk1983"};
+    primaryWeapon[] = {"gm_lmgrpk_prp"};
+    silencer[] = {};
     backPack[] = {"RD_54_69"};
     magazines[] =
     {
-        LIST_6("rhs_45Rnd_545X39_AK"),
+        LIST_6("gm_75Rnd_762x39mm_B_M43_ak47_blk"),
         LIST_1("rhs_mag_9x18_8_57N181S")
     };
 };
@@ -199,7 +187,7 @@ class mmgac : r_light
     backPack[] = {"RD_54_69"};
     backpackItems[] =
     {
-        LIST_6("rhs_45Rnd_545X39_AK"),
+        LIST_6("gm_75Rnd_762x39mm_B_M43_ak47_blk"),
     };
 };
 class mmgag : r_light
@@ -212,7 +200,7 @@ class mmgag : r_light
     };
     backpackItems[] =
     {
-        LIST_6("rhs_45Rnd_545X39_AK"),
+        LIST_6("gm_75Rnd_762x39mm_B_M43_ak47_blk"),
     };
 };
 class hmgg : r_light
@@ -361,6 +349,10 @@ class sp : car
         "Rangefinder",
         "ItemGPS"
     };
+};
+class dm : sn
+{
+    displayName = "Designated Marksman";
 };
 class vc : smg
 {

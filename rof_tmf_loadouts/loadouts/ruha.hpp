@@ -105,7 +105,7 @@ class smg : r
     primaryWeapon[] = {"rhs_weap_m92", "rhs_weap_m92_fold"};
     magazines[] =
     {
-        LIST_6("rhs_30Rnd_762x39mm_Savz58"),
+        LIST_6("rhssaf_30Rnd_762x39mm_M67"),
         "rhssaf_mag_br_m84",
         LIST_2("rhs_mag_rdg2_white")
     };
@@ -169,6 +169,7 @@ class ar : r
 class aar : r
 {
     displayName = "Assistant Automatic Rifleman";
+    backpack[] = {"rhssaf_alice_md2camo"};
     backpackItems[] =
     {
         LIST_4("rhs_100Rnd_762x54mmR")
@@ -510,7 +511,7 @@ class engm : car
 {
     displayName = "Combat Engineer (Mines)";
     vest[] = {"rhs_6b23_digi_vydra_3m"};
-    backpack[] = {"B_Carryall_oli"};
+    backpack[] = {"B_Bergen_dgtl_F"};
     items[] +=
     {
         // TO REPLACE: "ACE_DefusalKit"

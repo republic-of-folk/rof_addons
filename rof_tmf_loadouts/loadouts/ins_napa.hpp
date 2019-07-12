@@ -223,12 +223,12 @@ class aar : r
 {
     displayName = "Assistant Machinegunner (PKM)";
 	backpack[] = {
-		"B_FieldPack_khk",
-		"B_FieldPack_oli"
+		"B_Carryall_oucamo",
+		"B_Carryall_oli"
 	};
     backpackItems[] =
     {
-        LIST_3("rhs_100Rnd_762x54mmR"),
+        LIST_2("rhs_100Rnd_762x54mmR"),
         "rhs_100Rnd_762x54mmR_green"
     };
     linkedItems[] += {"Binocular"};

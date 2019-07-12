@@ -91,13 +91,13 @@ class g : r_light
 {
     displayName = "Grenadier";
     vest[] = {"usm_vest_LBE_gr"};
-    primaryWeapon[] = {"rhs_weap_m4a1_carryhandle_m203"};
+    primaryWeapon[] = {"hlc_rifle_m203"};
     magazines[] +=
     {
         LIST_8("rhs_mag_M433_HEDP"),
         LIST_4("rhs_mag_m714_White")
     };
-    backpack[] = {"B_AssaultPack_rgr"};
+    backpack[] = {"B_simc_USMC65_M41", "B_simc_USMC65_M41_Roll", "B_simc_USMC65_M41_Roll2"};
 };
 class car : r
 {
@@ -125,7 +125,7 @@ class m : r_light
         LIST_6("ACE_bloodIV_500")
     };
     items[] = {};
-    backpack[] = {"B_AssaultPack_rgr"};
+    backpack[] = {"B_simc_USMC65_M41", "B_simc_USMC65_M41_Roll", "B_simc_USMC65_M41_Roll2"};
 };
 class smg : r
 {
@@ -198,7 +198,7 @@ class aar : r
 {
     displayName = "Assistant Automatic Rifleman";
     linkedItems[] += {"Binocular"};
-    backpack[] = {"B_AssaultPack_rgr"};
+    backpack[] = {"B_simc_USMC65_M41", "B_simc_USMC65_M41_Roll", "B_simc_USMC65_M41_Roll2"};
     backpackItems[] =
     {
         LIST_2("rhs_200rnd_556x45_M_SAW")
@@ -443,7 +443,7 @@ class sp : sn
     displayName = "Spotter";
     traits[] += {"camouflageCoef"};
     vest[] = {"usm_vest_LBE_gr_m"};
-    primaryWeapon[] = {"rhs_weap_m16a4_carryhandle_M203"};
+    primaryWeapon[] = {"hlc_rifle_m203"};
     scope[] = {"rhsusf_acc_ACOG"};
     linkedItems[] =
     {
@@ -474,7 +474,7 @@ class vd : smg
 {
     displayName = "Vehicle Driver";
     traits[] += {"engineer"};
-    backpack[] = {"B_AssaultPack_rgr"};
+    backpack[] = {"B_simc_USMC65_M41", "B_simc_USMC65_M41_Roll", "B_simc_USMC65_M41_Roll2"};
     headgear[] = {"H_Cap_headphones"};
     linkedItems[] += {"ItemGPS"};
     backpackItems[] = {"ToolKit"};
@@ -498,7 +498,7 @@ class pcc : smg
 
     displayName = "Helicopter Crew Chief";
     traits[] += {"engineer"};
-    backpack[] = {"B_AssaultPack_rgr"};
+    backpack[] = {"B_simc_USMC65_M41", "B_simc_USMC65_M41_Roll", "B_simc_USMC65_M41_Roll2"};
     headgear[] = {"rhs_gssh18"};
     goggles[] = {"G_Aviator"};
     linkedItems[] += {"ItemGPS"};

@@ -190,7 +190,7 @@ class fac : co
 class ar : r
 {
     displayName = "Automatic Rifleman";
-    primaryWeapon[] = {"hlc_rifle_rpk74n"};
+    primaryWeapon[] = {"gm_lmgrpk74n_brn", "gm_lmgrpk74n_prp"};
     bipod[] = {};
     silencer[] = {};
     sidearmWeapon[] = {};
@@ -217,7 +217,7 @@ class rat : car
 class dm : r
 {
     displayName = "Designated Marksman";
-    primaryWeapon[] = {"rhs_weap_svdp"};
+    primaryWeapon[] = {"40th_weap_svd_wood"};
     silencer[] = {};
     scope[] = {"rhs_acc_pso1m2"};
     bipod[] = {};

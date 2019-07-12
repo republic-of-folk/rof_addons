@@ -93,7 +93,7 @@ class r_light : r
 class g : r_light
 {
     displayName = "Grenadier";
-    primaryWeapon[] = {"rhs_weap_m4a1_carryhandle_m203"};
+    primaryWeapon[] = {"hlc_rifle_m203"};
     magazines[] +=
     {
         LIST_8("rhs_mag_M433_HEDP"),
@@ -224,6 +224,7 @@ class dm : r
         LIST_6("hlc_20Rnd_762x51_T_M14"),
         LIST_2("rhs_mag_an_m8hc")
     };
+    backpack[] = {"B_AssaultPack_rgr"};
 };
 class mmgg : ar
 {
@@ -435,7 +436,7 @@ class vc : smg
 {
     displayName = "Vehicle Commander";
     vest[] = {"rhsusf_spcs_ucp_crewman"};
-    backpack[] = {};
+    backpack[] = {"B_AssaultPack_rgr"};
     headgear[] = {"H_Cap_headphones"};
     linkedItems[] += {"Binocular","ItemGPS"};
 };

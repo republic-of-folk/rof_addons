@@ -180,7 +180,7 @@ class sl : ftl
 	sidearmAttachments[] = {"optic_yorris","acc_flashlight_pistol"};
     magazines[] =
     {
-        LIST_7("30Rnd_65x39_caseless_mag"),
+        LIST_7("30Rnd_65x39_caseless_green"),
 		LIST_1("30Rnd_65x39_caseless_mag_tracer"),
 		LIST_4("10Rnd_50BW_Mag_F"),
         LIST_2("HandGrenade"),

@@ -91,7 +91,7 @@ class r_light : r
 class g : r_light
 {
     displayName = "Grenadier";
-    primaryWeapon[] = {"rhs_weap_m4a1_carryhandle_m203"};
+    primaryWeapon[] = {"hlc_rifle_m203"};
     magazines[] +=
     {
         LIST_8("rhs_mag_M433_HEDP"),
@@ -214,7 +214,7 @@ class rat : r_light
 class dm : r
 {
     displayName = "Designated Marksman";
-    primaryWeapon[] = {"rhs_weap_m14ebrri"};
+    primaryWeapon[] = {"hlc_rifle_M14dmr_Rail"};
     scope[] = {"rhsusf_acc_ACOG3"};
     magazines[] =
     {
@@ -222,6 +222,7 @@ class dm : r
         LIST_2("rhs_mag_m67"),
         LIST_2("rhs_mag_an_m8hc")
     };
+    backpack[] = {"B_AssaultPack_rgr"};
 };
 class mmgg : ar
 {
@@ -441,7 +442,7 @@ class sp : sn
     displayName = "Spotter";
     traits[] += {"camouflageCoef"};
     vest[] = {"usm_vest_LBE_gr_m"};
-    primaryWeapon[] = {"rhs_weap_m16a4_carryhandle_M203"};
+    primaryWeapon[] = {"hlc_rifle_m203"};
     scope[] = {"rhsusf_acc_ACOG"};
     linkedItems[] =
     {

@@ -177,6 +177,7 @@ class ar : r
 class aar : r
 {
     displayName = "Assistant Automatic Rifleman";
+    backpack[] = {"usm_pack_alice"};
     backpackItems[] =
     {
         LIST_4("rhs_100Rnd_762x54mmR")

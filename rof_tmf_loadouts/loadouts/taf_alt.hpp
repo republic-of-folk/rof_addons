@@ -197,12 +197,16 @@ class mmgg : ar
 {
     displayName = "MMG Gunner";
     primaryWeapon[] = {"hlc_lmg_m60"};
+    primaryMagazine[] = {"hlc_100Rnd_762x51_M_M60E4"}; // array is not randomized - it's in case of grenade launchers
     sidearmWeapon[] = {"rhsusf_weap_m1911a1"};
     scope[] = {};
     magazines[] =
     {
-        LIST_4("hlc_100Rnd_762x51_M_M60E4"),
+        LIST_1("hlc_100Rnd_762x51_M_M60E4"),
         LIST_2("rhsusf_mag_7x45acp_MHP")
+    };
+    backpackItems[] = {
+        LIST_1("hlc_100Rnd_762x51_M_M60E4")
     };
     backPack[] = {"usm_pack_762x51_ammobelts"};
 };
@@ -212,8 +216,8 @@ class mmgac : r_light
     backPack[] = {"rhssaf_alice_smb"};
     backpackItems[] =
     {
-        LIST_4("hlc_100Rnd_762x51_M_M60E4"),
-		LIST_2("hlc_100Rnd_762x51_T_M60E4"),
+        LIST_3("hlc_100Rnd_762x51_M_M60E4"),
+		LIST_1("hlc_100Rnd_762x51_T_M60E4"),
 		"ACE_Tripod"
     };
 };
@@ -228,7 +232,7 @@ class mmgag : r
         "ItemWatch",
         "rhs_pdu4"
     };
-    backPack[] = {"usm_pack_762x51_ammobelts"};
+    backPack[] = {"B_simc_USMC65_M41"};
     backpackItems[] =
     {
         LIST_1("hlc_100Rnd_762x51_M_M60E4")
@@ -395,14 +399,16 @@ class sn : r_light
     uniform[] = {"U_B_T_FullGhillie_tna_F"};
 	vest[] = {"V_TacChestrig_grn_F"};
     primaryWeapon[] = {"hlc_rifle_M21"};
+    primaryMagazine[] = {"hlc_20Rnd_762x51_B_M14"};
     scope[] = {"hlc_optic_artel_m14"};
     silencer[] = {"hlc_muzzle_MAG58_Brake"};
     magazines[] = {
-        LIST_8("hlc_20Rnd_762x51_B_M14"),
+        LIST_7("hlc_20Rnd_762x51_B_M14"),
         LIST_1("rhs_mag_rdg2_white")
     };
     linkedItems[] += {"rhs_pdu4"};
-	Items[] += {"ACE_Maptools","ACE_RangeCard"};
+	items[] += {"ACE_Maptools","ACE_RangeCard"};
+    backpack[] = {"B_simc_USMC65_M41"};
 };
 class snnv : sn
 {
@@ -416,7 +422,8 @@ class sp : r_light
     traits[] += {"camouflageCoef"};
     uniform[] = {"U_B_T_FullGhillie_tna_F"};
     linkedItems[] += {"rhs_pdu4"};
-	Items[] += {"ACE_Maptools","ACE_SpottingScope","ACE_RangeCard"};
+	items[] += {"ACE_Maptools","ACE_SpottingScope","ACE_RangeCard"};
+    backpack[] = {"B_simc_USMC65_M41"};
 };
 class vc : smg
 {
@@ -475,7 +482,6 @@ class pcc : smg
 class pc : pcc
 {
     displayName = "Helicopter Crew";
-    backpack[] = {};
     backpackItems[] = {};
 };
 class jp : baseMan
@@ -511,7 +517,7 @@ class eng : r_light
         "ACE_DefusalKit",
         LIST_4("DemoCharge_Remote_Mag"),
         LIST_2("SatchelCharge_Remote_Mag"),
-        LIST_2("ClaymoreDirectionalMine_Remote_Mag")
+        LIST_1("ClaymoreDirectionalMine_Remote_Mag")
     };
 };
 class engm : r_light

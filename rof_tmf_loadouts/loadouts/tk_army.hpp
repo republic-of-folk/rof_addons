@@ -166,7 +166,7 @@ class ar : r
 class aar : r
 {
     displayName = "Assistant Automatic Rifleman";
-    backpack[] = {"rhs_sidor"};
+    backpack[] = {"B_FieldPack_oli"};
     backpackItems[] =
     {
         LIST_3("rhs_100Rnd_762x54mmR")

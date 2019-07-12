@@ -224,11 +224,10 @@ class dm : r
     displayName = "Designated Marksman";
 	headgear[] = {"rhssaf_booniehat_woodland"};
 	vest[] = {"rhssaf_vest_md99_woodland_radio"};
-	primaryWeapon[] = {"rhs_weap_m76"};
-    scope[] = {"rhsusf_acc_pso1m2"};
+	primaryWeapon[] = {"40th_weap_svd_wood"};
+    scope[] = {"rhs_acc_pso1m2"};
 	magazines[] = {
-		LIST_13("rhsgref_10Rnd_792x57_m76"),
-		LIST_1("rhssaf_10Rnd_792x57_m76_tracer"),
+		LIST_9("rhs_10Rnd_762x54mmR_7N1"),
         LIST_2("rhssaf_mag_br_m75"),
         LIST_1("rhssaf_mag_brd_m83_white"),
 		LIST_1("rhssaf_mag_brd_m83_green")

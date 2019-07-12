@@ -11,9 +11,11 @@ class baseMan {// Weaponless baseclass
         "rhssaf_helmet_m97_digital"
     };
     goggles[] = {
-        "G_CBRN_M04_Hood",
+        "G_CBRN_M04_Hood"
     };
-    hmd[] = {};
+    hmd[] = {
+        "SAN_Headlamp_v2"
+    };
     // Leave empty to remove all. "Default" > leave original item.
 
     // All randomized

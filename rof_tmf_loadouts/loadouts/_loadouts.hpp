@@ -131,7 +131,7 @@ class CfgLoadouts
         displayName = "Altis Insurgents";
         category = "Insurgents";
         #include "ins_altis.hpp"
-    };
+    }
     class INS_TAKI {
         displayName = "Takistani Insurgents";
         category = "Insurgents";
@@ -176,7 +176,7 @@ class CfgLoadouts
         displayName = "Takistani Army (alternative)";
         category = "Independent";
         #include "tk_army_alt.hpp"
-    };
+    }
     class TAF_STANDARD {
         displayName = "Tanoan Armed Forces";
         category = "Independent";

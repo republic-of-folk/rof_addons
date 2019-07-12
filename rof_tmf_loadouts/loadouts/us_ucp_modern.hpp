@@ -673,14 +673,23 @@ class jp : baseMan
     sidearmWeapon[] = {"rhsusf_weap_m9"};
     magazines[] =
     {
-        LIST_3("rhsusf_mag_15Rnd_9x19_FMJ"),"rhs_mag_m18_yellow","ACE_HandFlare_Yellow","ACE_Chemlight_HiYellow"
+        LIST_3("rhsusf_mag_15Rnd_9x19_FMJ"),
+        "rhs_mag_m18_yellow",
+        "ACE_HandFlare_Yellow",
+        "ACE_Chemlight_HiYellow"
     };
     items[] = {
         LIST_5("ACE_fieldDressing"),
         LIST_1("ACE_morphine"),
-		"ACE_Maptools","ACE_Earplugs","ACE_Flashlight_MX991"
+		"ACE_Maptools",
+        "ACE_Earplugs"
     };
-    linkedItems[] = {"ItemMap","ItemGPS","ItemCompass","ItemWatch"};
+    linkedItems[] = {
+        "ItemMap",
+        "ItemGPS",
+        "ItemCompass",
+        "ItemWatch"
+    };
 	code = "";
 };
 class eng : r

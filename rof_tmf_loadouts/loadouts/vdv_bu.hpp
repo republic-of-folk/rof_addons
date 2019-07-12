@@ -190,7 +190,7 @@ class fac : co
 class ar : r
 {
     displayName = "Automatic Rifleman";
-    primaryWeapon[] = {"hlc_rifle_rpk74n"};
+    primaryWeapon[] = {"gm_lmgrpk74n_brn"};
     bipod[] = {};
     silencer[] = {};
     sidearmWeapon[] = {};
@@ -217,7 +217,7 @@ class rat : car
 class dm : r
 {
     displayName = "Designated Marksman";
-    primaryWeapon[] = {"rhs_weap_svdp"};
+    primaryWeapon[] = {"40th_weap_svd_wood"};
     silencer[] = {};
     scope[] = {"rhs_acc_pso1m2"};
     bipod[] = {};
@@ -393,26 +393,10 @@ class samag : r_light
         LIST_1("rhs_mag_9k38_rocket")
     };
 };
-class sn : r
+class sn : dm
 {
     displayName = "Sniper";
     traits[] += {"camouflageCoef"};
-    headgear[] = {"fieldcap_butan"};
-    vest[] = {"345th_RD_webbing_bayonet"};
-    backpack[] = {};
-    goggles[] = {};
-    primaryWeapon[] = {"rhs_weap_svds"};
-    scope[] = {"rhs_acc_pso1m21"};
-    bipod[] = {};
-    silencer[] = {};
-    sidearmWeapon[] = {"rhs_weap_makarov_pm"};
-    magazines[] =
-    {
-        LIST_5("rhs_10Rnd_762x54mmR_7N1"),
-        LIST_1("rhs_mag_rdg2_white"),
-        LIST_2("rhs_mag_9x18_8_57N181S")
-    };
-    linkedItems[] += {"rhs_pdu4","ItemGPS"};
 };
 class sp : r
 {

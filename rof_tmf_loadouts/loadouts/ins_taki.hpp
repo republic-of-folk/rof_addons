@@ -205,14 +205,17 @@ class rat : r_light
 class dm : r
 {
     displayName = "Designated Marksman";
-    primaryWeapon[] = {"rhs_weap_m14ebrri"};
-    scope[] = {"rhsusf_acc_ACOG3"};
+    primaryWeapon[] = {"rhs_weap_kar98k"};
+    scope[] = {};
+    bipod[] = {};
+    sidearmWeapon[] = {"rhs_weap_makarov_pm"};
     magazines[] =
     {
-        LIST_11("rhsusf_20Rnd_762x51_m118_special_Mag"),
-        LIST_2("rhs_mag_rgd5"),
-        LIST_2("rhs_mag_rdg2_white")
+        LIST_13("rhsgref_5Rnd_792x57_kar98k"),
+        LIST_3("rhs_mag_9x18_8_57N181S")
     };
+    backpack[] = {};
+    linkedItems[] += {"rhs_pdu4","ItemGPS"};
 };
 class mmgg : ar
 {
