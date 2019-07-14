@@ -129,6 +129,7 @@ class sl : g
     displayName = "Squad Leader";
     headgear[] = {"mgsr_beret"};
     goggles[] = {"G_Aviator"};
+    backPack[] = {"B_ViperHarness_blk_F"};
     magazines[] += {
         LIST_2("ACE_HuntIR_M203")
     };
@@ -139,13 +140,24 @@ class sl : g
         "ACE_HuntIR_monitor"
     };
 };
+class rto: r
+{
+    displayName = "Radio Operator";
+    // backPack[] = {"B_RadioBag_01_black_F"};
+};
 class co : sl
 {
     displayName = "Platoon Leader";
 };
-class fac : sl
+class fac : g
 {
     displayName = "Forward Air Controller";
+    // backPack[] = {"B_RadioBag_01_black_F"};
+    headgear[] = {"mgsr_beret"};
+    goggles[] = {"G_Aviator"};
+    linkedItems[] += {
+        "Rangefinder"
+    };
 };
 class ar : r
 {
@@ -183,35 +195,39 @@ class dm : r
     bipod[] = {"rhsusf_acc_harris_bipod"};
     magazines[] =
     {
-        LIST_10("rhsusf_20Rnd_762x51_m118_special_Mag"),
+        LIST_10("rhsusf_20Rnd_762x51_SR25_m118_special_Mag"),
         LIST_2("rhs_mag_m67"),
         LIST_2("rhs_mag_an_m8hc")
     };
 };
 class mmgg : ar
 {
-    displayName = "MMG Gunner";
+    displayName = "SAW Gunner";
 };
-class mmgac : ar
+class mmgac : r
 {
-    displayName = "MMG Ammo Carrier";
+    displayName = "SAW Ammo Carrier";
+    backpackItems[] =
+    {
+        LIST_3("rhs_mag_30Rnd_556x45_M855A1_Stanag")
+    };
 };
 class mmgag : aar
 {
-    displayName = "MMG Assistant Gunner";
+    displayName = "SAW Assistant Gunner";
 };
 class hmgg : r_light
 {
-    displayName = "HMG Gunner";
+    displayName = "HMG Gunner [defunct]";
 
 };
 class hmgac : r_light
 {
-    displayName = "HMG Ammo Carrier";
+    displayName = "HMG Ammo Carrier [defunct]";
 };
 class hmgag : r_light
 {
-    displayName = "HMG Assistant Gunner";
+    displayName = "HMG Assistant Gunner [defunct]";
     linkedItems[] =
     {
         "ItemMap",
@@ -225,7 +241,7 @@ class matg : r_light
 {
     displayName = "MAT Gunner";
     backpack[] = {"B_ViperHarness_blk_F"};
-    secondaryWeapon[] = {"rhs_weap_smaw_green"};
+    secondaryWeapon[] = {"rhs_weap_smaw"};
     secondaryAttachments[] = {"rhs_weap_optic_smaw"};
     magazines[] +=
     {
@@ -301,7 +317,7 @@ class hatag : r_light
 };
 class mtrg : r_light
 {
-    displayName = "Mortar Gunner";
+    displayName = "Mortar Gunner [defunct]";
     linkedItems[] =
     {
         "ItemMap",
@@ -312,11 +328,11 @@ class mtrg : r_light
 };
 class mtrac : r_light
 {
-    displayName = "Mortar Ammo Carrier";
+    displayName = "Mortar Ammo Carrier [defunct]";
 };
 class mtrag : r_light
 {
-    displayName = "Mortar Assistant Gunner";
+    displayName = "Mortar Assistant Gunner [defunct]";
     linkedItems[] =
     {
         "ItemMap",
@@ -492,11 +508,11 @@ class engm : car
 };
 class UAV_light : car
 {
-    displayName = "UAV Operator (no drone)";
+    displayName = "UAV Operator (no drone) [BLUFOR]";
     traits[] += {"UAVHacker"};
     linkedItems[] += {"B_UavTerminal"};
 };
 class UAV : UAV_light
 {
-    displayName = "UAV Operator";
+    displayName = "UAV Operator [defunct]";
 };

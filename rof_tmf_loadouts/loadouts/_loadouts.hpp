@@ -230,27 +230,27 @@ class CfgLoadouts
     class CTRG_AR {
         displayName = "CTRG (Arid)";
         category = "Future";
-        #include "ctrg_arid.hpp"
+        #include "f_ctrg_arid.hpp"
     };
     class CTRG_JU {
         displayName = "CTRG (Jungle)";
         category = "Future";
-        #include "ctrg_jungle.hpp"
+        #include "f_ctrg_jungle.hpp"
     };
     class CTRG_URB {
         displayName = "CTRG (Urban)";
         category = "Future";
-        #include "ctrg_urban.hpp"
+        #include "f_ctrg_urban.hpp"
     };
     class VIPER_AR {
         displayName = "VIPER (Arid)";
         category = "Future";
-        #include "viper_arid.hpp"
+        #include "f_viper_arid.hpp"
     };
     class VIPER_JU {
         displayName = "VIPER (Jungle)";
         category = "Future";
-        #include "viper_jungle.hpp"
+        #include "f_viper_jungle.hpp"
     };
     class GE_AUTUMN {
         displayName = "West Germany Army (Autumn)";
@@ -306,5 +306,35 @@ class CfgLoadouts
         displayName = "West Germany Army (Flecktarn)";
         category = "Blufor (Old School)";
         #include "ge_flecktarn.hpp"
+    };
+    class AAF_STANDARD {
+        displayName = "AAF (Standard)";
+        category = "Future";
+        #include "f_aaf_standard.hpp"
+    };
+    class CSAT_AR {
+        displayName = "CSAT (Arid)";
+        category = "Future";
+        #include "f_csat_arid.hpp"
+    };
+    class CSAT_JU {
+        displayName = "CSAT (Jungle)";
+        category = "Future";
+        #include "f_csat_jungle.hpp"
+    };
+    class CSAT_URB {
+        displayName = "CSAT (Urban)";
+        category = "Future";
+        #include "f_csat_urban.hpp"
+    };
+    class NATO_AR {
+        displayName = "NATO (Arid)";
+        category = "Future";
+        #include "f_nato_arid.hpp"
+    };
+    class NATO_JU {
+        displayName = "NATO (Jungle)";
+        category = "Future";
+        #include "f_nato_jungle.hpp"
     };
 };
