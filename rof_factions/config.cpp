@@ -25,8 +25,12 @@ class CfgPatches {
         };
     };
 
-    class boberro_factions_takins;
-    class rof_retextures_un;
+    class boberro_factions_takins {
+        units[] = {};
+    };
+    class rof_retextures_un {
+        units[] = {};
+    };
 };
 
 class CfgVehicles {
