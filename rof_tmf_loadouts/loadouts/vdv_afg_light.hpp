@@ -42,7 +42,6 @@ class baseMan {// Weaponless baseclass
     linkedItems[] = {
         "ItemMap",
         "ItemCompass",
-        "ItemRadio",
         "ItemWatch"
     };
 
@@ -147,7 +146,6 @@ class sl : ftl
     {
         "ItemMap",
         "ItemCompass",
-        "ItemRadio",
         "ItemWatch"
     };
 };
@@ -238,7 +236,6 @@ class mmgag : aar
     {
         "ItemMap",
         "ItemCompass",
-        "ItemRadio",
         "ItemWatch"
     };
     backpackItems[] =
@@ -375,7 +372,6 @@ class samag : r_light
     {
         "ItemMap",
         "ItemCompass",
-        "ItemRadio",
         "ItemWatch"
     };
     magazines[] +=
@@ -396,7 +392,6 @@ class sp : g
     {
         "ItemMap",
         "ItemCompass",
-        "ItemRadio",
         "ItemWatch"
     };
 };

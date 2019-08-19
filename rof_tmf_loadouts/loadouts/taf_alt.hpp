@@ -228,7 +228,6 @@ class mmgag : r
     {
         "ItemMap",
         "ItemCompass",
-        "ItemRadio",
         "ItemWatch",
         "rhs_pdu4"
     };
@@ -258,7 +257,6 @@ class hmgag : r_light
     {
         "ItemMap",
         "ItemCompass",
-        "ItemRadio",
         "ItemWatch",
         "rhs_pdu4"
     };
@@ -291,7 +289,6 @@ class matag : r_light
     {
         "ItemMap",
         "ItemCompass",
-        "ItemRadio",
         "ItemWatch",
         "rhs_pdu4"
     };
@@ -321,7 +318,6 @@ class hatag : r_light
     {
         "ItemMap",
         "ItemCompass",
-        "ItemRadio",
         "ItemWatch",
         "rhs_pdu4"
     };
@@ -334,7 +330,6 @@ class mtrg : r_light
     {
         "ItemMap",
         "ItemCompass",
-        "ItemRadio",
         "ItemWatch"
     };
 	Items[] += {
@@ -357,7 +352,6 @@ class mtrag : r_light
     {
         "ItemMap",
         "ItemCompass",
-        "ItemRadio",
         "ItemWatch",
         "rhs_pdu4"
     };
@@ -382,7 +376,6 @@ class samag : r_light
     {
         "ItemMap",
         "ItemCompass",
-        "ItemRadio",
         "ItemWatch",
         "Binocular"
     };

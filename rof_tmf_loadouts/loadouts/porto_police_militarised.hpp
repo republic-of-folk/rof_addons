@@ -49,7 +49,6 @@ class baseMan {// Weaponless baseclass
     linkedItems[] = {
         "ItemMap",
         "ItemCompass",
-        "ItemRadio",
         "ItemWatch"
     };
 

@@ -52,7 +52,6 @@ class baseMan {// Weaponless baseclass
     linkedItems[] = {
         "ItemMap",
         "ItemCompass",
-        "ItemRadio",
         "ItemWatch"
     };
 
@@ -156,7 +155,6 @@ class sl : ftl
     {
         "ItemMap",
         "ItemCompass",
-        "ItemRadio",
         "ItemWatch",
         "Rangefinder",
         "ItemGPS"
@@ -248,7 +246,6 @@ class mmgag : car
     {
         "ItemMap",
         "ItemCompass",
-        "ItemRadio",
         "ItemWatch",
         "Rangefinder",
         "ItemGPS"
@@ -278,7 +275,6 @@ class hmgag : r_light
     {
         "ItemMap",
         "ItemCompass",
-        "ItemRadio",
         "ItemWatch",
         "Rangefinder",
         "ItemGPS"
@@ -315,7 +311,6 @@ class matag : r_light
     {
         "ItemMap",
         "ItemCompass",
-        "ItemRadio",
         "ItemWatch",
         "Rangefinder",
         "ItemGPS"
@@ -344,7 +339,6 @@ class hatag : r_light
     {
         "ItemMap",
         "ItemCompass",
-        "ItemRadio",
         "ItemWatch",
         "Rangefinder",
         "ItemGPS"
@@ -358,7 +352,6 @@ class mtrg : r_light
     {
         "ItemMap",
         "ItemCompass",
-        "ItemRadio",
         "ItemWatch",
         "ItemGPS"
     };
@@ -376,7 +369,6 @@ class mtrag : r_light
     {
         "ItemMap",
         "ItemCompass",
-        "ItemRadio",
         "ItemWatch",
         "Rangefinder",
         "ItemGPS"
@@ -399,7 +391,6 @@ class samag : r_light
     {
         "ItemMap",
         "ItemCompass",
-        "ItemRadio",
         "ItemWatch",
         "Rangefinder",
         "ItemGPS"
@@ -441,7 +432,6 @@ class sp : g
     {
         "ItemMap",
         "ItemCompass",
-        "ItemRadio",
         "ItemWatch",
         "Rangefinder",
         "ItemGPS"

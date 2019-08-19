@@ -44,7 +44,6 @@ class baseMan {// Weaponless baseclass
     {
         "ItemMap",
         "ItemCompass",
-        "ItemRadio",
         "ItemWatch",
         "ItemGPS"
     };
@@ -171,7 +170,6 @@ class ftl : r
     {
         "ItemMap",
         "ItemCompass",
-        "ItemRadio",
         "ItemWatch",
         "Binocular",
         "ItemGPS"
@@ -207,7 +205,6 @@ class sl : ftl
     {
         "ItemMap",
         "ItemCompass",
-        "ItemRadio",
         "ItemWatch",
         "Rangefinder",
         "ItemGPS"
@@ -252,7 +249,6 @@ class fac : car
     {
         "ItemMap",
         "ItemCompass",
-        "ItemRadio",
         "ItemWatch",
         "Laserdesignator",
         "ItemGPS"
@@ -345,7 +341,6 @@ class mmgag : aar
     {
         "ItemMap",
         "ItemCompass",
-        "ItemRadio",
         "ItemWatch",
         "Rangefinder",
         "ItemGPS"
@@ -376,7 +371,6 @@ class hmgag : car
     {
         "ItemMap",
         "ItemCompass",
-        "ItemRadio",
         "ItemWatch",
         "Rangefinder",
         "ItemGPS"
@@ -411,7 +405,6 @@ class matag : r_light
     {
         "ItemMap",
         "ItemCompass",
-        "ItemRadio",
         "ItemWatch",
         "Rangefinder",
         "ItemGPS"
@@ -458,7 +451,6 @@ class hatag : car
     {
         "ItemMap",
         "ItemCompass",
-        "ItemRadio",
         "ItemWatch",
         "Rangefinder",
         "ItemGPS"
@@ -472,7 +464,6 @@ class mtrg : car
     {
         "ItemMap",
         "ItemCompass",
-        "ItemRadio",
         "ItemWatch",
         "ItemGPS"
     };
@@ -491,7 +482,6 @@ class mtrag : car
     {
         "ItemMap",
         "ItemCompass",
-        "ItemRadio",
         "ItemWatch",
         "Rangefinder",
         "ItemGPS"
@@ -514,7 +504,6 @@ class samag : car
     {
         "ItemMap",
         "ItemCompass",
-        "ItemRadio",
         "ItemWatch",
         "Rangefinder",
         "ItemGPS"
@@ -570,7 +559,6 @@ class sp : sn
     {
         "ItemMap",
         "ItemCompass",
-        "ItemRadio",
         "ItemWatch",
         "Rangefinder",
         "ItemGPS"
