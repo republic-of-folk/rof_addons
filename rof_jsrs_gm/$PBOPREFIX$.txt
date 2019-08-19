@@ -1,1 +1,1 @@
-prefix=rof_addons\rof_jsrs_gm
+rof_addons\rof_jsrs_gm

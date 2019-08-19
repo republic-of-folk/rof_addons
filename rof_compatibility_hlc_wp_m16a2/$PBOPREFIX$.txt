@@ -1,1 +1,0 @@
-prefix=rof_addons\rof_compatibility_hlc_wp_m16a2
