@@ -417,172 +417,14 @@ acex_volume_reduction = 5;
 acex_volume_remindIfLowered = true;
 acex_volume_showNotification = true;
 
-// // Achilles - Available Factions
-// Achilles_var_345th_VMF_army = true;
-// Achilles_var_AFGCIV = true;
-// Achilles_var_BLU_CTRG_F = true;
-// Achilles_var_BLU_F = true;
-// Achilles_var_BLU_GEN_F = true;
-// Achilles_var_BLU_T_F = true;
-// Achilles_var_boberro_takins = true;
-// Achilles_var_CIV_F = true;
-// Achilles_var_CIV_IDAP_F = true;
-// Achilles_var_IND_C_F = true;
-// Achilles_var_IND_F = true;
-// Achilles_var_IND_G_F = true;
-// Achilles_var_Interactive_F = true;
-// Achilles_var_oksv_army = true;
-// Achilles_var_oksv_army_wood = true;
-// Achilles_var_OPF_F = true;
-// Achilles_var_OPF_T_F = true;
-// Achilles_var_OPF_V_F = true;
-// Achilles_var_rds_rus_civ = true;
-// Achilles_var_rhs_faction_insurgents = true;
-// Achilles_var_rhs_faction_msv = true;
-// Achilles_var_rhs_faction_rva = true;
-// Achilles_var_rhs_faction_socom = true;
-// Achilles_var_rhs_faction_tv = true;
-// Achilles_var_rhs_faction_usaf = true;
-// Achilles_var_rhs_faction_usarmy = true;
-// Achilles_var_rhs_faction_usarmy_d = true;
-// Achilles_var_rhs_faction_usarmy_wd = true;
-// Achilles_var_rhs_faction_usmc = true;
-// Achilles_var_rhs_faction_usmc_d = true;
-// Achilles_var_rhs_faction_usmc_wd = true;
-// Achilles_var_rhs_faction_usn = true;
-// Achilles_var_rhs_faction_vdv = true;
-// Achilles_var_rhs_faction_vdv_45 = true;
-// Achilles_var_rhs_faction_vmf = true;
-// Achilles_var_rhs_faction_vpvo = true;
-// Achilles_var_rhs_faction_vv = true;
-// Achilles_var_rhs_faction_vvs = true;
-// Achilles_var_rhs_faction_vvs_c = true;
-// Achilles_var_rhsgref_faction_cdf_air = true;
-// Achilles_var_rhsgref_faction_cdf_ground = true;
-// Achilles_var_rhsgref_faction_cdf_ng = true;
-// Achilles_var_rhsgref_faction_chdkz = true;
-// Achilles_var_rhsgref_faction_hidf = true;
-// Achilles_var_rhsgref_faction_nationalist = true;
-// Achilles_var_rhsgref_faction_tla = true;
-// Achilles_var_rhsgref_faction_un = true;
-// Achilles_var_rhssaf_faction_airforce = true;
-// Achilles_var_rhssaf_faction_army = true;
-// Achilles_var_rhssaf_faction_un = true;
-// Achilles_var_rof_faction_civ_taki = true;
-// Achilles_var_rof_faction_o_taki_rebels = true;
-// Achilles_var_Tban = true;
-// Achilles_var_Virtual_F = true;
+// ACRE2
+force acre_sys_core_ts3ChannelSwitch = false;
+force acre_sys_signal_signalModel = 0;
 
-// // Achilles - Curator Vision Modes
-// achilles_curator_vision_blackhot = false;
-// achilles_curator_vision_blackhotgreencold = false;
-// achilles_curator_vision_blackhotredcold = false;
-// achilles_curator_vision_greenhotcold = false;
-// achilles_curator_vision_nvg = true;
-// achilles_curator_vision_redgreen = false;
-// achilles_curator_vision_redhot = false;
-// achilles_curator_vision_whitehot = true;
-// achilles_curator_vision_whitehotredcold = false;
-
-// // Achilles - Debug
-// Achilles_Debug_Output_Enabled = false;
-
-// // Achilles - Defaults
-// Achilles_var_setRadioFrequenciesLR_Default = "50";
-// Achilles_var_setRadioFrequenciesSR_Default = "150";
-
-// // Achilles - Icon Selection
-// Achilles_var_iconSelection = "Achilles_var_iconSelection_Ares";
-
-// // Achilles - Modules Interface
-// Achilles_var_moduleTreeCollapse = true;
-// Achilles_var_moduleTreeDLC = true;
-// Achilles_var_moduleTreeHelmet = false;
-
-// // ACRE2
-// force acre_sys_core_fullDuplex = false;
-// force acre_sys_core_ignoreAntennaDirection = false;
-// force acre_sys_core_interference = true;
-// acre_sys_core_postmixGlobalVolume = 1.5042;
-// acre_sys_core_premixGlobalVolume = 1;
-// force acre_sys_core_revealToAI = true;
-// acre_sys_core_spectatorVolume = 1;
-// force acre_sys_core_terrainLoss = 0.5;
-// force acre_sys_core_ts3ChannelName = "";
-// force acre_sys_core_ts3ChannelPassword = "";
-// acre_sys_core_ts3ChannelSwitch = true;
-// acre_sys_core_unmuteClients = true;
-
-// // ASR AI3
-// force asr_ai3_control_onteamswitchleader = true;
-// asr_ai3_danger_AD_INSIDE = 50;
-// asr_ai3_danger_AD_OUTSIDE = 250;
-// force asr_ai3_danger_ADVANCED_COVER = false;
-// asr_ai3_danger_ATTACK_TIMER = 60;
-// asr_ai3_danger_AUTO_ATTACK_WITHIN = 35;
-// force asr_ai3_danger_COUNTER_ATTACK = false;
-// force asr_ai3_danger_debug_findcover = false;
-// force asr_ai3_danger_debug_reveal = false;
-// force asr_ai3_danger_getinweapons = 0.5;
-// asr_ai3_danger_MAX_DIST_TO_COVER = 50;
-// asr_ai3_danger_NO_COVER_FOR_DANGER_WITHIN = 75;
-// force asr_ai3_danger_radiorange = 700;
-// force asr_ai3_danger_rrdelaymin = 5;
-// force asr_ai3_danger_rrdelayplus = 10;
-// force asr_ai3_danger_seekcover = true;
-// force asr_ai3_danger_usebuildings = 0.8;
-// force asr_ai3_hitreactions_fallDown = true;
-// force asr_ai3_hitreactions_STAY_IN_VEH = true;
-// force asr_ai3_incognito_incodbg = false;
-// asr_ai3_incognito_incodiff = 0;
-// force asr_ai3_incognito_incohint = false;
-// force asr_ai3_main_factionskip_str = "['LOP_AFR_Civ','LOP_CHR_Civ','LOP_TAK_Civ']";
-// force asr_ai3_rearming_debug_rearm = false;
-// force asr_ai3_rearming_rearm = 40;
-// asr_ai3_rearming_rearm_fak = 1;
-// asr_ai3_rearming_rearm_mags = 3;
-// force asr_ai3_skills_debug_setcamo = false;
-// force asr_ai3_skills_debug_setskill = false;
-// asr_ai3_skills_packNVG = true;
-// force asr_ai3_skills_setskills = true;
-// force asr_ai3_skills_teamsuperai = true;
-
-// // CBA UI
-// cba_ui_StorePasswords = 1;
-
-// // CF_BAI
-// force cf_bai_subskills_maximum_aimingAccuracy = 0;
-// force cf_bai_subskills_maximum_aimingShake = 0;
-// force cf_bai_subskills_maximum_aimingSpeed = 0;
-// force cf_bai_subskills_maximum_commanding = 0;
-// force cf_bai_subskills_maximum_courage = 0;
-// force cf_bai_subskills_maximum_general = 0;
-// force cf_bai_subskills_maximum_spotDistance = 0;
-// force cf_bai_subskills_maximum_spotTime = 0;
-// force cf_bai_subskills_minimum_aimingAccuracy = 0.41;
-// force cf_bai_subskills_minimum_aimingShake = 0.5;
-// force cf_bai_subskills_minimum_aimingSpeed = 0.5;
-// force cf_bai_subskills_minimum_commanding = 0.5;
-// force cf_bai_subskills_minimum_courage = 0.5;
-// force cf_bai_subskills_minimum_general = 1;
-// force cf_bai_subskills_minimum_spotDistance = 0.35;
-// force cf_bai_subskills_minimum_spotTime = 0.5;
-// force cf_bai_subskills_sleep = 30;
-// force cf_bai_subskills_terrain_maximum_default = 30;
-// force cf_bai_subskills_terrain_maximum_world_code = "[[""pja310"",25],[""Panthera3"",25]]";
-// force cf_bai_subskills_terrain_range = 25;
-
-// // Laxemann Align
-// L_Align_enabled = true;
-// L_Align_steadyShake_enabled = true;
-
-// // Laxemann Immerse
-// L_Immerse_exShake = true;
-// L_Immerse_force = true;
-// L_Immerse_recoil = true;
+// Laxemann Immerse
 force force L_Immerse_twitch = false;
 
-// // LAxemann's Suppress
+// LAxemann's Suppress
 force force L_Suppress_buildup = 0.25;
 force force L_Suppress_enabled = true;
 force force L_Suppress_flyByEffects = true;
@@ -592,5 +434,5 @@ force force L_Suppress_intensity = 0;
 force force L_Suppress_playerSwabEnabled = true;
 force force L_Suppress_recovery = 1;
 
-// // NIArms
+// NIArms
 force force niarms_magSwitch = true;
