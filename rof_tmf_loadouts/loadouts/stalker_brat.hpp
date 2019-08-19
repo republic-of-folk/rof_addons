@@ -69,13 +69,13 @@ class r : baseMan
     attachment[] = {"rhs_acc_2dpZenit"};
     magazines[] =
     {
-        LIST_8("rhs_30Rnd_762x39mm_polymer"),
+        LIST_8("rhs_30Rnd_762x39mm_polymer")
     };
     items[] =
     {
         LIST_10("ACE_fieldDressing"),
         LIST_3("ACE_morphine"),
-        LIST_1("ACE_epinephrine"),
+        LIST_1("ACE_epinephrine")
     };
 };
 class r_light : r
@@ -208,7 +208,7 @@ class dm : r
     magazines[] =
     {
         LIST_7("rhs_20rnd_9x39mm_SP5"),
-        LIST_2("rhs_mag_m67"),
+        LIST_2("rhs_mag_m67")
     };
 };
 class mmgg : ar
@@ -478,7 +478,7 @@ class eng : r_light
         "ACE_Clacker",
         "ACE_DefusalKit",
         LIST_2("DemoCharge_Remote_Mag"),
-        LIST_2("SatchelCharge_Remote_Mag"),
+        LIST_2("SatchelCharge_Remote_Mag")
     };
 };
 class engm : r_light

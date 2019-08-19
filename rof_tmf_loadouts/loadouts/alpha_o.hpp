@@ -194,7 +194,7 @@ class ar : r
         LIST_4("rhs_100Rnd_762x54mmR"),
         LIST_2("16Rnd_9x21_Mag"),
         "rhs_mag_rgd5",
-        "rhs_mag_rdg2_white",
+        "rhs_mag_rdg2_white"
     };
 };
 class aar : r
@@ -224,7 +224,7 @@ class dm : r
         LIST_12("rhs_10Rnd_762x54mmR_7N1"),
         "rhs_mag_rgd5",
         LIST_2("rhs_mag_rdg2_white"),
-        LIST_2("16Rnd_9x21_Mag"),
+        LIST_2("16Rnd_9x21_Mag")
     };
 };
 class mmgg : ar
@@ -416,7 +416,7 @@ class sn : r
     {
         LIST_13("rhs_5Rnd_338lapua_t5000"),
         "rhs_mag_rgd5",
-        LIST_2("16Rnd_9x21_Mag"),
+        LIST_2("16Rnd_9x21_Mag")
     };
     backpack[] = {};
     linkedItems[] += {"ItemGPS"};
@@ -521,7 +521,7 @@ class eng : r_light
         "ACE_Clacker",
         "ACE_DefusalKit",
         LIST_2("DemoCharge_Remote_Mag"),
-        LIST_2("SatchelCharge_Remote_Mag"),
+        LIST_2("SatchelCharge_Remote_Mag")
     };
 };
 class engm : r_light

@@ -197,7 +197,7 @@ class ar : r
     magazines[] =
     {
         LIST_7("rhs_45Rnd_545X39_AK"),
-        "rhs_mag_rdg2_white",
+        "rhs_mag_rdg2_white"
     };
 };
 class aar : r
@@ -520,7 +520,7 @@ class eng : r_light
         "ACE_Clacker",
         "ACE_DefusalKit",
         LIST_2("DemoCharge_Remote_Mag"),
-        LIST_2("SatchelCharge_Remote_Mag"),
+        LIST_2("SatchelCharge_Remote_Mag")
     };
 };
 class engm : r_light

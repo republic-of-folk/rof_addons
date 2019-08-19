@@ -10,7 +10,7 @@ class baseMan {// Weaponless baseclass
     goggles[] = {
         "","","","","","","","","","","",
         "","","","","","","","","","","",
-        "G_Spectacles","G_Squares_Tinted","G_Squares","G_Spectacles_Tinted",
+        "G_Spectacles","G_Squares_Tinted","G_Squares","G_Spectacles_Tinted"
     };
     hmd[] = {};
     // Leave empty to remove all. "Default" > leave original item.
@@ -65,7 +65,7 @@ class r_light : baseMan
     magazines[] =
     {
         LIST_5("gm_30Rnd_762x39mm_B_M43_ak47_blk"),
-        LIST_1("SmokeShell"),
+        LIST_1("SmokeShell")
     };
     items[] =
     {
@@ -79,10 +79,10 @@ class r : r_light
     displayName = "Rifleman";
     magazines[] += {
         LIST_3("gm_30Rnd_762x39mm_B_M43_ak47_blk"),
-        LIST_2("rhs_mag_rgd5"),
+        LIST_2("rhs_mag_rgd5")
     };
     items[] += {
-        "ACE_EntrenchingTool",
+        "ACE_EntrenchingTool"
     };
 };
 class g : r_light {
@@ -93,7 +93,7 @@ class g : r_light {
         LIST_5("gm_30Rnd_762x39mm_B_M43_ak47_blk"),
         LIST_1("SmokeShell"),
         LIST_5("rhs_VOG25"),
-        LIST_4("rhs_GRD40_White"),
+        LIST_4("rhs_GRD40_White")
     };
 };
 class car : r_light
@@ -121,7 +121,7 @@ class smg : r_light
     primaryWeapon[] = {"gm_mpiaks74nk_prp"};
     magazines[] = {
         LIST_6("gm_30Rnd_545x39mm_B_7N6_ak74_prp"),
-        LIST_1("SmokeShell"),
+        LIST_1("SmokeShell")
     };
 };
 class ftl : g
@@ -195,7 +195,7 @@ class dm : r
     scope[] = {"rhs_acc_pso1m2"};
     magazines[] = {
         LIST_8("rhs_10Rnd_762x54mmR_7N1"),
-        LIST_2("SmokeShell"),
+        LIST_2("SmokeShell")
     };
 };
 class mmgg : ar
@@ -276,7 +276,7 @@ class mtrg : r_light
     backPack[] = {"O_Mortar_01_weapon_F"};
     items[] += {
         "ACE_RangeTable_82mm",
-        "ACE_Maptools",
+        "ACE_Maptools"
     };
 };
 class mtrac : r_light
@@ -291,7 +291,7 @@ class mtrag : r_light
     linkedItems[] += {"gm_df7x40_blk"};
     items[] += {
         "ACE_RangeTable_82mm",
-        "ACE_Maptools",
+        "ACE_Maptools"
     };
 };
 class samg : r_light
@@ -301,7 +301,7 @@ class samg : r_light
     secondaryMagazine[] = {"rhs_mag_9k38_rocket"};
     backPack[] = {"gm_gc_army_backpack_80_at_str"};
     backpackItems[] = {
-        LIST_2("rhs_mag_9k38_rocket"),
+        LIST_2("rhs_mag_9k38_rocket")
     };
 };
 class samag : r_light
@@ -311,7 +311,7 @@ class samag : r_light
     items[] += {"ACE_Maptools"};
     backPack[] = {"gm_gc_army_backpack_80_at_str"};
     backpackItems[] = {
-        LIST_2("rhs_mag_9k38_rocket"),
+        LIST_2("rhs_mag_9k38_rocket")
     };
 };
 class sn : dm
@@ -417,7 +417,7 @@ class jp : baseMan
         LIST_2("rhs_mag_9x18_8_57N181S"),
         LIST_2("SmokeShell"),
         LIST_1("SmokeShellGreen"),
-        LIST_1("SmokeShellRed"),
+        LIST_1("SmokeShellRed")
     };
 };
 class eng : r_light
@@ -428,12 +428,12 @@ class eng : r_light
     backPack[] = {"gm_gc_army_backpack_80_assaultpack_str"};
     backpackItems[] = {
         LIST_4("rhsusf_m112_mag"),
-        LIST_1("rhsusf_m112x4_mag"),
+        LIST_1("rhsusf_m112x4_mag")
     };
     items[] += {
         "ACE_wirecutter",
         "ACE_Clacker",
-        "ACE_DefusalKit",
+        "ACE_DefusalKit"
     };
 };
 class engm : r_light
@@ -445,7 +445,7 @@ class engm : r_light
     backpackItems[] = {LIST_3("ATMine_Range_Mag")};
     items[] += {
         "ACE_wirecutter",
-        "ACE_DefusalKit",
+        "ACE_DefusalKit"
     };
 };
 class UAV_light : r_light

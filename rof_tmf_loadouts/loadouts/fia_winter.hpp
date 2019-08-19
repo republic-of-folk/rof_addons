@@ -14,7 +14,7 @@ class baseMan {// Weaponless baseclass
         "G_Bandanna_blk",
         "G_Bandanna_aviator",
         "G_Bandanna_shades",
-        "G_Bandanna_sport",
+        "G_Bandanna_sport"
     };
     hmd[] = {};
     // Leave empty to remove all. "Default" > leave original item.
@@ -513,7 +513,7 @@ class eng : r_light
         "ACE_Clacker",
         "ACE_DefusalKit",
         LIST_2("DemoCharge_Remote_Mag"),
-        LIST_2("SatchelCharge_Remote_Mag"),
+        LIST_2("SatchelCharge_Remote_Mag")
     };
 };
 class engm : r_light

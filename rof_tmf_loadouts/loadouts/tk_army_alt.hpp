@@ -413,7 +413,7 @@ class sp : sn
     {
         LIST_7("hlc_20Rnd_762x51_B_fal"),
         LIST_2("rhs_mag_rgd5"),
-        LIST_2("rhs_mag_rdg2_white"),
+        LIST_2("rhs_mag_rdg2_white")
     };
 };
 class vc : smg
@@ -510,7 +510,7 @@ class eng : car
         "ACE_Clacker",
         "ACE_DefusalKit",
         LIST_4("DemoCharge_Remote_Mag"),
-        LIST_2("SatchelCharge_Remote_Mag"),
+        LIST_2("SatchelCharge_Remote_Mag")
     };
 };
 class engm : car

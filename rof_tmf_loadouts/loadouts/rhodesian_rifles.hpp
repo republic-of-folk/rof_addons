@@ -3,7 +3,7 @@ class baseMan {// Weaponless baseclass
     // All randomized.
     uniform[] =
     {
-        "M93_Rhodesian_B",
+        "M93_Rhodesian_B"
     };
     vest[] = {};
     backpack[] = {};
@@ -73,7 +73,7 @@ class r : baseMan
         LIST_10("ACE_fieldDressing"),
         LIST_3("ACE_morphine"),
         LIST_1("ACE_epinephrine"),
-        LIST_1("ACE_EntrenchingTool"),
+        LIST_1("ACE_EntrenchingTool")
     };
 };
 class r_light : r
@@ -176,7 +176,7 @@ class ar : r
     {
         LIST_3("hlc_50rnd_762x51_M_FAL"),
         LIST_1("rhs_mag_m67"),
-        LIST_1("rhs_mag_an_m8hc"),
+        LIST_1("rhs_mag_an_m8hc")
     };
 };
 class aar : r
@@ -509,7 +509,7 @@ class engm : r_light
         "ACE_EntrenchingTool",
         LIST_4("APERSMine_Range_Mag"),
         LIST_1("ATMine_Range_Mag"),
-        LIST_2("ClaymoreDirectionalMine_Remote_Mag"),
+        LIST_2("ClaymoreDirectionalMine_Remote_Mag")
     };
 };
 class UAV_light : r_light

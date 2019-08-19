@@ -315,7 +315,7 @@ class aar : r
     backpackItems[] =
     {
         LIST_3("150Rnd_762x54_Box"),
-        LIST_1("150Rnd_762x54_Box_Tracer"),
+        LIST_1("150Rnd_762x54_Box_Tracer")
     };
     linkedItems[] += {"Binocular"};
 };

@@ -245,7 +245,7 @@ class mmgac : r_light
     backPack[] = {"B_Carryall_oli"};
     backpackItems[] =
     {
-        LIST_3("rhsusf_100Rnd_762x51"),
+        LIST_3("rhsusf_100Rnd_762x51")
     };
 };
 class mmgag : aar
@@ -263,7 +263,7 @@ class mmgag : aar
     backPack[] = {"B_Carryall_oli"};
     backpackItems[] =
     {
-        LIST_3("rhsusf_100Rnd_762x51"),
+        LIST_3("rhsusf_100Rnd_762x51")
     };
 };
 class hmgg : r_light
@@ -527,7 +527,7 @@ class eng : r_light
         "ACE_Clacker",
         "ACE_DefusalKit",
         LIST_2("DemoCharge_Remote_Mag"),
-        LIST_2("SatchelCharge_Remote_Mag"),
+        LIST_2("SatchelCharge_Remote_Mag")
     };
 };
 class engm : r_light

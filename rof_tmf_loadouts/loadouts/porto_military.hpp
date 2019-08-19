@@ -166,7 +166,7 @@ class co : sl
 {
     displayName = "Platoon Leader";
     goggles[] = {
-        "G_Aviator",
+        "G_Aviator"
     };
 };
 class fac : co
@@ -521,7 +521,7 @@ class eng : r_light
         "ACE_Clacker",
         "ACE_DefusalKit",
         LIST_2("DemoCharge_Remote_Mag"),
-        LIST_2("SatchelCharge_Remote_Mag"),
+        LIST_2("SatchelCharge_Remote_Mag")
     };
 };
 class engm : r_light

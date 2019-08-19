@@ -709,7 +709,7 @@ class jp : pp
     items[] = {
         LIST_10("ACE_fieldDressing"),
         LIST_3("ACE_morphine"),
-        LIST_1("ACE_epinephrine"),
+        LIST_1("ACE_epinephrine")
     };
 };
 class UAV : car

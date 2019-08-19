@@ -111,7 +111,7 @@ class car : r
     {
         LIST_4("rhs_30Rnd_762x39mm"),
         LIST_1("rhs_mag_9x18_8_57N181S"),
-        LIST_1("rhs_mag_f1"),
+        LIST_1("rhs_mag_f1")
     };
 };
 class smg : r_light
@@ -187,7 +187,7 @@ class mmgac : r_light
     backPack[] = {"RD_54_69"};
     backpackItems[] =
     {
-        LIST_6("gm_75Rnd_762x39mm_B_M43_ak47_blk"),
+        LIST_6("gm_75Rnd_762x39mm_B_M43_ak47_blk")
     };
 };
 class mmgag : r_light
@@ -200,7 +200,7 @@ class mmgag : r_light
     };
     backpackItems[] =
     {
-        LIST_6("gm_75Rnd_762x39mm_B_M43_ak47_blk"),
+        LIST_6("gm_75Rnd_762x39mm_B_M43_ak47_blk")
     };
 };
 class hmgg : r_light
@@ -429,7 +429,7 @@ class eng : r_light
         "ACE_Clacker",
         "ACE_DefusalKit",
         LIST_2("DemoCharge_Remote_Mag"),
-        LIST_2("SatchelCharge_Remote_Mag"),
+        LIST_2("SatchelCharge_Remote_Mag")
     };
 };
 class engm : r_light

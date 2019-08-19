@@ -15,7 +15,7 @@ class baseMan {// Weaponless baseclass
         "H_Construction_basic_white_F"
     };
     goggles[] = {
-        "G_CBRN_S10",
+        "G_CBRN_S10"
     };
     hmd[] = {};
     // Leave empty to remove all. "Default" > leave original item.
@@ -66,7 +66,7 @@ class r : baseMan
     sidearmWeapon[] = {"rhs_weap_pya"};
     magazines[] =
     {
-        LIST_4("rhs_mag_9x19_17"),
+        LIST_4("rhs_mag_9x19_17")
     };
 };
 class r_light : r
@@ -177,7 +177,7 @@ class dm : r
     magazines[] =
     {
         LIST_7("rhs_20rnd_9x39mm_SP5"),
-        LIST_2("rhs_mag_m67"),
+        LIST_2("rhs_mag_m67")
     };
 };
 class mmgg : r_light
@@ -440,7 +440,7 @@ class eng : r_light
         "ACE_Clacker",
         "ACE_DefusalKit",
         LIST_2("DemoCharge_Remote_Mag"),
-        LIST_2("SatchelCharge_Remote_Mag"),
+        LIST_2("SatchelCharge_Remote_Mag")
     };
 };
 class engm : r_light

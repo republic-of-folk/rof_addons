@@ -142,7 +142,7 @@ class ftl : r
     displayName = "Fireteam Leader (M203)";
 	primaryWeapon[] = {"rhs_weap_m4a1_carryhandle_m203S"};
 	goggles[] = {
-		"","","","","","rhsusf_shemagh_grn","rhsusf_shemagh2_grn","rhsusf_shemagh_od","rhsusf_shemagh2_od","rhsusf_shemagh_tan","rhsusf_shemagh2_tan",
+		"","","","","","rhsusf_shemagh_grn","rhsusf_shemagh2_grn","rhsusf_shemagh_od","rhsusf_shemagh2_od","rhsusf_shemagh_tan","rhsusf_shemagh2_tan"
 	};
 	headgear[] = {"rhsusf_ach_helmet_ESS_ucp"};
 	scope[] = {
@@ -166,7 +166,7 @@ class ftlngl : r
 {
     displayName = "Fireteam Leader";
 	goggles[] = {
-		"","","","","","rhsusf_shemagh_grn","rhsusf_shemagh2_grn","rhsusf_shemagh_od","rhsusf_shemagh2_od","rhsusf_shemagh_tan","rhsusf_shemagh2_tan",
+		"","","","","","rhsusf_shemagh_grn","rhsusf_shemagh2_grn","rhsusf_shemagh_od","rhsusf_shemagh2_od","rhsusf_shemagh_tan","rhsusf_shemagh2_tan"
 	};
 	headgear[] = {"rhsusf_ach_helmet_ESS_ucp"};
 	scope[] = {

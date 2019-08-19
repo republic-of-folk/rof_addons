@@ -176,7 +176,7 @@ class ar : r
     {
         LIST_11("rhs_45Rnd_545X39_AK"),
         "rhs_mag_rgd5",
-        "rhs_mag_rdg2_white",
+        "rhs_mag_rdg2_white"
     };
 };
 class aar : r

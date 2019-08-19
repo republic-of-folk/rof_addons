@@ -231,7 +231,7 @@ class fac : car
     {"arifle_SPAR_01_GL_blk_F"};
     scope[] = {};
     attachment[] = {"acc_pointer_ir"};
-    silencer[] = {"muzzle_snds_m",};
+    silencer[] = {"muzzle_snds_m"};
     magazines[] =
     {
         LIST_7("30Rnd_556x45_Stanag_red"),
@@ -687,7 +687,7 @@ class jp : pp
     items[] = {
         LIST_10("ACE_fieldDressing"),
         LIST_3("ACE_morphine"),
-        LIST_1("ACE_epinephrine"),
+        LIST_1("ACE_epinephrine")
     };
 };
 class UAV : car

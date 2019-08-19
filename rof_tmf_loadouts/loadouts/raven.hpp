@@ -385,7 +385,7 @@ class sn : r_light
     };
     items[] +=
     {
-        "ACE_MapTools",
+        "ACE_MapTools"
     };
 };
 class sp : r
@@ -487,7 +487,7 @@ class eng : car
         "ACE_Clacker",
         "ACE_DefusalKit",
         LIST_2("DemoCharge_Remote_Mag"),
-        LIST_2("SatchelCharge_Remote_Mag"),
+        LIST_2("SatchelCharge_Remote_Mag")
     };
 };
 class engm : car

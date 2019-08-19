@@ -6,7 +6,7 @@ class baseMan {// Weaponless baseclass
     {
         "M93_Jeans_B",
         "M93_ins_dpm_B",
-        "M93_bdu_jeans_B",
+        "M93_bdu_jeans_B"
     };
     vest[] = {};
     backpack[] = {};
@@ -415,7 +415,7 @@ class sn : smg
     scope[] = {"rhs_acc_pso1m21"};
 	magazines[] = {
         LIST_9("rhs_10Rnd_762x54mmR_7N1"),
-        LIST_2("rhs_mag_rdg2_white"),
+        LIST_2("rhs_mag_rdg2_white")
     };
 };
 class sp : sn

@@ -67,7 +67,7 @@ class r : baseMan
     attachment[] = {"ACE_acc_pointer_green"};
     magazines[] =
     {
-        LIST_8("rhsgref_30rnd_556x45_vhs2"),
+        LIST_8("rhsgref_30rnd_556x45_vhs2")
     };
     items[] =
     {
@@ -452,7 +452,7 @@ class eng : r_light
         "ACE_Clacker",
         "ACE_DefusalKit",
         LIST_2("DemoCharge_Remote_Mag"),
-        LIST_2("SatchelCharge_Remote_Mag"),
+        LIST_2("SatchelCharge_Remote_Mag")
     };
 };
 class engm : r_light
