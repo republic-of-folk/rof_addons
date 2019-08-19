@@ -20,7 +20,9 @@ class CfgPatches
             "40th_weapons_cfg"
         };
     };
-    class Taliban_fighters_rof_patch {};
+    class Taliban_fighters_rof_patch {
+        units[] = {};
+    };
 };
 
 class CfgFactionClasses
