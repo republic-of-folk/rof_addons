@@ -36,7 +36,13 @@ class CfgWeapons
             {
                 class StandardSound
                 {
-                    soundSetShot[] = {"jsrs_sniper_shake_soundset", "jsrs_ugl_shot_soundset", "jsrs_12x7mm_reflector_1"};
+                    soundClosure[] = {};
+                    begin1[] = {"\jsrs_soundmod_complete\JSRS_Soundmod_Soundfiles\weapons\Shot\UGL\Close_1.ogg",1.8,1,800};
+                    begin2[] = {"\jsrs_soundmod_complete\JSRS_Soundmod_Soundfiles\weapons\Shot\UGL\Close_2.ogg",1.8,1,800};
+                    begin3[] = {"\jsrs_soundmod_complete\JSRS_Soundmod_Soundfiles\weapons\Shot\UGL\Close_3.ogg",1.8,1,800};
+                    begin4[] = {"\jsrs_soundmod_complete\JSRS_Soundmod_Soundfiles\weapons\Shot\UGL\Close_4.ogg",1.8,1,800};
+                    soundBegin[] = {"begin1",0.25,"begin2",0.25,"begin3",0.25,"begin4",0.25};
+                    soundsetshot[] = {"jsrs_m32_shot_soundset","jsrs_12x7mm_reverb_soundset"};
                 };
             };
         };
@@ -45,11 +51,11 @@ class CfgWeapons
             class BaseSoundModeType{};
             class StandardSound: BaseSoundModeType
             {
-                soundsetshot[] = {"jsrs_rifle_shake_soundset","jsrs_m16a4_shot_soundset","jsrs_m16a4_shell_soundset","jsrs_556mm_echo_soundset","jsrs_5x56mm_reflector_1"};
+                soundsetshot[] = {"jsrs_m16a4_shot_soundset","jsrs_5x56mm_reverb_soundset"};
             };
             class SilencedSound: BaseSoundModeType
             {
-                soundsetshot[] = {"jsrs_rifle_shake_soundset","jsrs_m16a4_shot_silenced_soundset","jsrs_m16a4_shell_soundset","jsrs_5x56mm_sd_reflector_1"};
+                soundsetshot[] = {"jsrs_m16a4_shot_silenced_soundset","jsrs_5x56mm_sd_reverb_soundset"};
             };
         };
         class Burst: Mode_Burst
@@ -57,11 +63,11 @@ class CfgWeapons
             class BaseSoundModeType{};
             class StandardSound: BaseSoundModeType
             {
-                soundsetshot[] = {"jsrs_rifle_shake_soundset","jsrs_m16a4_shot_soundset","jsrs_m16a4_shell_soundset","jsrs_556mm_echo_soundset","jsrs_5x56mm_reflector_1"};
+                soundsetshot[] = {"jsrs_m16a4_shot_soundset","jsrs_5x56mm_reverb_soundset"};
             };
             class SilencedSound: BaseSoundModeType
             {
-                soundsetshot[] = {"jsrs_rifle_shake_soundset","jsrs_m16a4_shot_silenced_soundset","jsrs_m16a4_shell_soundset","jsrs_5x56mm_sd_reflector_1"};
+                soundsetshot[] = {"jsrs_m16a4_shot_silenced_soundset","jsrs_5x56mm_sd_reverb_soundset"};
             };
         };
     };
@@ -72,11 +78,11 @@ class CfgWeapons
             class BaseSoundModeType{};
             class StandardSound: BaseSoundModeType
             {
-                soundsetshot[] = {"jsrs_rifle_shake_soundset","jsrs_spar_shot_soundset_variant2","jsrs_m4_shell_soundset","jsrs_556mm_echo_soundset","jsrs_5x56mm_reflector_1"};
+                soundsetshot[] = {"jsrs_m4_shot_soundset","jsrs_5x56mm_reverb_soundset"};
             };
             class SilencedSound: BaseSoundModeType
             {
-                soundsetshot[] = {"jsrs_rifle_shake_soundset","jsrs_m4_shot_silenced_soundset","jsrs_m4_shell_soundset","jsrs_frame_caliber_5x56mm_silenced"};
+                soundsetshot[] = {"jsrs_m4_shot_silenced_soundset","jsrs_5x56mm_sd_reverb_soundset"};
             };
         };
         class Burst: Mode_FullAuto
@@ -84,11 +90,11 @@ class CfgWeapons
             class BaseSoundModeType{};
             class StandardSound: BaseSoundModeType
             {
-                soundsetshot[] = {"jsrs_rifle_shake_soundset","jsrs_spar_shot_soundset_variant2","jsrs_m4_shell_soundset","jsrs_556mm_echo_soundset","jsrs_5x56mm_reflector_1"};
+                soundsetshot[] = {"jsrs_m4_shot_soundset","jsrs_5x56mm_reverb_soundset"};
             };
             class SilencedSound: BaseSoundModeType
             {
-                soundsetshot[] = {"jsrs_rifle_shake_soundset","jsrs_m4_shot_silenced_soundset","jsrs_m4_shell_soundset","jsrs_frame_caliber_5x56mm_silenced"};
+                soundsetshot[] = {"jsrs_m4_shot_silenced_soundset","jsrs_5x56mm_sd_reverb_soundset"};
             };
         };
     };
@@ -99,11 +105,11 @@ class CfgWeapons
             class BaseSoundModeType{};
             class StandardSound: BaseSoundModeType
             {
-                soundsetshot[] = {"jsrs_rifle_shake_soundset","jsrs_spar_shot_soundset_variant2","jsrs_m4_shell_soundset","jsrs_556mm_echo_soundset","jsrs_5x56mm_reflector_1"};
+                soundsetshot[] = {"jsrs_m4_shot_soundset","jsrs_5x56mm_reverb_soundset"};
             };
             class SilencedSound: BaseSoundModeType
             {
-                soundsetshot[] = {"jsrs_rifle_shake_soundset","jsrs_m4_shot_silenced_soundset","jsrs_m4_shell_soundset","jsrs_frame_caliber_5x56mm_silenced"};
+                soundsetshot[] = {"jsrs_m4_shot_silenced_soundset","jsrs_5x56mm_sd_reverb_soundset"};
             };
         };
         class Burst: Mode_FullAuto
@@ -111,11 +117,11 @@ class CfgWeapons
             class BaseSoundModeType{};
             class StandardSound: BaseSoundModeType
             {
-                soundsetshot[] = {"jsrs_rifle_shake_soundset","jsrs_spar_shot_soundset_variant2","jsrs_m4_shell_soundset","jsrs_556mm_echo_soundset","jsrs_5x56mm_reflector_1"};
+                soundsetshot[] = {"jsrs_m4_shot_soundset","jsrs_5x56mm_reverb_soundset"};
             };
             class SilencedSound: BaseSoundModeType
             {
-                soundsetshot[] = {"jsrs_rifle_shake_soundset","jsrs_m4_shot_silenced_soundset","jsrs_m4_shell_soundset","jsrs_frame_caliber_5x56mm_silenced"};
+                soundsetshot[] = {"jsrs_m4_shot_silenced_soundset","jsrs_5x56mm_sd_reverb_soundset"};
             };
         };
     };
@@ -126,11 +132,11 @@ class CfgWeapons
             class BaseSoundModeType{};
             class StandardSound: BaseSoundModeType
             {
-                soundsetshot[] = {"jsrs_rifle_shake_soundset","jsrs_spar_shot_soundset_variant2","jsrs_m4_shell_soundset","jsrs_556mm_echo_soundset","jsrs_5x56mm_reflector_1"};
+                soundsetshot[] = {"jsrs_m4_shot_soundset","jsrs_5x56mm_reverb_soundset"};
             };
             class SilencedSound: BaseSoundModeType
             {
-                soundsetshot[] = {"jsrs_rifle_shake_soundset","jsrs_m4_shot_silenced_soundset","jsrs_m4_shell_soundset","jsrs_frame_caliber_5x56mm_silenced"};
+                soundsetshot[] = {"jsrs_m4_shot_silenced_soundset","jsrs_5x56mm_sd_reverb_soundset"};
             };
         };
         class Burst: Mode_FullAuto
@@ -138,11 +144,11 @@ class CfgWeapons
             class BaseSoundModeType{};
             class StandardSound: BaseSoundModeType
             {
-                soundsetshot[] = {"jsrs_rifle_shake_soundset","jsrs_spar_shot_soundset_variant2","jsrs_m4_shell_soundset","jsrs_556mm_echo_soundset","jsrs_5x56mm_reflector_1"};
+                soundsetshot[] = {"jsrs_m4_shot_soundset","jsrs_5x56mm_reverb_soundset"};
             };
             class SilencedSound: BaseSoundModeType
             {
-                soundsetshot[] = {"jsrs_rifle_shake_soundset","jsrs_m4_shot_silenced_soundset","jsrs_m4_shell_soundset","jsrs_frame_caliber_5x56mm_silenced"};
+                soundsetshot[] = {"jsrs_m4_shot_silenced_soundset","jsrs_5x56mm_sd_reverb_soundset"};
             };
         };
     };
@@ -153,11 +159,11 @@ class CfgWeapons
             class BaseSoundModeType{};
             class StandardSound: BaseSoundModeType
             {
-                soundsetshot[] = {"jsrs_rifle_shake_soundset","jsrs_m16a4_shot_soundset","jsrs_m16a4_shell_soundset","jsrs_556mm_echo_soundset","jsrs_5x56mm_reflector_1"};
+                soundsetshot[] = {"jsrs_m16a4_shot_soundset","jsrs_5x56mm_reverb_soundset"};
             };
             class SilencedSound: BaseSoundModeType
             {
-                soundsetshot[] = {"jsrs_rifle_shake_soundset","jsrs_m16a4_shot_silenced_soundset","jsrs_m16a4_shell_soundset","jsrs_5x56mm_sd_reflector_1"};
+                soundsetshot[] = {"jsrs_m16a4_shot_silenced_soundset","jsrs_5x56mm_sd_reverb_soundset"};
             };
         };
         class Burst: Mode_FullAuto
@@ -165,11 +171,11 @@ class CfgWeapons
             class BaseSoundModeType{};
             class StandardSound: BaseSoundModeType
             {
-                soundsetshot[] = {"jsrs_rifle_shake_soundset","jsrs_m16a4_shot_soundset","jsrs_m16a4_shell_soundset","jsrs_556mm_echo_soundset","jsrs_5x56mm_reflector_1"};
+                soundsetshot[] = {"jsrs_m16a4_shot_soundset","jsrs_5x56mm_reverb_soundset"};
             };
             class SilencedSound: BaseSoundModeType
             {
-                soundsetshot[] = {"jsrs_rifle_shake_soundset","jsrs_m16a4_shot_silenced_soundset","jsrs_m16a4_shell_soundset","jsrs_5x56mm_sd_reflector_1"};
+                soundsetshot[] = {"jsrs_m16a4_shot_silenced_soundset","jsrs_5x56mm_sd_reverb_soundset"};
             };
         };
     };
@@ -180,11 +186,11 @@ class CfgWeapons
             class BaseSoundModeType{};
             class StandardSound: BaseSoundModeType
             {
-                soundsetshot[] = {"jsrs_rifle_shake_soundset","jsrs_m4_shot_soundset","jsrs_m4_shell_soundset","jsrs_556mm_echo_soundset","jsrs_5x56mm_reflector_1"};
+                soundsetshot[] = {"jsrs_m4_shot_soundset","jsrs_5x56mm_reverb_soundset"};
             };
             class SilencedSound: BaseSoundModeType
             {
-                soundsetshot[] = {"jsrs_rifle_shake_soundset","jsrs_m4_shot_silenced_soundset","jsrs_m4_shell_soundset","jsrs_5x56mm_sd_reflector_1"};
+                soundsetshot[] = {"jsrs_m4_shot_silenced_soundset","jsrs_5x56mm_sd_reverb_soundset"};
             };
         };
         class Burst: Mode_Burst
@@ -192,11 +198,11 @@ class CfgWeapons
             class BaseSoundModeType{};
             class StandardSound: BaseSoundModeType
             {
-                soundsetshot[] = {"jsrs_rifle_shake_soundset","jsrs_m4_shot_soundset","jsrs_m4_shell_soundset","jsrs_556mm_echo_soundset","jsrs_5x56mm_reflector_1"};
+                soundsetshot[] = {"jsrs_m4_shot_soundset","jsrs_5x56mm_reverb_soundset"};
             };
             class SilencedSound: BaseSoundModeType
             {
-                soundsetshot[] = {"jsrs_rifle_shake_soundset","jsrs_m4_shot_silenced_soundset","jsrs_m4_shell_soundset","jsrs_5x56mm_sd_reflector_1"};
+                soundsetshot[] = {"jsrs_m4_shot_silenced_soundset","jsrs_5x56mm_sd_reverb_soundset"};
             };
         };
     };
