@@ -337,4 +337,29 @@ class CfgLoadouts
         category = "Future";
         #include "f_nato_jungle.hpp"
     };
+    class VMF_MPR {
+        displayName = "VMF Naval Infantry"
+        category = "Russians (90's)";
+        #include "vmf_mpr.hpp"
+    };
+    class SANTA_RED {
+        displayName = "Santas Little Helpers (RED)";
+        category = "Special";
+        #include "santa_red.hpp"
+    };
+    class SANTA_BLUE {
+        displayName = "Ded Moroz Little Helpers (BLUE)";
+        category = "Independent";
+        #include "santa_blue.hpp"
+    };
+    class SANTA_GREEN {
+        displayName = "Satans Little Helpers (GREEN)";
+        category = "Independent";
+        #include "santa_green.hpp"
+    };
+    class LWP_SUMMER {
+        displayName = "Polish People's Army (Summer)";
+        category = "Soviet";
+        #include "lwp_summer.hpp"
+    };
 };
