@@ -132,10 +132,10 @@ class smg : r
 {
     displayName = "Submachinegunner";
     vest[] = {"V_TacChestrig_oli_F"};
-    primaryWeapon[] = {"rhs_weap_pp2000"};
+    primaryWeapon[] = {"hlc_wp_mod733"};
     magazines[] =
     {
-        LIST_10("rhs_mag_9x19mm_7n21_20"),
+        LIST_10("rhs_mag_20Rnd_556x45_M855A1_Stanag"),
         LIST_2("rhs_mag_m67"),
         LIST_2("rhs_mag_an_m8hc")
     };
@@ -178,13 +178,12 @@ class ar : r
 {
     displayName = "Automatic Rifleman";
     vest[] = {"rhsusf_spcs_ucp_saw"};
-    primaryWeapon[] = {"rhs_weap_m249_pip_S_para"};
-    bipod[] = {};
+    primaryWeapon[] = {"rhs_weap_m249"};
+    bipod[] = {"rhsusf_acc_saw_bipod"};
     sidearmWeapon[] = {"rhsusf_weap_m1911a1"};
     magazines[] =
     {
-        LIST_2("rhs_200rnd_556x45_M_SAW"),
-        "rhs_200rnd_556x45_T_SAW",
+        LIST_3("rhsusf_200Rnd_556x45_mixed_soft_pouch_ucp"),
         "rhs_mag_m67",
         "rhs_mag_an_m8hc",
         LIST_4("rhsusf_mag_7x45acp_MHP")
@@ -198,7 +197,7 @@ class aar : r
     backpack[] = {"B_AssaultPack_rgr"};
     backpackItems[] =
     {
-        LIST_2("rhs_200rnd_556x45_M_SAW")
+        LIST_2("rhsusf_200Rnd_556x45_mixed_soft_pouch_ucp"),
     };
 };
 class rat : r_light

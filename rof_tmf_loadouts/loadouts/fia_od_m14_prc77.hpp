@@ -74,6 +74,7 @@ class r : baseMan
         LIST_3("ACE_morphine"),
         LIST_1("ACE_epinephrine")
     };
+    backpack[] = {"B_simc_USMC65_M41", "B_simc_USMC65_M41_Roll", "B_simc_USMC65_M41_Roll2"};
 };
 class r_light : r
 {
@@ -98,7 +99,6 @@ class g : r_light
         LIST_8("rhs_mag_M433_HEDP"),
         LIST_2("rhs_mag_m714_White")
     };
-    backpack[] = {"B_simc_USMC65_M41", "B_simc_USMC65_M41_Roll", "B_simc_USMC65_M41_Roll2"};
 };
 class car : r
 {
@@ -126,16 +126,15 @@ class m : r_light
         LIST_6("ACE_bloodIV_500")
     };
     items[] = {};
-    backpack[] = {"B_simc_USMC65_M41", "B_simc_USMC65_M41_Roll", "B_simc_USMC65_M41_Roll2"};
 };
 class smg : r
 {
     displayName = "Submachinegunner";
     vest[] = {"V_TacChestrig_oli_F"};
-    primaryWeapon[] = {"rhs_weap_savz61"};
+    primaryWeapon[] = {"rhs_weap_m3a1"};
     magazines[] =
     {
-        LIST_9("rhsgref_20rnd_765x17_vz61"),
+        LIST_9("rhsgref_30rnd_1143x23_M1911B_SMG"),
         LIST_2("rhs_mag_m67"),
         LIST_2("rhs_mag_an_m8hc")
     };
@@ -190,27 +189,24 @@ class ar : r
 {
     displayName = "Automatic Rifleman";
     vest[] = {"usm_vest_LBE_mg"};
-    primaryWeapon[] = {"rhs_weap_m249_pip_S_para"};
-    bipod[] = {};
+    primaryWeapon[] = {"rhs_weap_m249"};
+    bipod[] = {"rhsusf_acc_saw_bipod"};
     sidearmWeapon[] = {"rhsusf_weap_m1911a1"};
     magazines[] =
     {
-        LIST_2("rhs_200rnd_556x45_M_SAW"),
-        "rhs_200rnd_556x45_T_SAW",
+        LIST_3("rhsusf_200rnd_556x45_mixed_box"),
         "rhs_mag_m67",
         "rhs_mag_an_m8hc",
         LIST_2("rhsusf_mag_7x45acp_MHP")
     };
-    // backpack[] = {"usm_pack_200rnd_556_bandoliers"};
 };
 class aar : r
 {
     displayName = "Assistant Automatic Rifleman";
     linkedItems[] += {"Binocular"};
-    backpack[] = {"B_simc_USMC65_M41", "B_simc_USMC65_M41_Roll", "B_simc_USMC65_M41_Roll2"};
     backpackItems[] =
     {
-        LIST_2("rhs_200rnd_556x45_M_SAW")
+        LIST_2("rhsusf_200rnd_556x45_mixed_box")
     };
 };
 class rat : r_light
@@ -223,7 +219,6 @@ class dm : r
     displayName = "Designated Marksman";
     primaryWeapon[] = {"hlc_rifle_M14_Bipod"};
     scope[] = {"hlc_optic_artel_m14"};
-    backpack[] = {"B_simc_USMC65_M41", "B_simc_USMC65_M41_Roll", "B_simc_USMC65_M41_Roll2"};
 };
 class mmgg : ar
 {
@@ -460,15 +455,15 @@ class vd : smg
 {
     displayName = "Vehicle Driver";
     traits[] += {"engineer"};
-    backpack[] = {"B_simc_USMC65_M41", "B_simc_USMC65_M41_Roll", "B_simc_USMC65_M41_Roll2"};
     headgear[] = {"rhsusf_Bowman"};
     linkedItems[] += {"ItemGPS"};
+    backpack[] = {"B_simc_USMC65_M41"};
     backpackItems[] = {"ToolKit"};
 };
 class vg : smg
 {
     displayName = "Vehicle Gunner";
-    backpack[] = {};
+    backpack[] = {"B_simc_USMC65_M41"};
     headgear[] = {"rhsusf_Bowman"};
 };
 class pp : smg
@@ -484,18 +479,18 @@ class pcc : smg
 
     displayName = "Helicopter Crew Chief";
     traits[] += {"engineer"};
-    backpack[] = {"B_simc_USMC65_M41", "B_simc_USMC65_M41_Roll", "B_simc_USMC65_M41_Roll2"};
     headgear[] = {"rhs_gssh18"};
     goggles[] = {"G_Aviator"};
     linkedItems[] += {"ItemGPS"};
+    backpack[] = {"B_simc_USMC65_M41"};
     backpackItems[] = {"ToolKit"};
 };
 class pc : smg
 {
     displayName = "Helicopter Crew";
-    backpack[] = {};
     headgear[] = {"rhs_gssh18"};
     goggles[] = {"G_Aviator"};
+    backpack[] = {"B_simc_USMC65_M41"};
     linkedItems[] += {"ItemGPS"};
 };
 class jp : baseMan

@@ -3,12 +3,12 @@ class baseMan {// Weaponless baseclass
     // All randomized.
     uniform[] =
     {
-        "usm_bdu_blk"
+        "usm_bdum65_blk"
     };
     vest[] = {};
     backpack[] = {};
     headgear[] = {
-        "rhssaf_helmet_m97_black_nocamo"
+        "usm_helmet_pasgt_rms_blk"
     };
     goggles[] = {
         ""
@@ -70,7 +70,7 @@ class r : baseMan
     backpack[] = {"B_simc_USMC65_M41"};
 
     primaryWeapon[] = {"hlc_smg_mp5a3"};
-    silencer[] = {"muzzle_snds_L"};
+    silencer[] = {"hlc_muzzle_Agendasix"};
     attachment[] = {"hlc_acc_Surefiregrip"};
     scope[] = {};
 
@@ -105,7 +105,7 @@ class r_light : r
 class g : r_light
 {
     displayName = "Grenadier";
-    primaryWeapon[] = {"hlc_smg_9mmar"};
+    sidearmWeapon[] = {"rhs_weap_M320"};
     magazines[] +=
     {
         LIST_8("1Rnd_HE_Grenade_shell"),
@@ -181,12 +181,12 @@ class ar : r
 {
     displayName = "Automatic Rifleman";
     primaryWeapon[] = {"rhs_weap_m249_pip_S_para"};
-    bipod[] = {};
+    silencer[] = {"rhsusf_acc_rotex5_grey"};
+    bipod[] = {"rhsusf_acc_saw_bipod"};
     sidearmWeapon[] = {"rhsusf_weap_m1911a1"};
     magazines[] =
     {
-        LIST_2("rhs_200rnd_556x45_M_SAW"),
-        "rhs_200rnd_556x45_T_SAW",
+        LIST_3("rhsusf_200rnd_556x45_mixed_box"),
         "rhs_mag_m67",
         "rhs_mag_an_m8hc",
         LIST_4("rhsusf_mag_7x45acp_MHP")
@@ -200,7 +200,7 @@ class aar : r
     backpack[] = {"B_AssaultPack_rgr"};
     backpackItems[] =
     {
-        LIST_2("rhs_200rnd_556x45_M_SAW")
+        LIST_2("rhsusf_200rnd_556x45_mixed_box")
     };
 };
 class rat : r_light
@@ -210,7 +210,7 @@ class rat : r_light
     backPack[] = {"rhs_rpg_empty"};
     magazines[] +=
     {
-        "rhs_rpg7_PG7VL_mag"
+        LIST_3("rhs_rpg7_PG7VL_mag"),
     };
 };
 class dm : r
@@ -440,6 +440,7 @@ class sp : ftl
 class vc : smg
 {
     displayName = "Vehicle Commander";
+    headgear[] = {"usm_helmet_pasgt_rms_odg"};
     uniform[] = {"usm_bdu_odg"};
     backpack[] = {"usm_pack_st138_prc77"};
     linkedItems[] += {"Binocular","ItemGPS"};
@@ -448,6 +449,7 @@ class vd : smg
 {
     displayName = "Vehicle Driver";
     traits[] += {"engineer"};
+    headgear[] = {"usm_helmet_pasgt_rms_odg"};
     uniform[] = {"usm_bdu_odg"};
     backpack[] = {"B_AssaultPack_rgr"};
     linkedItems[] += {"ItemGPS"};
@@ -456,6 +458,7 @@ class vd : smg
 class vg : smg
 {
     displayName = "Vehicle Gunner";
+    headgear[] = {"usm_helmet_pasgt_rms_odg"};
     uniform[] = {"usm_bdu_odg"};
     backpack[] = {};
 };

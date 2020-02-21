@@ -130,10 +130,10 @@ class smg : r
 {
     displayName = "Submachinegunner";
     vest[] = {"V_TacChestrig_oli_F"};
-    primaryWeapon[] = {"rhs_weap_pp2000"};
+    primaryWeapon[] = {"hlc_wp_mod733"};
     magazines[] =
     {
-        LIST_10("rhs_mag_9x19mm_7n21_20"),
+        LIST_8("rhs_mag_20Rnd_556x45_M855A1_Stanag"),
         LIST_2("rhs_mag_m67"),
         LIST_2("rhs_mag_an_m8hc")
     };
@@ -176,13 +176,12 @@ class fac : co
 class ar : r
 {
     displayName = "Automatic Rifleman";
-    primaryWeapon[] = {"rhs_weap_m249_pip_S_para"};
-    bipod[] = {};
+    primaryWeapon[] = {"rhs_weap_m249"};
+    bipod[] = {"rhsusf_acc_saw_bipod"};
     sidearmWeapon[] = {"rhsusf_weap_m1911a1"};
     magazines[] =
     {
-        LIST_2("rhs_200rnd_556x45_M_SAW"),
-        "rhs_200rnd_556x45_T_SAW",
+        LIST_3("rhsusf_200Rnd_556x45_mixed_soft_pouch"),
         "rhs_mag_m67",
         "rhs_mag_an_m8hc",
         LIST_4("rhsusf_mag_7x45acp_MHP")
@@ -196,7 +195,7 @@ class aar : r
     backpack[] = {"B_AssaultPack_rgr"};
     backpackItems[] =
     {
-        LIST_2("rhs_200rnd_556x45_M_SAW")
+        LIST_2("rhsusf_200Rnd_556x45_mixed_soft_pouch")
     };
 };
 class rat : r_light
@@ -206,7 +205,7 @@ class rat : r_light
     backPack[] = {"rhs_rpg_empty"};
     magazines[] +=
     {
-        "rhs_rpg7_PG7VL_mag"
+        LIST_3("rhs_rpg7_PG7VL_mag")
     };
 };
 class dm : r
@@ -225,12 +224,11 @@ class dm : r
 class mmgg : ar
 {
     displayName = "MMG Gunner";
-    primaryWeapon[] = {"MMG_02_black_F"};
+    primaryWeapon[] = {"rhs_weap_m240B"};
     scope[] = {"rhsusf_acc_ELCAN"};
-    bipod[] = {"bipod_01_F_blk"};
     magazines[] =
     {
-        LIST_3("130Rnd_338_Mag"),
+        LIST_3("hlc_100Rnd_762x51_Barrier_M60E4"),
         "rhs_mag_m67",
         "rhs_mag_an_m8hc",
         LIST_4("rhsusf_mag_7x45acp_MHP")
@@ -242,7 +240,7 @@ class mmgac : r_light
     backPack[] = {"B_Carryall_oli"};
     backpackItems[] =
     {
-        LIST_3("130Rnd_338_Mag")
+        LIST_4("hlc_100Rnd_762x51_Barrier_M60E4")
     };
 };
 class mmgag : aar
@@ -259,7 +257,7 @@ class mmgag : aar
     backPack[] = {"B_Carryall_oli"};
     backpackItems[] =
     {
-        LIST_3("130Rnd_338_Mag")
+        LIST_4("hlc_100Rnd_762x51_Barrier_M60E4")
     };
 };
 class hmgg : r_light
