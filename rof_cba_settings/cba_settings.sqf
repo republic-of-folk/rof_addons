@@ -224,21 +224,15 @@ ace_nametags_showVehicleCrewInfo = true;
 ace_nametags_tagSize = 2;
 
 // ACE Nightvision
-force ace_nightvision_aimDownSightsBlur = 1;
-force ace_nightvision_disableNVGsWithSights = false;
-force ace_nightvision_effectScaling = 0.52139;
-force ace_nightvision_fogScaling = 1;
-force ace_nightvision_noiseScaling = 1;
-ace_nightvision_shutterEffects = true;
+force ace_nightvision_aimDownSightsBlur = 0;
+force ace_nightvision_disableNVGsWithSights = true;
+force ace_nightvision_effectScaling = 0.52622;
+force ace_nightvision_fogScaling = 0.52622;
+force ace_nightvision_noiseScaling = 0.25;
+force ace_nightvision_shutterEffects = true;
 
 // ACE Overheating
-ace_overheating_displayTextOnJam = true;
-force ace_overheating_enabled = true;
-force ace_overheating_overheatingDispersion = true;
-ace_overheating_showParticleEffects = true;
-ace_overheating_showParticleEffectsForEveryone = true;
-force force ace_overheating_unJamFailChance = 0;
-force force ace_overheating_unJamOnreload = true;
+force force ace_overheating_enabled = false;
 
 // ACE Pointing
 force force ace_finger_enabled = true;
@@ -418,8 +412,13 @@ acex_volume_remindIfLowered = true;
 acex_volume_showNotification = true;
 
 // ACRE2
-force acre_sys_core_ts3ChannelSwitch = false;
-force acre_sys_signal_signalModel = 0;
+force force acre_sys_core_fullDuplex = true;
+force force acre_sys_core_ignoreAntennaDirection = true;
+force force acre_sys_core_interference = false;
+acre_sys_core_postmixGlobalVolume = 1.5042;
+force force acre_sys_core_revealToAI = 0;
+force force acre_sys_core_ts3ChannelSwitch = false;
+force force acre_sys_signal_signalModel = 0;
 
 // Laxemann Immerse
 force force L_Immerse_twitch = false;
@@ -436,3 +435,21 @@ force force L_Suppress_recovery = 1;
 
 // NIArms
 force force niarms_magSwitch = true;
+
+// LAMBS - Danger
+// lambs_danger_CQB_range = 50;
+// lambs_danger_debug_Drawing = false;
+// lambs_danger_debug_FSM = false;
+// lambs_danger_debug_FSM_civ = false;
+// lambs_danger_debug_functions = false;
+force lambs_danger_disableAIPlayerGroup = true;
+force lambs_danger_disableAIPlayerGroupReaction = true;
+force lambs_danger_disableAIPlayerGroupSuppression = true;
+// lambs_danger_minSuppression_range = 25;
+// lambs_danger_panic_chance = 10;
+// lambs_danger_radio_backpack = 2000;
+// lambs_danger_radio_EAST = 500;
+// lambs_danger_radio_GUER = 500;
+// lambs_danger_radio_shout = 50;
+// lambs_danger_radio_WEST = 500;
+// lambs_danger_RenderExpectedDestination = false;
