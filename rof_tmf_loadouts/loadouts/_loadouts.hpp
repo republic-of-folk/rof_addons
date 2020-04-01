@@ -349,12 +349,12 @@ class CfgLoadouts
     };
     class SANTA_BLUE {
         displayName = "Ded Moroz Little Helpers (BLUE)";
-        category = "Independent";
+        category = "Special";
         #include "santa_blue.hpp"
     };
     class SANTA_GREEN {
         displayName = "Satans Little Helpers (GREEN)";
-        category = "Independent";
+        category = "Special";
         #include "santa_green.hpp"
     };
     class LWP_SUMMER {
