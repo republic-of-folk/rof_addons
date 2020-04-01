@@ -1,5 +1,5 @@
 class Bag_Base;
-class usm_pack_alice;
+class usm_pack_alice: Bag_Base {};
 class usm_pack_alice_prc119: Bag_Base
 {
     scope = 1;
@@ -110,7 +110,7 @@ class usm_pack_alice_medic: usm_pack_alice
 };
 class usm_pack_alice_medic_empty: usm_pack_alice_medic
 {
-    scope = 2;
+    scope = 1;
     class TransportItems
     {
         delete _xx_FirstAidKit;
