@@ -176,6 +176,7 @@ class fac : r_light
 {
     displayName = "Radioman";
     backpack[] = {"usm_pack_st138_prc77_empty"};
+    // backpack[] = {"B_RadioBag_01_digi_F"};
 };
 class ar : r
 {
