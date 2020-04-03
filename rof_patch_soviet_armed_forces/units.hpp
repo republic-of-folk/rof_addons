@@ -1,61 +1,18 @@
-class CAManBase;
 class SoldierEB;
-class O_Soldier_base_F: SoldierEB
-{
-    class EventHandlers;
-};
-class O_medic_F: SoldierEB
-{
-    class EventHandlers;
-};
-class O_Soldier_TL_F: SoldierEB
-{
-    class EventHandlers;
-};
-class O_crew_F: SoldierEB
-{
-    class EventHandlers;
-};
-class O_Soldier_AR_F: SoldierEB
-{
-    class EventHandlers;
-};
-class O_Soldier_SL_F: SoldierEB
-{
-    class EventHandlers;
-};
-class O_Soldier_GL_F: SoldierEB
-{
-    class EventHandlers;
-};
-class O_soldier_M_F: SoldierEB
-{
-    class EventHandlers;
-};
-class O_Soldier_support_base_F: SoldierEB
-{
-    class EventHandlers;
-};
-class o_soldier_unarmed_f: SoldierEB
-{
-    class EventHandlers;
-};
-class O_support_MG_F: SoldierEB
-{
-    class EventHandlers;
-};
-class O_Soldier_F: SoldierEB
-{
-    class EventHandlers;
-};
-class O_Soldier_AT_F: SoldierEB
-{
-    class EventHandlers;
-};
-class O_Soldier_AAT_F: SoldierEB
-{
-    class EventHandlers;
-};
+class O_medic_F;
+class O_Soldier_TL_F;
+class O_crew_F;
+class O_Soldier_AR_F;
+class O_Soldier_SL_F;
+class O_Soldier_GL_F;
+class O_soldier_M_F;
+class O_Soldier_support_base_F;
+class o_soldier_unarmed_f;
+class O_support_MG_F;
+class O_Soldier_F;
+class O_Soldier_AT_F;
+class O_Soldier_AAT_F;
+
 class oksv_wood_rifleman: O_Soldier_F
 {
     _generalMacro = "O_Soldier_F";

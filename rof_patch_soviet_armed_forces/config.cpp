@@ -7,7 +7,7 @@ class CfgPatches
         units[] = {};
         weapons[] = {};
         requiredVersion = 1.5;
-        requiredAddons[] = {"rhs_main", "40th_bp_cfg", "OKSV_units_addon", "40th_headgears_conf", "40th_insignia_cfg", "40th_objects_cfg", "40th_uniforms_conf", "40th_vests_conf", "40th_weapons_cfg"};
+        requiredAddons[] = {"A3_Characters_F", "rhs_main", "40th_bp_cfg", "OKSV_units_addon", "40th_headgears_conf", "40th_insignia_cfg", "40th_objects_cfg", "40th_uniforms_conf", "40th_vests_conf", "40th_weapons_cfg"};
     };
 };
 
