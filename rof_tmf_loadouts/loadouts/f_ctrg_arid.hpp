@@ -45,6 +45,7 @@ class baseMan {// Weaponless baseclass
         LIST_10("ACE_fieldDressing"),
         LIST_3("ACE_morphine"),
         LIST_1("ACE_epinephrine"),
+        LIST_1("ACE_salineIV_500"),
         LIST_2("ACE_CableTie"),
         LIST_1("ACE_Earplugs"),
         LIST_1("ACE_IR_Strobe_Item")
@@ -105,23 +106,21 @@ class r_light : r
     displayName = "Rifleman (Light)";
     primaryWeapon[] =
     {
-        "arifle_SPAR_02_snd_F",
-        "arifle_SPAR_02_blk_F"
+        "arifle_SPAR_02_blk_F",
     };
     silencer[] =
     {
         "muzzle_snds_m",
-        "muzzle_snds_m_snd_f"
     };
     magazines[] =
     {
-        LIST_10("30Rnd_556x45_Stanag_red"),
-        LIST_2("HandGrenade"),
+        LIST_8("30Rnd_556x45_Stanag_red"),
+        LIST_1("HandGrenade"),
         LIST_2("SmokeShell"),
         LIST_1("SmokeShellGreen"),
         LIST_2("Chemlight_Green"),
-        LIST_2("ACE_M84"),
-        LIST_3("16Rnd_9x21_red_Mag")
+        LIST_1("ACE_M84"),
+        LIST_2("16Rnd_9x21_red_Mag")
     };
 };
 class g : r
@@ -169,13 +168,12 @@ class m : r
 {
     displayName = "Medic";
     backpackItems[] = {
+        LIST_1("ACE_surgicalKit"),
+        LIST_1("ACE_personalAidKit"),
         LIST_20("ACE_fieldDressing"),
-        LIST_15("ACE_fieldDressing"),
         LIST_10("ACE_morphine"),
         LIST_10("ACE_epinephrine"),
-        LIST_4("ACE_bloodIV_250"),
-        LIST_2("ACE_bloodIV_500"),
-        LIST_1("ACE_bloodIV")
+        LIST_6("ACE_salineIV_500"),
     };
     items[] += {LIST_2("SmokeShell")};
 };
@@ -212,12 +210,11 @@ class smg : r
 class ftl : r
 {
     displayName = "Fireteam Leader";
-    primaryWeapon[] = {"arifle_SPAR_01_GL_snd_F"};
+    primaryWeapon[] = {"arifle_SPAR_01_GL_blk_F"};
     scope[] = {"optic_erco_snd_f"};
     silencer[] =
     {
-        "muzzle_snds_m",
-        "muzzle_snds_m_snd_f"
+        "muzzle_snds_m"
     };
     magazines[] =
     {
@@ -294,14 +291,12 @@ class fac : car
     //backPack[] = {"B_RadioBag_01_eaf_F"};
     primaryWeapon[] =
     {
-        "arifle_SPAR_01_GL_snd_F",
-        "arifle_SPAR_01_GL_blk_F"
+        "arifle_SPAR_01_GL_blk_F",
     };
     scope[] = {};
     silencer[] =
     {
         "muzzle_snds_m",
-        "muzzle_snds_m_snd_f"
     };
     magazines[] =
     {
@@ -332,10 +327,10 @@ class fac : car
 class ar : r
 {
     displayName = "Automatic Rifleman";
-    primaryWeapon[] = {"arifle_SPAR_02_snd_F"};
+    primaryWeapon[] = {"arifle_SPAR_02_blk_F"};
     scope[] = {"optic_erco_snd_f"};
-    bipod[] = {"bipod_01_f_snd"};
-    silencer[] = {"muzzle_snds_m_snd_f"};
+    bipod[] = {"bipod_01_f"};
+    silencer[] = {"muzzle_snds_m_f"};
     magazines[] =
     {
         LIST_3("150Rnd_556x45_Drum_Sand_Mag_F"),
@@ -391,6 +386,7 @@ class dm : r
         LIST_3("16Rnd_9x21_red_Mag")
     };
 };
+
 class mmgg : ar
 {
     displayName = "MMG Gunner [DLC]";
@@ -413,16 +409,6 @@ class mmgg : ar
         LIST_3("16Rnd_9x21_red_Mag")
     };
 };
-class mmgac : r_light
-{
-    displayName = "MMG Ammo Carrier";
-    backPack[] = {"B_Carryall_cbr"};
-    backpackItems[] =
-    {
-        LIST_4("130Rnd_338_Mag"),
-        LIST_1("ACE_Tripod")
-    };
-};
 class mmgag : aar
 {
     displayName = "MMG Assistant Gunner";
@@ -441,20 +427,26 @@ class mmgag : aar
         LIST_1("ACE_SpottingScope")
     };
 };
+class mmgac : r_light
+{
+    displayName = "MMG Ammo Carrier";
+    backPack[] = {"B_Carryall_cbr"};
+    backpackItems[] =
+    {
+        LIST_4("130Rnd_338_Mag"),
+        LIST_1("ACE_Tripod")
+    };
+};
+
 class hmgg : r_light
 {
-    displayName = "HMG Gunner";
+    displayName = "HMG Gunner (Legacy)";
     backPack[] = {"B_HMG_01_weapon_F"};
 
 };
-class hmgac : r_light
-{
-    displayName = "HMG Ammo Carrier";
-    backPack[] = {"B_HMG_01_weapon_F"};
-};
 class hmgag : r_light
 {
-    displayName = "HMG Assistant Gunner";
+    displayName = "HMG Assistant Gunner (Legacy)";
     backPack[] = {"B_HMG_01_support_F"};
     linkedItems[] =
     {
@@ -465,6 +457,41 @@ class hmgag : r_light
         "ItemGPS"
     };
 };
+class hmgac : r_light
+{
+    displayName = "HMG Ammo Carrier (Legacy)";
+    backPack[] = {"B_HMG_01_weapon_F"};
+};
+class hmgg_csw : r_light
+{
+    displayName = "HMG Gunner (CSW)";
+    secondaryWeapon[] = {"ace_csw_staticHMGCarry"};
+
+};
+class hmgag_csw : r_light
+{
+    displayName = "HMG Assistant Gunner (CSW)";
+    secondaryWeapon[] = {"ace_csw_m3CarryTripodLow"};
+    linkedItems[] =
+    {
+        "ItemMap",
+        "ItemCompass",
+        "ItemWatch",
+        "Rangefinder",
+        "ItemGPS"
+    };
+    backpack[] = {"B_Kitbag_cbr"};
+};
+class hmgac_csw : r_light
+{
+    displayName = "HMG Ammo Carrier (CSW)";
+    backpack[] = {"B_Bergen_mcamo_F"};
+    backpackItems[] = {
+        LIST_3("ace_csw_100Rnd_127x99_mag"),
+        LIST_2("ace_csw_100Rnd_127x99_mag_yellow"),
+    };
+};
+
 class matg : r_light
 {
     displayName = "MAT Gunner";
@@ -505,9 +532,10 @@ class matag : r_light
         LIST_2("MRAWS_HE_F")
     };
 };
+
 class hatg : r_light
 {
-    displayName = "HAT Gunner";
+    displayName = "HAT Gunner (Legacy)";
     backPack[] = {"B_Kitbag_cbr"};
     secondaryWeapon[] = {"launch_B_Titan_short_F"};
     secondaryAttachments[] = {"acc_pointer_ir"};
@@ -517,19 +545,9 @@ class hatg : r_light
         "Titan_AP"
     };
 };
-class hatac : r_light
-{
-    displayName = "HAT Ammo Carrier";
-    backPack[] = {"B_Carryall_cbr"};
-    backpackItems[] =
-    {
-        LIST_2("Titan_AT"),
-        LIST_2("Titan_AP")
-    };
-};
 class hatag : r_light
 {
-    displayName = "HAT Assistant Gunner";
+    displayName = "HAT Assistant Gunner (Legacy)";
     backPack[] = {"B_Kitbag_cbr"};
     backpackItems[] =
     {
@@ -545,6 +563,45 @@ class hatag : r_light
         "ItemGPS"
     };
 };
+class hatac : r_light
+{
+    displayName = "HAT Ammo Carrier (Legacy)";
+    backPack[] = {"B_Carryall_cbr"};
+    backpackItems[] =
+    {
+        LIST_2("Titan_AT"),
+        LIST_2("Titan_AP")
+    };
+};
+class hatg_csw : r_light
+{
+    displayName = "HAT Gunner (CSW)";
+    secondaryWeapon[] = {"ace_csw_staticATCarry"};
+};
+class hatag_csw : r_light
+{
+    displayName = "HAT Assistant Gunner (CSW)";
+    secondaryWeapon[] = {"ace_csw_m3CarryTripod"};
+    backpack[] = {"B_Kitbag_cbr"};
+    linkedItems[] =
+    {
+        "ItemMap",
+        "ItemCompass",
+        "ItemWatch",
+        "Rangefinder",
+        "ItemGPS"
+    };
+};
+class hatac_csw : r_light
+{
+    displayName = "HAT Ammo Carrier (CSW)";
+    backpack[] = {"B_Bergen_mcamo_F"};
+    backpackItems[] =
+    {
+        LIST_4("Titan_AT"),
+    };
+};
+
 class mtrg : r_light
 {
     displayName = "Mortar Gunner";
@@ -557,11 +614,6 @@ class mtrg : r_light
         "ItemGPS"
     };
     items[] += {"ACE_MapTools","ACE_RangeTable_82mm"};
-};
-class mtrac : r_light
-{
-    displayName = "Mortar Ammo Carrier";
-    backPack[] = {"B_Mortar_01_weapon_F"};
 };
 class mtrag : r_light
 {
@@ -577,6 +629,49 @@ class mtrag : r_light
     };
     items[] += {"ACE_MapTools","ACE_RangeTable_82mm"};
 };
+class mtrac : r_light
+{
+    displayName = "Mortar Ammo Carrier";
+    backPack[] = {"B_Mortar_01_weapon_F"};
+};
+class mtrg_csw : r_light
+{
+    displayName = "Mortar Gunner (CSW)";
+    secondaryWeapon[] = {"ace_csw_staticMortarCarry"};
+    linkedItems[] =
+    {
+        "ItemMap",
+        "ItemCompass",
+        "ItemWatch",
+        "ItemGPS"
+    };
+    items[] += {"ACE_MapTools","ACE_RangeTable_82mm"};
+};
+class mtrag_csw : r_light
+{
+    displayName = "Mortar Assistant Gunner (CSW)";
+    secondaryWeapon[] = {"ace_csw_carryMortarBaseplate"};
+    linkedItems[] =
+    {
+        "ItemMap",
+        "ItemCompass",
+        "ItemWatch",
+        "Rangefinder",
+        "ItemGPS"
+    };
+    items[] += {"ACE_MapTools","ACE_RangeTable_82mm"};
+    backpack[] = {"B_Kitbag_cbr"};
+};
+class mtrac_csw : r_light
+{
+    displayName = "Mortar Ammo Carrier (CSW)";
+    backpack[] = {"B_Bergen_mcamo_F"};
+    backpackItems[] = {
+        LIST_6("ACE_1Rnd_82mm_Mo_HE"),
+        LIST_2("ACE_1Rnd_82mm_Mo_Smoke"),
+    };
+};
+
 class samg : r_light
 {
     displayName = "AA Missile Specialist";
@@ -755,10 +850,12 @@ class jp : pp
         "SmokeShellBlue",
         "Chemlight_Green"
     };
-    items[] = {
+    items[] =
+    {
         LIST_10("ACE_fieldDressing"),
         LIST_3("ACE_morphine"),
-        LIST_1("ACE_epinephrine")
+        LIST_1("ACE_epinephrine"),
+        LIST_1("ACE_salineIV_500"),
     };
 };
 class UAV : r_light

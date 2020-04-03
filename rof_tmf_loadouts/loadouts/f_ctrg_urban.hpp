@@ -35,6 +35,7 @@ class baseMan {// Weaponless baseclass
         LIST_10("ACE_fieldDressing"),
         LIST_3("ACE_morphine"),
         LIST_1("ACE_epinephrine"),
+        LIST_1("ACE_salineIV_500"),
         LIST_2("ACE_CableTie"),
         LIST_1("ACE_Earplugs"),
         LIST_1("ACE_IR_Strobe_Item")
@@ -82,6 +83,15 @@ class r_light : r
     displayName = "Rifleman (Light)";
     primaryWeapon[] = {"arifle_SPAR_01_blk_F"};
     vest[] = {"V_TacVest_oli"};
+    magazines[] =
+    {
+        LIST_8("30Rnd_556x45_Stanag_red"),
+        LIST_1("HandGrenade"),
+        LIST_1("SmokeShell"),
+        LIST_1("SmokeShellGreen"),
+        LIST_2("Chemlight_Green"),
+        LIST_2("16Rnd_9x21_red_Mag")
+    };
 };
 class g : r
 {
@@ -105,7 +115,7 @@ class g : r
     };
     items[] += {"ACE_HuntIR_monitor"};
 };
-class car : r
+class car : r_light
 {
     displayName = "Carabinier";
     primaryWeapon[] = {"arifle_SPAR_01_blk_F"};
@@ -115,13 +125,12 @@ class m : r
 {
     displayName = "Medic";
     backpackItems[] = {
+        LIST_1("ACE_surgicalKit"),
+        LIST_1("ACE_personalAidKit"),
         LIST_20("ACE_fieldDressing"),
-        LIST_15("ACE_fieldDressing"),
         LIST_10("ACE_morphine"),
         LIST_10("ACE_epinephrine"),
-        LIST_4("ACE_bloodIV_250"),
-        LIST_2("ACE_bloodIV_500"),
-        LIST_1("ACE_bloodIV")
+        LIST_6("ACE_salineIV_500"),
     };
     items[] += {LIST_3("SmokeShell")};
 };
@@ -354,18 +363,13 @@ class mmgag : aar
 };
 class hmgg : car
 {
-    displayName = "HMG Gunner";
+    displayName = "HMG Gunner (Legacy)";
     backPack[] = {"B_HMG_01_weapon_F"};
 
 };
-class hmgac : car
-{
-    displayName = "HMG Ammo Carrier";
-    backPack[] = {"B_HMG_01_weapon_F"};
-};
 class hmgag : car
 {
-    displayName = "HMG Assistant Gunner";
+    displayName = "HMG Assistant Gunner (Legacy)";
     backPack[] = {"B_HMG_01_support_F"};
     linkedItems[] =
     {
@@ -376,22 +380,45 @@ class hmgag : car
         "ItemGPS"
     };
 };
+class hmgac : car
+{
+    displayName = "HMG Ammo Carrier (Legacy)";
+    backPack[] = {"B_HMG_01_weapon_F"};
+};
+class hmgg_csw : car
+{
+    displayName = "HMG Gunner (CSW)";
+    secondaryWeapon[] = {"ace_csw_staticHMGCarry"};
+};
+class hmgag_csw : car
+{
+    displayName = "HMG Assistant Gunner (CSW)";
+    secondaryWeapon[] = {"ace_csw_m3CarryTripodLow"};
+    linkedItems[] =
+    {
+        "ItemMap",
+        "ItemCompass",
+        "ItemWatch",
+        "Rangefinder",
+        "ItemGPS"
+    };
+    backpack[] = {"B_Kitbag_cbr"};
+};
+class hmgac_csw : car
+{
+    displayName = "HMG Ammo Carrier (CSW)";
+    backpack[] = {"B_Bergen_mcamo_F"};
+    backpackItems[] = {
+        LIST_3("ace_csw_100Rnd_127x99_mag"),
+        LIST_2("ace_csw_100Rnd_127x99_mag_yellow"),
+    };
+};
 class matg : car
 {
     displayName = "MAT Gunner";
     secondaryWeapon[] = {"launch_MRAWS_olive_F"};
     secondaryAttachments[] = {"acc_pointer_ir"};
     backPack[] = {"B_FieldPack_oli"};
-    backpackItems[] =
-    {
-        LIST_2("MRAWS_HEAT_F"),
-        LIST_2("MRAWS_HE_F")
-    };
-};
-class matac : r_light
-{
-    displayName = "MAT Ammo Carrier";
-    backPack[] = {"B_Kitbag_sgg"};
     backpackItems[] =
     {
         LIST_2("MRAWS_HEAT_F"),
@@ -416,9 +443,19 @@ class matag : r_light
         LIST_2("MRAWS_HE_F")
     };
 };
+class matac : r_light
+{
+    displayName = "MAT Ammo Carrier";
+    backPack[] = {"B_Kitbag_sgg"};
+    backpackItems[] =
+    {
+        LIST_2("MRAWS_HEAT_F"),
+        LIST_2("MRAWS_HE_F")
+    };
+};
 class hatg : car
 {
-    displayName = "HAT Gunner";
+    displayName = "HAT Gunner (Legacy)";
     backPack[] = {"B_Kitbag_sgg"};
     secondaryWeapon[] = {"launch_B_Titan_short_tna_F"};
     secondaryAttachments[] = {"acc_pointer_ir"};
@@ -428,19 +465,9 @@ class hatg : car
         "Titan_AP"
     };
 };
-class hatac : car
-{
-    displayName = "HAT Ammo Carrier";
-    backPack[] = {"B_Carryall_oli"};
-    backpackItems[] =
-    {
-        LIST_2("Titan_AT"),
-        LIST_2("Titan_AP")
-    };
-};
 class hatag : car
 {
-    displayName = "HAT Assistant Gunner";
+    displayName = "HAT Assistant Gunner (Legacy)";
     backPack[] = {"B_Kitbag_sgg"};
     backpackItems[] =
     {
@@ -456,7 +483,47 @@ class hatag : car
         "ItemGPS"
     };
 };
-class mtrg : car
+class hatac : car
+{
+    displayName = "HAT Ammo Carrier (Legacy)";
+    backPack[] = {"B_Carryall_oli"};
+    backpackItems[] =
+    {
+        LIST_2("Titan_AT"),
+        LIST_2("Titan_AP")
+    };
+};
+class hatg_csw : car
+{
+    displayName = "HAT Gunner (CSW)";
+    headgear[] = {"H_HelmetIA"};
+    secondaryWeapon[] = {"ace_csw_staticATCarry"};
+};
+class hatag_csw : car
+{
+    displayName = "HAT Assistant Gunner (CSW)";
+    secondaryWeapon[] = {"ace_csw_m3CarryTripod"};
+    backpack[] = {"B_Kitbag_sgg"};
+    linkedItems[] =
+    {
+        "ItemMap",
+        "ItemCompass",
+        "ItemWatch",
+        "Rangefinder",
+        "ItemGPS"
+    };
+};
+class hatac_csw : r_light
+{
+    displayName = "HAT Ammo Carrier (CSW)";
+    headgear[] = {"H_HelmetIA"};
+    backpack[] = {"B_Bergen_mcamo_F"};
+    backpackItems[] =
+    {
+        LIST_4("Titan_AT"),
+    };
+};
+class mtrg : r_light
 {
     displayName = "Mortar Gunner";
     backPack[] = {"B_Mortar_01_weapon_F"};
@@ -469,12 +536,7 @@ class mtrg : car
     };
     items[] += {"ACE_MapTools","ACE_RangeTable_82mm"};
 };
-class mtrac : car
-{
-    displayName = "Mortar Ammo Carrier";
-    backPack[] = {"B_Mortar_01_weapon_F"};
-};
-class mtrag : car
+class mtrag : r_light
 {
     displayName = "Mortar Assistant Gunner";
     backPack[] = {"B_Mortar_01_support_F"};
@@ -487,6 +549,48 @@ class mtrag : car
         "ItemGPS"
     };
     items[] += {"ACE_MapTools","ACE_RangeTable_82mm"};
+};
+class mtrac : r_light
+{
+    displayName = "Mortar Ammo Carrier";
+    backPack[] = {"B_Mortar_01_weapon_F"};
+};
+class mtrg_csw : r_light
+{
+    displayName = "Mortar Gunner (CSW)";
+    secondaryWeapon[] = {"ace_csw_staticMortarCarry"};
+    linkedItems[] =
+    {
+        "ItemMap",
+        "ItemCompass",
+        "ItemWatch",
+        "ItemGPS"
+    };
+    items[] += {"ACE_MapTools","ACE_RangeTable_82mm"};
+};
+class mtrag_csw : r_light
+{
+    displayName = "Mortar Assistant Gunner (CSW)";
+    secondaryWeapon[] = {"ace_csw_carryMortarBaseplate"};
+    linkedItems[] =
+    {
+        "ItemMap",
+        "ItemCompass",
+        "ItemWatch",
+        "Rangefinder",
+        "ItemGPS"
+    };
+    items[] += {"ACE_MapTools","ACE_RangeTable_82mm"};
+    backpack[] = {"B_Kitbag_cbr"};
+};
+class mtrac_csw : r_light
+{
+    displayName = "Mortar Ammo Carrier (CSW)";
+    backpack[] = {"B_Bergen_mcamo_F"};
+    backpackItems[] = {
+        LIST_6("ACE_1Rnd_82mm_Mo_HE"),
+        LIST_2("ACE_1Rnd_82mm_Mo_Smoke"),
+    };
 };
 class samg : car
 {
@@ -672,10 +776,12 @@ class jp : pp
         "SmokeShellBlue",
         "Chemlight_Green"
     };
-    items[] = {
+    items[] =
+    {
         LIST_10("ACE_fieldDressing"),
         LIST_3("ACE_morphine"),
-        LIST_1("ACE_epinephrine")
+        LIST_1("ACE_epinephrine"),
+        LIST_1("ACE_salineIV_500"),
     };
 };
 class UAV : car
