@@ -105,10 +105,12 @@ class m : r_light
     insignias[] = {"gm_gc_armpatch_medical"};
     backpack[] = {"gm_ge_backpack_satchel_80_san"};
     backpackItems[] = {
+        LIST_1("ACE_surgicalKit"),
+        LIST_1("ACE_personalAidKit"),
         LIST_20("ACE_fieldDressing"),
         LIST_10("ACE_morphine"),
         LIST_10("ACE_epinephrine"),
-        LIST_6("ACE_bloodIV_500")
+        LIST_6("ACE_salineIV_500"),
     };
     items[] = {};
 };

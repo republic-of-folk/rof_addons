@@ -68,10 +68,12 @@ class r : baseMan
         LIST_1("rhsusf_8Rnd_00Buck"),
         LIST_1("rhs_mag_rdg2_white")
     };
-    items[] = {
+    items[] =
+    {
         LIST_10("ACE_fieldDressing"),
         LIST_3("ACE_morphine"),
-        LIST_1("ACE_epinephrine")
+        LIST_1("ACE_epinephrine"),
+        LIST_1("ACE_salineIV_500"),
     };
 };
 class r_light : r
@@ -124,10 +126,12 @@ class m : smg
     vest[] = {"V_BandollierB_khk"};
     backpack[] = {"rhs_medic_bag"};
     backpackItems[] = {
+        LIST_1("ACE_surgicalKit"),
+        LIST_1("ACE_personalAidKit"),
         LIST_20("ACE_fieldDressing"),
         LIST_10("ACE_morphine"),
         LIST_10("ACE_epinephrine"),
-        LIST_6("ACE_bloodIV_500")
+        LIST_6("ACE_salineIV_500"),
     };
 };
 class ftl : r_light
@@ -145,9 +149,10 @@ class co : sl
 {
     displayName = "Platoon Leader";
 };
-class fac : co
+class fac : r_light
 {
-    displayName = "Forward Air Controller";
+    displayName = "Radioman";
+    backpack[] = {"usm_pack_st138_prc77_empty"};
 };
 class ar : car
 {
@@ -319,10 +324,10 @@ class samag : r_light
         "Rangefinder",
         "ItemGPS"
     };
-    backPack[] = {"B_Carryall_oli"};
+    backPack[] = {"rhssaf_alice_smb"};
     backpackItems[] =
     {
-        LIST_2("rhs_fim92_mag")
+        LIST_3("rhs_fim92_mag")
     };
 };
 class sn : r

@@ -100,10 +100,12 @@ class m : r_light
     traits[] += {"medic"};
     backPack[] = {"rhs_medic_bag"};
     backpackItems[] = {
+        LIST_1("ACE_surgicalKit"),
+        LIST_1("ACE_personalAidKit"),
         LIST_20("ACE_fieldDressing"),
         LIST_10("ACE_morphine"),
         LIST_10("ACE_epinephrine"),
-        LIST_6("ACE_bloodIV_500")
+        LIST_6("ACE_salineIV_500"),
     };
 };
 class smg : r_light
@@ -161,7 +163,7 @@ class fac : ftl
 class ar : r
 {
     displayName = "Automatic Rifleman";
-	vest[] = {"usm_vest_LBE_mg"};
+	vest[] = {"usm_vest_LBE_mg_m"};
     primaryWeapon[] = {"rhs_weap_m249"};
     magazines[] =
     {
@@ -208,7 +210,7 @@ class mmgg : ar
     backpackItems[] = {
         LIST_1("hlc_100Rnd_762x51_M_M60E4")
     };
-    backPack[] = {"usm_pack_762x51_ammobelts"};
+    backPack[] = {"usm_pack_762x51_ammobelts_empty"};
 };
 class mmgac : r_light
 {

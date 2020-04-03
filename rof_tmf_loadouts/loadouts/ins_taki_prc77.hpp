@@ -63,10 +63,12 @@ class r : baseMan
         LIST_2("rhs_mag_rgd5"),
         LIST_1("rhs_mag_rdg2_white")
     };
-    items[] = {
+    items[] =
+    {
         LIST_10("ACE_fieldDressing"),
         LIST_3("ACE_morphine"),
-        LIST_1("ACE_epinephrine")
+        LIST_1("ACE_epinephrine"),
+        LIST_1("ACE_salineIV_500"),
     };
 };
 class r_light : r
@@ -115,10 +117,12 @@ class m : r_light
     traits[] += {"medic"};
     backpack[] = {"rhs_medic_bag"};
     backpackItems[] = {
+        LIST_1("ACE_surgicalKit"),
+        LIST_1("ACE_personalAidKit"),
         LIST_20("ACE_fieldDressing"),
         LIST_10("ACE_morphine"),
         LIST_10("ACE_epinephrine"),
-        LIST_6("ACE_bloodIV_500")
+        LIST_6("ACE_salineIV_500"),
     };
 };
 class smg : r
@@ -468,10 +472,12 @@ class jp : baseMan
     {
         LIST_4("rhs_mag_9x18_8_57N181S")
     };
-    items[] = {
+    items[] =
+    {
         LIST_10("ACE_fieldDressing"),
         LIST_3("ACE_morphine"),
-        LIST_1("ACE_epinephrine")
+        LIST_1("ACE_epinephrine"),
+        LIST_1("ACE_salineIV_500"),
     };
     linkedItems[] = {"ItemMap","ItemGPS","ItemCompass","ItemWatch"};
 };

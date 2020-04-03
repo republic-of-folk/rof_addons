@@ -44,7 +44,8 @@ class baseMan {// Weaponless baseclass
         LIST_10("ACE_fieldDressing"),
         LIST_3("ACE_morphine"),
         LIST_1("ACE_epinephrine"),
-        LIST_2("ACE_CableTie")
+        LIST_1("ACE_salineIV_500"),
+        LIST_2("ACE_CableTie"),
     };
     // These are added directly into their respective slots
     linkedItems[] =
@@ -137,13 +138,12 @@ class m : r
     displayName = "Medic";
     vest[] = {"V_PlateCarrierSpec_tna_F"};
     backpackItems[] = {
+        LIST_1("ACE_surgicalKit"),
+        LIST_1("ACE_personalAidKit"),
         LIST_20("ACE_fieldDressing"),
-        LIST_15("ACE_fieldDressing"),
         LIST_10("ACE_morphine"),
         LIST_10("ACE_epinephrine"),
-        LIST_4("ACE_bloodIV_250"),
-        LIST_2("ACE_bloodIV_500"),
-        LIST_1("ACE_bloodIV")
+        LIST_6("ACE_salineIV_500"),
     };
     items[] += {LIST_2("SmokeShell")};
 };
@@ -755,10 +755,12 @@ class jp : pp
         "SmokeShellBlue",
         "Chemlight_Green"
     };
-    items[] = {
+    items[] =
+    {
         LIST_10("ACE_fieldDressing"),
         LIST_3("ACE_morphine"),
-        LIST_1("ACE_epinephrine")
+        LIST_1("ACE_epinephrine"),
+        LIST_1("ACE_salineIV_500"),
     };
 };
 class UAV : r

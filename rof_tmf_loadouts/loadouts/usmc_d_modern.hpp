@@ -77,10 +77,12 @@ class r : baseMan
         LIST_2("rhs_mag_m67"),
         LIST_2("rhs_mag_an_m8hc")
     };
-    items[] = {
+    items[] =
+    {
         LIST_10("ACE_fieldDressing"),
         LIST_3("ACE_morphine"),
-        LIST_1("ACE_epinephrine")
+        LIST_1("ACE_epinephrine"),
+        LIST_1("ACE_salineIV_500"),
     };
 };
 class r_light : r
@@ -122,10 +124,12 @@ class m : car
     traits[] += {"medic"};
     vest[] = {"rhsusf_spc_corpsman"};
     backpackItems[] = {
+        LIST_1("ACE_surgicalKit"),
+        LIST_1("ACE_personalAidKit"),
         LIST_20("ACE_fieldDressing"),
         LIST_10("ACE_morphine"),
         LIST_10("ACE_epinephrine"),
-        LIST_6("ACE_bloodIV_500")
+        LIST_6("ACE_salineIV_500"),
     };
     items[] = {};
 };
@@ -305,6 +309,7 @@ class matg : r_light
     backpack[] = {"B_Carryall_cbr"};
     secondaryWeapon[] = {"rhs_weap_smaw_green"};
     secondaryAttachments[] = {"rhs_weap_optic_smaw"};
+    secondaryMagazine[] = {"rhs_mag_smaw_HEAA"};
     magazines[] +=
     {
         "rhs_mag_smaw_HEAA",

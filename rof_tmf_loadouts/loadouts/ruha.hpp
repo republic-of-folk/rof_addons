@@ -511,7 +511,7 @@ class engm : car
 {
     displayName = "Combat Engineer (Mines)";
     vest[] = {"rhs_6b23_digi_vydra_3m"};
-    backpack[] = {"B_Bergen_dgtl_F"};
+    backpack[] = {"rhssaf_alice_smb"};
     items[] +=
     {
         // TO REPLACE: "ACE_DefusalKit"

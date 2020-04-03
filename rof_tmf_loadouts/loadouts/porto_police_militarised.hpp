@@ -40,10 +40,12 @@ class baseMan {// Weaponless baseclass
 
     // These are added to the uniform or vest
     magazines[] = {};
-    items[] = {
+    items[] =
+    {
         LIST_10("ACE_fieldDressing"),
         LIST_3("ACE_morphine"),
-        LIST_1("ACE_epinephrine")
+        LIST_1("ACE_epinephrine"),
+        LIST_1("ACE_salineIV_500"),
     };
     // These are added directly into their respective slots
     linkedItems[] = {

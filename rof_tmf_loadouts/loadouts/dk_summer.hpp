@@ -66,10 +66,12 @@ class r_light : baseMan
         LIST_6("gm_20Rnd_762x51mm_B_DM41_g3_blk"),
         LIST_1("SmokeShell")
     };
-    items[] = {
+    items[] =
+    {
         LIST_10("ACE_fieldDressing"),
         LIST_3("ACE_morphine"),
-        LIST_1("ACE_epinephrine")
+        LIST_1("ACE_epinephrine"),
+        LIST_1("ACE_salineIV_500"),
     };
 };
 class r : r_light
@@ -101,10 +103,12 @@ class m : r_light
     vest[] = {"gm_ge_army_vest_80_medic"};
     backpack[] = {"gm_ge_backpack_satchel_80_san"};
     backpackItems[] = {
+        LIST_1("ACE_surgicalKit"),
+        LIST_1("ACE_personalAidKit"),
         LIST_20("ACE_fieldDressing"),
         LIST_10("ACE_morphine"),
         LIST_10("ACE_epinephrine"),
-        LIST_6("ACE_bloodIV_500")
+        LIST_6("ACE_salineIV_500"),
     };
     items[] = {};
 };

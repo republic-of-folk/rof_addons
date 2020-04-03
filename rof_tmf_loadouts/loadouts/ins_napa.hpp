@@ -92,10 +92,12 @@ class r : baseMan
         LIST_9("rhs_30Rnd_762x39mm"),
         LIST_2("rhs_mag_f1")
 	};
-    items[] = {
+    items[] =
+    {
         LIST_10("ACE_fieldDressing"),
         LIST_3("ACE_morphine"),
-        LIST_1("ACE_epinephrine")
+        LIST_1("ACE_epinephrine"),
+        LIST_1("ACE_salineIV_500"),
     };
 };
 class car : r
@@ -151,10 +153,12 @@ class m : car
     traits[] += {"medic"};
 	backpack[] = {"rhs_medic_bag"};
     backpackItems[] = {
+        LIST_1("ACE_surgicalKit"),
+        LIST_1("ACE_personalAidKit"),
         LIST_20("ACE_fieldDressing"),
         LIST_10("ACE_morphine"),
         LIST_10("ACE_epinephrine"),
-        LIST_6("ACE_bloodIV_500")
+        LIST_6("ACE_salineIV_500"),
     };
     items[] = {};
 };

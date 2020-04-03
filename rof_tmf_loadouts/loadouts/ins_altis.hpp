@@ -64,10 +64,12 @@ class r : baseMan
         LIST_2("rhs_mag_rgd5"),
         LIST_2("rhs_mag_rdg2_white")
     };
-    items[] = {
+    items[] =
+    {
         LIST_10("ACE_fieldDressing"),
         LIST_3("ACE_morphine"),
-        LIST_1("ACE_epinephrine")
+        LIST_1("ACE_epinephrine"),
+        LIST_1("ACE_salineIV_500"),
     };
 };
 class r_light : r
@@ -103,10 +105,12 @@ class m : car
     displayName = "Medic";
     traits[] += {"medic"};
     backpackItems[] = {
+        LIST_1("ACE_surgicalKit"),
+        LIST_1("ACE_personalAidKit"),
         LIST_20("ACE_fieldDressing"),
         LIST_10("ACE_morphine"),
         LIST_10("ACE_epinephrine"),
-        LIST_6("ACE_bloodIV_500")
+        LIST_6("ACE_salineIV_500"),
     };
 };
 class smg : r
@@ -153,9 +157,10 @@ class co : sl
 {
     displayName = "Platoon Leader";
 };
-class fac : co
+class fac : r_light
 {
-    displayName = "Forward Air Controller";
+    displayName = "Radioman";
+    backpack[] = {"usm_pack_st138_prc77_empty"};
 };
 class ar : r
 {
@@ -450,10 +455,12 @@ class jp : baseMan
     {
         LIST_4("rhs_mag_9x18_8_57N181S")
     };
-    items[] = {
+    items[] =
+    {
         LIST_10("ACE_fieldDressing"),
         LIST_3("ACE_morphine"),
-        LIST_1("ACE_epinephrine")
+        LIST_1("ACE_epinephrine"),
+        LIST_1("ACE_salineIV_500"),
     };
     linkedItems[] = {"ItemMap","ItemGPS","ItemCompass","ItemWatch"};
 };
