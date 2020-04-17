@@ -426,7 +426,7 @@ class mtrg : r_light
 class mtrag : r_light
 {
     displayName = "Mortar Assistant Gunner (Legacy)";
-    backPack[] = {"I_HMG_01_support_F"};
+    backPack[] = {"I_Mortar_01_support_F"};
     linkedItems[] =
     {
         "ItemMap",
