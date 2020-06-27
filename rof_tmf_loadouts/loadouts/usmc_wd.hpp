@@ -195,7 +195,7 @@ class ar : r
     backpack[] = {};
     magazines[] =
     {
-        LIST_4("rhs_200rnd_556x45_M_SAW")
+        LIST_4("rhsusf_200Rnd_556x45_box")
     };
 };
 class aar : r
@@ -204,7 +204,7 @@ class aar : r
     backpack[] = {"B_Carryall_oli"};
     backpackItems[] =
     {
-        LIST_2("rhs_200rnd_556x45_M_SAW")
+        LIST_2("rhsusf_200Rnd_556x45_box")
     };
     linkedItems[] += {"Binocular"};
 };

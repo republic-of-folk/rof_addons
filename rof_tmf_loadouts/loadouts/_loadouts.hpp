@@ -1,14 +1,15 @@
+// #include "\rof_addons\rof_tmf_loadouts\loadouts\_macros.hpp"
 #include "_macros.hpp"
 
 class CfgLoadouts
 {
     class USMC_WD_MODERN {
-        displayName = "USMC (Woodland)";
+        displayName = "USMC (MARPAT Woodland)";
         category = "Blufor (Modern)";
         #include "usmc_wd_modern.hpp"
     };
     class USMC_D_MODERN {
-        displayName = "USMC (Desert)";
+        displayName = "USMC (MARPAT Desert)";
         category = "Blufor (Modern)";
         #include "usmc_d_modern.hpp"
     };

@@ -183,7 +183,7 @@ class ar : r
     sidearmWeapon[] = {"rhsusf_weap_m1911a1"};
     magazines[] =
     {
-        LIST_2("rhs_200rnd_556x45_M_SAW"),
+        LIST_2("rhsusf_200Rnd_556x45_box"),
         "rhs_200rnd_556x45_T_SAW",
         "rhs_mag_m67",
         "rhs_mag_an_m8hc",
@@ -195,7 +195,7 @@ class aar : r
     displayName = "Assistant Automatic Rifleman";
     backpackItems[] =
     {
-        LIST_2("rhs_200rnd_556x45_M_SAW")
+        LIST_2("rhsusf_200Rnd_556x45_box")
     };
     linkedItems[] += {"Binocular"};
 };

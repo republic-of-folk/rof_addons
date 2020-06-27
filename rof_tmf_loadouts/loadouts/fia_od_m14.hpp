@@ -212,7 +212,7 @@ class aar : r
     linkedItems[] += {"Binocular"};
     backpackItems[] =
     {
-        LIST_2("rhs_200rnd_556x45_M_SAW")
+        LIST_2("rhsusf_200Rnd_556x45_box")
     };
 };
 class rat : r_light
