@@ -1,20 +1,20 @@
-class vdv_desert_M88;
-class M88_Afghanka : vdv_desert_M88 {
+class oksv_rifleman;
+class M88_Afghanka : oksv_rifleman {
     scope = 1;
 };
-class mp_desert_M88;
-class M88_Afghanka_reg : mp_desert_M88 {
+class oksv_reg;
+class M88_Afghanka_reg : oksv_reg {
     scope = 1;
 };
-class vdv_ttsko_m88;
-class M88_Butan : vdv_ttsko_m88 {
+class ttsko_rifleman;
+class M88_Butan : ttsko_rifleman {
     scope = 1;
 };
-class M88_Butan_vdv : vdv_ttsko_m88 {
+class M88_Butan_vdv : ttsko_rifleman {
     scope = 1;
 };
 
-class M88_Pogratsovka: vdv_desert_M88
+class M88_Pogratsovka: oksv_rifleman
 {
     displayName = "Pogratsovka";
     descriptionShort = "Field uniform for Border Troops of the Soviet Union";

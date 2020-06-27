@@ -1,14 +1,14 @@
-class Panama_Afghanistan;
-class panama_afg : Panama_Afghanistan {
+class m55_panama_khaki_1;
+class panama_afg : m55_panama_khaki_1 {
     scope = 1;
 };
-class Panama_Afghanistan1;
-class panama_afg2 : Panama_Afghanistan1 {
+class m55_panama_khaki_2;
+class panama_afg2 : m55_panama_khaki_2 {
     scope = 1;
 };
 
-class fieldcap_butan;
-class fieldcap_pv : fieldcap_butan
+class m88_fieldcap_ttsko;
+class fieldcap_pv : m88_fieldcap_ttsko
 {
     displayName = "Field Cap (PV)";
     descriptionShort = "Field cap for Border Troops of the Soviet Union";
@@ -32,8 +32,8 @@ class ssh68_camo_mesh: ssh68_camo_kzs
     hiddenSelectionsTextures[] = {"\rof_addons\rof_patch_soviet_armed_forces\data\ssh68_mesh_cover.paa"};
 };
 
-class ssh68_khaki;
-class ssh68_net: ssh68_khaki
+class ssh68_dark_green;
+class ssh68_net: ssh68_dark_green
 {
     displayName = "SSh-68 (Net)";
     descriptionShort = "Steel helmet model 1968 with net";
