@@ -420,6 +420,11 @@ force force acre_sys_core_revealToAI = 0;
 force force acre_sys_core_ts3ChannelSwitch = false;
 force force acre_sys_signal_signalModel = 0;
 
+// DUI - Squad Radar - Radar
+force force diwako_dui_radar_showSpeaking = false;
+force force diwako_dui_radar_showSpeaking_radioOnly = true;
+force force diwako_dui_radar_showSpeaking_replaceIcon = false;
+
 // Laxemann Immerse
 force force L_Immerse_twitch = false;
 
