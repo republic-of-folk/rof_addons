@@ -69,6 +69,7 @@ class r : baseMan
         LIST_3("ACE_morphine"),
         LIST_1("ACE_epinephrine"),
         LIST_1("ACE_salineIV_500"),
+        LIST_1("ACE_splint"),
     };
 };
 class r_light : r
@@ -474,6 +475,7 @@ class jp : baseMan
         LIST_3("ACE_morphine"),
         LIST_1("ACE_epinephrine"),
         LIST_1("ACE_salineIV_500"),
+        LIST_1("ACE_splint"),
     };
     linkedItems[] = {"ItemMap","ItemGPS","ItemCompass","ItemWatch"};
 };

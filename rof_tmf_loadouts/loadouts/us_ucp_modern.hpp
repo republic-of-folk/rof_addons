@@ -74,11 +74,13 @@ class car : baseMan
         LIST_6("rhs_mag_30Rnd_556x45_M855A1_Stanag"),
         LIST_1("rhs_mag_an_m8hc")
     };
-    items[] = {
+    items[] =
+    {
         LIST_10("ACE_fieldDressing"),
         LIST_3("ACE_morphine"),
         LIST_1("ACE_epinephrine"),
-		LIST_3("ACE_CableTie"),
+        LIST_1("ACE_salineIV_500"),
+        LIST_1("ACE_splint"),
     };
     hmd[] = {
         "rhsusf_ANPVS_14"

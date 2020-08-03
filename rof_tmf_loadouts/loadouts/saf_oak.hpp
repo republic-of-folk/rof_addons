@@ -66,12 +66,13 @@ class r : baseMan
         LIST_1("rhssaf_mag_brd_m83_white"),
 		LIST_1("rhssaf_mag_brd_m83_green")
     };
-    items[] = {
+    items[] =
+    {
         LIST_10("ACE_fieldDressing"),
         LIST_3("ACE_morphine"),
         LIST_1("ACE_epinephrine"),
-		LIST_1("ACE_CableTie"),
-		"ACE_Flashlight_KSF1","ACE_Earplugs"
+        LIST_1("ACE_salineIV_500"),
+        LIST_1("ACE_splint"),
     };
 };
 class r_light : r

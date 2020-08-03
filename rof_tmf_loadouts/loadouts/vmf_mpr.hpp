@@ -95,9 +95,8 @@ class r_light : r
         LIST_10("ACE_fieldDressing"),
         LIST_3("ACE_morphine"),
         LIST_1("ACE_epinephrine"),
-		LIST_1("ACE_Flashlight_KSF1"),
-		LIST_1("ACE_EarPlugs"),
-		LIST_2("ACE_CableTie")
+        LIST_1("ACE_salineIV_500"),
+        LIST_1("ACE_splint"),
     };
 };
 class g : r

@@ -75,6 +75,7 @@ class r : baseMan
         LIST_3("ACE_morphine"),
         LIST_1("ACE_epinephrine"),
         LIST_1("ACE_salineIV_500"),
+        LIST_1("ACE_splint"),
     };
     backpack[] = {"B_simc_USMC65_M41", "B_simc_USMC65_M41_Roll", "B_simc_USMC65_M41_Roll2"};
 };

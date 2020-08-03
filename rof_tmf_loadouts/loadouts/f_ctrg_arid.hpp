@@ -46,6 +46,7 @@ class baseMan {// Weaponless baseclass
         LIST_3("ACE_morphine"),
         LIST_1("ACE_epinephrine"),
         LIST_1("ACE_salineIV_500"),
+        LIST_1("ACE_splint"),
         LIST_2("ACE_CableTie"),
         LIST_1("ACE_Earplugs"),
         LIST_1("ACE_IR_Strobe_Item")
@@ -856,6 +857,7 @@ class jp : pp
         LIST_3("ACE_morphine"),
         LIST_1("ACE_epinephrine"),
         LIST_1("ACE_salineIV_500"),
+        LIST_1("ACE_splint"),
     };
 };
 class UAV : r_light

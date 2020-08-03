@@ -66,9 +66,11 @@ class r_light : baseMan
     };
     items[] =
     {
-        LIST_4("ACE_fieldDressing"),
-        LIST_2("ACE_morphine"),
-        LIST_1("ACE_epinephrine")
+        LIST_10("ACE_fieldDressing"),
+        LIST_3("ACE_morphine"),
+        LIST_1("ACE_epinephrine"),
+        LIST_1("ACE_salineIV_500"),
+        LIST_1("ACE_splint"),
     };
 };
 class r : r_light

@@ -76,11 +76,13 @@ class r : baseMan
         LIST_2("ACE_Chemlight_Orange"),
         LIST_1("rhs_mag_zarya2")
     };
-    items[] = {
+    items[] =
+    {
         LIST_10("ACE_fieldDressing"),
         LIST_3("ACE_morphine"),
         LIST_1("ACE_epinephrine"),
-        LIST_3("ACE_CableTie")
+        LIST_1("ACE_salineIV_500"),
+        LIST_1("ACE_splint"),
     };
 };
 class r_light : r

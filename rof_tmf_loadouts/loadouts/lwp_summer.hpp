@@ -78,14 +78,13 @@ class r_light : r
 {
     displayName = "Rifleman (light)";
 	headgear[] = {"gm_pl_army_headgear_cap_80_moro"};
-    items[] = {
+    items[] =
+    {
         LIST_10("ACE_fieldDressing"),
         LIST_3("ACE_morphine"),
         LIST_1("ACE_epinephrine"),
-		LIST_1("ACE_CableTie"),
-		"ACE_Earplugs",
-        "ACE_Flashlight_KSF1",
-        "gm_bayonet_6x3_wud"
+        LIST_1("ACE_salineIV_500"),
+        LIST_1("ACE_splint"),
     };
 };
 class car : r
