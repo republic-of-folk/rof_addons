@@ -148,6 +148,11 @@ class CfgLoadouts
         category = "Insurgents";
         #include "ins_napa.hpp"
     };
+    class INS_AFRICA {
+        displayName = "African Militia";
+        category = "Insurgents";
+        #include "ins_african.hpp"
+    };
     class PORTO_MILITARY {
         displayName = "Military (Porto)";
         category = "Porto";
