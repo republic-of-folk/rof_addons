@@ -125,12 +125,15 @@ class m : r
     };
     traits[] += {"medic"};
     vest[] = {"RPS_Smersh13_b","RPS_Smersh14_b"};
-    Items[] += {
+    backpackItems[] = {
+        LIST_1("ACE_surgicalKit"),
+        LIST_1("ACE_personalAidKit"),
         LIST_20("ACE_fieldDressing"),
         LIST_10("ACE_morphine"),
         LIST_10("ACE_epinephrine"),
-        LIST_6("ACE_bloodIV_500")
+        LIST_6("ACE_salineIV_500"),
     };
+    items[] = {};
 };
 class smg : car
 {

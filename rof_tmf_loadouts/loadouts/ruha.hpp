@@ -97,9 +97,12 @@ class m : car
     displayName = "Medic";
     vest[] = {"rhsgref_6b23_ttsko_mountain_medic"};
     backpackItems[] = {
-        "Medikit",
-        LIST_7("FirstAidKit"),
-        LIST_2("rhs_mag_rdg2_white")
+        LIST_1("ACE_surgicalKit"),
+        LIST_1("ACE_personalAidKit"),
+        LIST_20("ACE_fieldDressing"),
+        LIST_10("ACE_morphine"),
+        LIST_10("ACE_epinephrine"),
+        LIST_6("ACE_salineIV_500"),
     };
     items[] = {};
 };
