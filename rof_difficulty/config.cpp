@@ -58,7 +58,7 @@ class CfgDifficultyPresets {
             thirdPersonView = 0;
             visionAid = 0;
             vonID = 0;
-            waypoints = 0;
+            waypoints = 1;
             weaponCrosshair = 0;
             weaponInfo = 1;
         };
@@ -86,7 +86,7 @@ class CfgDifficultyPresets {
             thirdPersonView = 0;
             visionAid = 0;
             vonID = 0;
-            waypoints = 0;
+            waypoints = 1;
             weaponCrosshair = 0;
             weaponInfo = 1;
         };
@@ -114,7 +114,7 @@ class CfgDifficultyPresets {
             thirdPersonView = 0;
             visionAid = 0;
             vonID = 0;
-            waypoints = 0;
+            waypoints = 1;
             weaponCrosshair = 0;
             weaponInfo = 1;
         };
@@ -142,7 +142,7 @@ class CfgDifficultyPresets {
             thirdPersonView = 0;
             visionAid = 0;
             vonID = 0;
-            waypoints = 0;
+            waypoints = 1;
             weaponCrosshair = 0;
             weaponInfo = 1;
         };
