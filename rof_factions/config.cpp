@@ -13,6 +13,7 @@ class CfgPatches {
         requiredAddons[] = {
             "A3_Characters_F_OPFOR",
             "A3_Characters_F_Exp",
+            "A3_Armor_F_Tank",
             "rhs_c_troops",
             "rhssaf_c_troops",
             "rhsgref_c_troops",
@@ -36,4 +37,5 @@ class CfgPatches {
 class CfgVehicles {
     #include "CfgVehicles\rhs_m113_un.hpp"
     #include "CfgVehicles\rhs_rpk.hpp"
+    #include "CfgVehicles\f_nyx_desert.hpp"
 };
