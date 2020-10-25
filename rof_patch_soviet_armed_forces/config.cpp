@@ -31,7 +31,7 @@ class CfgFactionClasses
         displayName = "Soviet Army";
         priority = 10;
         side = 0;
-        icon = "40th_config\data\SA.paa";
+        icon = "rof_addons\rof_patch_soviet_armed_forces\data\sa_co.paa";
     };
 };
 class CfgEditorCategories
