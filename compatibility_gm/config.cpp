@@ -1,18 +1,25 @@
-#define _ARMA_
+#include "script_component.hpp"
 
 class CfgPatches
 {
-    class rof_compatibility_gm
+    class ADDON
     {
-        name = "RoF - GM Compatibility";
+        name = "Republic of Folk Addons - Compatibility GM";
+        author = "Roberro, Republic of Folk";
         units[] = {};
-        requiredVersion = 1.88;
-        requiredAddons[] = {"cba_main", "ace_medical", "gm_weapons_items", "gm_weapons_items_gc_items", "gm_weapons_items_ge_items", "gm_weapons_rifles_ak47", "gm_weapons_rifles_ak74", "gm_weapons_machineguns_pk"};
-        author = "ROF";
-        authors[] = {"ROF"};
-        version = "0.0.3";
-        versionStr = "0.0.2";
-        versionAr[] = {0,0,2};
+        weapons[] = {};
+        requiredVersion = REQUIRED_VERSION;
+        requiredAddons[] = {
+            "cba_main",
+            "ace_medical",
+            "gm_weapons_items",
+            "gm_weapons_items_gc_items",
+            "gm_weapons_items_ge_items",
+            "gm_weapons_rifles_ak47",
+            "gm_weapons_rifles_ak74",
+            "gm_weapons_machineguns_pk"
+        };
+        VERSION_CONFIG;
     };
 };
 
@@ -21,7 +28,7 @@ class CfgFunctions
     class ROF
     {
         class GM_Fix {
-            file = "\rof_addons\rof_compatibility_gm\functions";
+            file = "\x\rof\addons\compatibility_gm\functions";
             class itemCheck {};
         };
     };
@@ -31,7 +38,7 @@ class Extended_PostInit_EventHandlers
 {
     class rof_compatibility_gm
     {
-        init = "call compile preprocessFileLineNumbers '\rof_addons\rof_compatibility_gm\XEH_postInit.sqf'";
+        init = "call compile preprocessFileLineNumbers '\x\rof\addons\compatibility_gm\XEH_postInit.sqf'";
     };
 };
 
