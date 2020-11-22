@@ -1,7 +1,7 @@
 name = "Republic of Folk Addons";
-picture = "rof.paa";
+picture = "\x\rof\addons\main\rof.paa";
 hidePicture = "false";
 hideName = "false";
 actionName = "Website";
-action = "http://republicoffolk.org/forum/";
+action = "https://republicoffolk.org/";
 description = "Republic of Folk Addons";
