@@ -1,2 +1,2 @@
-["loadout", ROF_fnc_itemCheck] call CBA_fnc_addPlayerEventHandler;
-[player] call ROF_fnc_itemCheck;
+// Replace GM objects with ACE compatible ones
+["gm_repairkit_01", "ToolKit"] call ace_common_fnc_registerItemReplacement;
