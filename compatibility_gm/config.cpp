@@ -23,17 +23,6 @@ class CfgPatches
     };
 };
 
-class CfgFunctions
-{
-    class ROF
-    {
-        class GM_Fix {
-            file = "\x\rof\addons\compatibility_gm\functions";
-            class itemCheck {};
-        };
-    };
-};
-
 class Extended_PostInit_EventHandlers
 {
     class rof_compatibility_gm
