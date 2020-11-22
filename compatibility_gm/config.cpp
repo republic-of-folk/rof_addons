@@ -10,7 +10,7 @@ class CfgPatches
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "cba_main",
+            "rof_main",
             "ace_medical",
             "gm_weapons_items",
             "gm_weapons_items_gc_items",
