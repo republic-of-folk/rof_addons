@@ -13,10 +13,11 @@ class CfgPatches
             "rof_main",
             "ace_medical",
             "gm_weapons_items",
-            "gm_characters_dk_characters",
             "gm_characters_gc_characters",
             "gm_characters_ge_characters",
-            "gm_characters_pl_characters"
+            "gm_characters_gc_civilians",
+            "gm_characters_pl_characters",
+            "gm_characters_dk_characters"
         };
         VERSION_CONFIG;
     };
