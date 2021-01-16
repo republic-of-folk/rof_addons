@@ -32,36 +32,54 @@ class CfgWeapons {
 
     class gm_carlgustaf_m2_base: gm_launcher_base {};
     class gm_pzf44_2_base: gm_launcher_base {};
-    class gm_rpg7_base: gm_launcher_base {};
+    class gm_rpg7_base: gm_launcher_base {
+        magazineWells[] = {"gm_magazineWell_40mm_rpg7", "RPG7"};
+    };
     class gm_fim43_base: gm_launcher_base {};
-    
     class gm_strela_launcher_base: gm_launcher_base {};
     class gm_9k32m_base: gm_strela_launcher_base {};
     class gm_strela_launcher: gm_strela_launcher_base {};
 
     class gm_dshkm_base: gm_machineGun_base {};
     class gm_m2_base: gm_machineGun_base {};
-    class gm_mg3_base: gm_machineGun_base {};
-    class gm_pk_base: gm_machineGun_base {};
+
+    class gm_mg3_base: gm_machineGun_base {
+        // magazineWell[] = {"CBA_762x51_MG3"};
+    };
+    class gm_pk_base: gm_machineGun_base {
+        // magazineWell[] = {"CBA_762x54R_LINKS"};
+    };
     class gm_pkt_base: gm_pk_base {};
     class gm_pkt_veh_base: gm_pkt_base {};
     class gm_pkt_coax: gm_pkt_veh_base {};
     class gm_pkt_quad_mi2: gm_pkt_coax {};
     class gm_sgm_base: gm_machineGun_base {};
 
-    class gm_mp2_base: gm_rifle_base {};
-    class gm_mp5_base: gm_rifle_base {};
-    class gm_mp5sd_base: gm_mp5_base {};
-    class gm_pm63_base: gm_rifle_base {};
+    class gm_mp2_base: gm_rifle_base {
+        // magazineWell[] = {"CBA_9x19_UZI"};
+    };
+    class gm_mp5_base: gm_rifle_base {
+        // magazineWell[] = {"CBA_9x19_MP5"};
+    };
+    class gm_mp5sd_base: gm_mp5_base {
+        // magazineWell[] = {"CBA_9x19_MP5"};
+    };
+    class gm_pm63_base: gm_rifle_base {
+        // magazineWell[] = {"CBA_9x18_PM63"};
+    };
     
     class gm_lp1_base: gm_pistol_base {};
-    class gm_p1_base: gm_pistol_base {};
+    class gm_p1_base: gm_pistol_base {
+        // magazineWell[] = {"CBA_9x19_P38"};
+    };
     class gm_p2a1_base: gm_pistol_base {};
     class gm_p2a1_launcher_base: gm_launcher_base {};
-    class gm_pm_base: gm_pistol_base {};
+    class gm_pm_base: gm_pistol_base {
+        // magazineWell[] = {"CBA_9x18_PM"};
+    };
 
     class gm_ak47_base : gm_rifle_base {
-        magazineWell[] = {"AK_762x39"};
+        magazineWell[] = {"gm_magazineWell_762x39mm_ak47", "AK_762x39", "CBA_762x39_AK"};
 
         modes[] = {
             "SemiAuto",
@@ -142,7 +160,7 @@ class CfgWeapons {
         };
     };
     class gm_rpk_base : gm_ak47_base {
-        magazineWell[] = {"AK_762x39"};
+        magazineWell[] += {"CBA_762x39_RPK"};
 
         class FullAuto : gm_FullAuto {};
         class ai_FullAuto_close : FullAuto {
@@ -151,7 +169,7 @@ class CfgWeapons {
         };
     };
     class gm_ak74_base : gm_rifle_base {
-        magazineWell[] = {"AK_545x39"};
+        magazineWell[] = {"gm_magazineWell_545x39mm_ak74", "AK_545x39", "CBA_545x39_AK"};
 
         modes[] = {
             "SemiAuto",
@@ -219,7 +237,7 @@ class CfgWeapons {
         };
     };
     class gm_rpk74_base : gm_ak74_base {
-        magazineWell[] = {"AK_545x39"};
+        magazineWell[] += {"CBA_545x39_RPK"};
 
         class FullAuto : gm_FullAuto {};
         class ai_FullAuto_close : FullAuto {
@@ -227,7 +245,13 @@ class CfgWeapons {
             dispersion              = 0.00093;
         };
     };
-    class gm_g3_base: gm_rifle_base {};
-    class gm_m16_base: gm_rifle_base {};
-    class gm_svd_base: gm_rifle_base {};
+    class gm_g3_base: gm_rifle_base {
+        // magazineWell[] = {"CBA_762x51_G3", "CBA_762x51_G3_L", "CBA_762x51_G3_XL"};
+    };
+    class gm_m16_base: gm_rifle_base {
+        // magazineWell[] = {"CBA_556x45_STANAG", "CBA_556x45_STANAG_L", "CBA_556x45_STANAG_XL", "CBA_556x45_STANAG_2D", "CBA_556x45_STANAG_2D_XL"};
+    };
+    class gm_svd_base: gm_rifle_base {
+        // magazineWell[] = {"CBA_762x54R_SVD"};
+    };
 };
