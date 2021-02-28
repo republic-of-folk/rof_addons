@@ -1,43 +1,3 @@
-class LandVehicle;
-class Tank: LandVehicle
-{
-    class NewTurret;
-    class Sounds;
-    class HitPoints;
-};
-class Tank_F: Tank
-{
-    class Turrets
-    {
-        class MainTurret: NewTurret
-        {
-            class Turrets
-            {
-                class CommanderOptics;
-            };
-        };
-    };
-    class AnimationSources;
-    class ViewPilot;
-    class ViewOptics;
-    class ViewCargo;
-    class HeadLimits;
-    class HitPoints: HitPoints
-    {
-        class HitHull;
-        class HitEngine;
-        class HitLTrack;
-        class HitRTrack;
-    };
-    class Sounds: Sounds
-    {
-        class Engine;
-        class Movement;
-    };
-    class EventHandlers;
-    class textureSources;
-};
-class APC_Tracked_02_base_F: Tank_F{};
 class RHS_ZU23_base;
 class rhs_btr70_msv;
 class rhs_btr60_msv;
@@ -75,6 +35,7 @@ class rhs_2s3_tv;
 class rhs_d30_msv;
 class rhs_2b14_82mm_msv;
 class rhs_zsu234_aa;
+
 class oksv_t80: rhs_t80
 {
     generalmacro = "rhs_t80";
