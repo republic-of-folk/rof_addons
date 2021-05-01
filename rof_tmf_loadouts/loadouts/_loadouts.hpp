@@ -233,6 +233,11 @@ class CfgLoadouts
         category = "Independent";
         #include "saf_oak.hpp"
     };
+    class F_FIA_LATE {
+        displayName = "FIA (Late)";
+        category = "Future";
+        #include "f_fia_late.hpp"
+    };
     class CTRG_AR {
         displayName = "CTRG (Arid)";
         category = "Future";
