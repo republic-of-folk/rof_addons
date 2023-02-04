@@ -139,7 +139,7 @@ class g : car
     magazines[] +=
     {
         LIST_8("rhs_VOG25"),
-        LIST_4("rhs_VG40OP_white")
+        LIST_2("rhs_GRD40_White")
     };
 };
 class m : car 
@@ -166,7 +166,8 @@ class ftl : g
     displayName = "Fireteam Leader";
     magazines[] +=
     {
-        LIST_2("rhs_mag_m715_Green")
+        LIST_2("rhs_GRD40_Red"),
+        LIST_2("rhs_GRD40_Green")
     };
     linkedItems[] += {"Binocular","ItemGPS"};
 };

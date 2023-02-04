@@ -328,6 +328,11 @@ class CfgLoadouts
         category = "Future";
         #include "f_csat_arid.hpp"
     };
+    class CSAT_WS_AFR {
+        displayName = "CSAT African Force (Western Sahara)";
+        category = "Future";
+        #include "f_csat_african_ws.hpp"
+    };
     class CSAT_JU {
         displayName = "CSAT (Jungle)";
         category = "Future";
@@ -338,6 +343,11 @@ class CfgLoadouts
         category = "Future";
         #include "f_csat_urban.hpp"
     };
+    class UNA_WS {
+        displayName = "UNA (Western Sahara)";
+        category = "Future";
+        #include "f_una_ws.hpp"
+    };
     class NATO_AR {
         displayName = "NATO (Arid)";
         category = "Future";
@@ -347,6 +357,16 @@ class CfgLoadouts
         displayName = "NATO (Jungle)";
         category = "Future";
         #include "f_nato_jungle.hpp"
+    };
+    class LDF {
+        displayName = "LDF";
+        category = "Future";
+        #include "f_ldf_standard.hpp"
+    };
+    class LDF_NIGHT {
+        displayName = "LDF (Night)";
+        category = "Future";
+        #include "f_ldf_night.hpp"
     };
     class VMF_MPR {
         displayName = "VMF Naval Infantry"
