@@ -342,7 +342,7 @@ class sn : dm
         LIST_2("gm_8Rnd_9x19mm_B_DM11_p1_blk"),
         LIST_1("SmokeShell")
     };
-    linkedItems[] += {"rhs_pdu4"};
+    linkedItems[] += {"gm_lp7_oli"};
     items[] += {"ACE_Maptools"};
 };
 class sp : r_light

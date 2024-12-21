@@ -198,6 +198,7 @@ class ar : r
 {
     displayName = "Automatic Rifleman";
     primaryWeapon[] = {"LMG_Mk200_F"};
+    primaryMagazine[] = {};
     scope[] = {};
     magazines[] =
     {
@@ -237,6 +238,7 @@ class mmgg : ar
 {
     displayName = "MMG Gunner [DLC]";
     primaryWeapon[] = {"LMG_S77_Hex_lxWS"};
+    primaryMagazine[] = {};
     scope[] = {"optic_Arco_hex_lxWS"};
     magazines[] =
     {
@@ -469,7 +471,6 @@ class mtrg : car
 {
     displayName = "Mortar Gunner (Legacy)";
     backPack[] = {"O_Mortar_01_weapon_F"};
-    primaryWeapon[] = {"arifle_Katiba_C_F"};
     linkedItems[] =
     {
         "ItemMap",
@@ -554,6 +555,7 @@ displayName = "Sniper (GM6)";
     hmd[] = {};
     headgear[] = {};
     primaryWeapon[] = {"srifle_GM6_camo_F"};
+    primaryMagazine[] = {};
     scope[] = {"optic_lrps"};
     magazines[] =
     {
@@ -574,6 +576,7 @@ class sp : sn
     backpack[] = {"B_Kitbag_desert_lxWS"};
     headgear[] = {};
     primaryWeapon[] = {"srifle_DMR_01_F"};
+    primaryMagazine[] = {};
     scope[] = {"optic_arco"};
     bipod[] = {"bipod_02_f_hex"};
     magazines[] =

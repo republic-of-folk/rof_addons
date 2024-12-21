@@ -1,4 +1,3 @@
-// #include "\rof_addons\rof_tmf_loadouts\loadouts\_macros.hpp"
 #include "_macros.hpp"
 
 class CfgLoadouts
@@ -19,22 +18,22 @@ class CfgLoadouts
         #include "us_ucp_modern.hpp"
     };
     class USMC_WD {
-        displayName = "USMC (Woodland)";
+        displayName = "USMC (90's Woodland)";
         category = "Blufor (Old School)";
         #include "usmc_wd.hpp"
     };
     class USMC_D {
-        displayName = "USMC (Desert)";
+        displayName = "USMC (90's Desert)";
         category = "Blufor (Old School)";
         #include "usmc_d.hpp"
     };
     class US_WD {
-        displayName = "US Army (Woodland)";
+        displayName = "US Army (90's Woodland)";
         category = "Blufor (Old School)";
         #include "us_wd.hpp"
     };
     class US_D {
-        displayName = "US Army (Desert)";
+        displayName = "US Army (90's Desert)";
         category = "Blufor (Old School)";
         #include "us_d.hpp"
     };
@@ -108,6 +107,11 @@ class CfgLoadouts
         category = "Soviet";
         #include "ussr_pv.hpp"
     };
+    class USSR_COSSACKS {
+        displayName = "Soviet Army (Cossacks)";
+        category = "Soviet";
+        #include "ussr_cossacks.hpp"
+    };
     class VDV_F {
         displayName = "VDV (Flora)";
         category = "Russians (90's)";
@@ -152,6 +156,11 @@ class CfgLoadouts
         displayName = "African Militia";
         category = "Insurgents";
         #include "ins_african.hpp"
+    };
+    class INS_GM_REVOLUTIONARIES {
+        displayName = "Revolutionaries (80's)";
+        category = "Insurgents";
+        #include "ins_gm_revolutionaries.hpp"
     };
     class PORTO_MILITARY {
         displayName = "Military (Porto)";
@@ -318,6 +327,31 @@ class CfgLoadouts
         category = "Blufor (Old School)";
         #include "ge_flecktarn.hpp"
     };
+    class GE_FLECKTARN_90 {
+        displayName = "West Germany Army (90s Flecktarn)";
+        category = "Blufor (Modern)";
+        #include "ge_flecktarn_90.hpp"
+    };
+    class GE_FLECKTARN_90_NVG {
+        displayName = "West Germany Army (90s Flecktarn) (Night)";
+        category = "Blufor (Modern)";
+        #include "ge_flecktarn_90_nvg.hpp"
+    };
+    class GE_FLECKTARN_90_RHS {
+        displayName = "West Germany Army (90s Flecktarn) (RHS Gun)";
+        category = "Blufor (Modern)";
+        #include "ge_flecktarn_90_rhs.hpp"
+    };
+    class GE_TROPIK_90 {
+        displayName = "West Germany Army (90s Tropik)";
+        category = "Blufor (Modern)";
+        #include "ge_tropik_90.hpp"
+    };
+    class GE_TROPIK_90_NVG {
+        displayName = "West Germany Army (90s Tropik) (Night)";
+        category = "Blufor (Modern)";
+        #include "ge_tropik_90_nvg.hpp"
+    };
     class AAF_STANDARD {
         displayName = "AAF (Standard)";
         category = "Future";
@@ -353,6 +387,26 @@ class CfgLoadouts
         category = "Future";
         #include "f_nato_arid.hpp"
     };
+    class NATO_RF_QRF_ARID {
+        displayName = "NATO QRF (Arid)";
+        category = "Future";
+        #include "f_nato_rf_qrf_arid.hpp"
+    };
+    class NATO_RF_QRF_DESERT {
+        displayName = "NATO QRF (Desert)";
+        category = "Future";
+        #include "f_nato_rf_qrf_desert.hpp"
+    };
+    class NATO_RF_QRF_JUNGLE {
+        displayName = "NATO QRF (Jungle)";
+        category = "Future";
+        #include "f_nato_rf_qrf_jungle.hpp"
+    };
+    class NATO_RF_QRF_WOODLAND {
+        displayName = "NATO QRF (Woodland)";
+        category = "Future";
+        #include "f_nato_rf_qrf_woodland.hpp"
+    };
     class NATO_JU {
         displayName = "NATO (Jungle)";
         category = "Future";
@@ -368,6 +422,16 @@ class CfgLoadouts
         category = "Future";
         #include "f_ldf_night.hpp"
     };
+    class LDF_REGULARS {
+        displayName = "LDF (Regulars)";
+        category = "Future";
+        #include "f_ldf_regulars.hpp"
+    };
+    class F_LDF_RF_QRF_GEOMETRIC {
+        displayName = "LDF Special Forces";
+        category = "Future";
+        #include "f_ldf_rf_qrf_geometric.hpp"
+    }
     class VMF_MPR {
         displayName = "VMF Naval Infantry"
         category = "Russians (90's)";
@@ -392,5 +456,10 @@ class CfgLoadouts
         displayName = "Polish People's Army (Summer)";
         category = "Soviet";
         #include "lwp_summer.hpp"
+    };
+    class F_ION_RF {
+        displayName = "ION PMC";
+        category = "Future";
+        #include "f_ion_rf.hpp"
     };
 };
