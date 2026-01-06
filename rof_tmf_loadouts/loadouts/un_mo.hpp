@@ -53,7 +53,7 @@ class r : baseMan
     displayName = "Rifleman";
     headgear[] = {"rhsgref_ssh68_un"};
     vest[] = {"rhsgref_6b23_ttsko_mountain_rifleman"};
-    backpack[] = {"B_FieldPack_cbr"};
+    backpack[] = {"B_FieldPack_oli"};
     primaryWeapon[] = {"rhs_weap_m70ab2", "rhs_weap_m70ab2_fold"};
     magazines[] =
     {
@@ -185,7 +185,7 @@ class ar : r
 class aar : r
 {
     displayName = "Assistant Automatic Rifleman";
-    backpack[] = {"usm_pack_alice"};
+    backpack[] = {"rhsgref_ttsko_alicepack"};
     backpackItems[] =
     {
         LIST_4("rhs_100Rnd_762x54mmR")
@@ -467,35 +467,35 @@ class vg : vd
     displayName = "Vehicle Gunner";
     backpackItems[] = {};
 };
-class pp : smg
+class pp : baseMan
 {
     displayName = "Helicopter Pilot";
     uniform[] = {"rhs_uniform_df15"};
     headgear[] = {"rhs_zsh7a_mike"};
+    vest[] = {"rhsgref_chestrig"};
     goggles[] = {};
     linkedItems[] += {"ItemGPS"};
-    magazines[] += {
-        LIST_2("SmokeShellGreen")
+    primaryWeapon[] = {};
+    sidearmWeapon[] = {"rhs_weap_makarov_pm"};
+    magazines[] = {
+        LIST_3("rhs_mag_9x18_8_57N181S"),
+        LIST_1("SmokeShell"),
+        LIST_2("SmokeShellGreen"),
+        LIST_2("SmokeShellRed")
     };
 };
-class pcc : smg
+class pcc : pp
 {
-    displayName = "Helicopter Crew Chief";
+    displayName = "Helicopter Crew Chief (Repair)";
     traits[] += {"engineer"};
-    uniform[] = {"rhs_uniform_df15"};
     headgear[] = {"rhs_zsh7a"};
-    goggles[] = {};
-    linkedItems[] += {"ItemGPS"};
+    backPack[] = {"B_FieldPack_oli"};
     backpackItems[] = {"ToolKit"};
-    magazines[] += {
-        LIST_2("SmokeShellGreen")
-    };
 };
-class pc : pcc
+class pc : pp
 {
     displayName = "Helicopter Crew";
-    backpack[] = {};
-    backpackItems[] = {};
+    headgear[] = {"rhs_zsh7a"};
 };
 class jp : baseMan
 {

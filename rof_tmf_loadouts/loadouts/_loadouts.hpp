@@ -247,6 +247,11 @@ class CfgLoadouts
         category = "Future";
         #include "f_fia_late.hpp"
     };
+    class F_FIA_WS_WINTER {
+        displayName = "FIA (Winter) (WS)";
+        category = "Future";
+        #include "f_fia_ws_winter.hpp"
+    };
     class CTRG_AR {
         displayName = "CTRG (Arid)";
         category = "Future";

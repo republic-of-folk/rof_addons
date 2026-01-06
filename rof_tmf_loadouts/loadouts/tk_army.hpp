@@ -49,7 +49,7 @@ class r : baseMan
 {
     displayName = "Rifleman";
     vest[] = {"usm_vest_LBE_rm"};
-    headgear[] =  {"ssh68_camo_yel", "ssh68_khaki"};
+    headgear[] =  {"ssh68_khaki"};
     primaryWeapon[] = {"hlc_rifle_FAL5000"};
     silencer[] = {"hlc_muzzle_MAG58_Brake"};
     magazines[] =
