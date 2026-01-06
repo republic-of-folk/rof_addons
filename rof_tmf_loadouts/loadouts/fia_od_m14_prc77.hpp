@@ -61,7 +61,7 @@ class r : baseMan
     displayName = "Rifleman";
     headgear[] = {"usm_bdu_boonie_odg", "usm_bdu_cap_odg", ""};
     vest[] = {"usm_vest_LBE_rm"};
-    primaryWeapon[] = {"hlc_rifle_M14"};
+    primaryWeapon[] = {"rhs_weap_m14"};
     scope[] = {};
     magazines[] =
     {
@@ -93,10 +93,10 @@ class g : r_light
 {
     displayName = "Grenadier";
     vest[] = {"usm_vest_LBE_gr"};
-    primaryWeapon[] = {"hlc_rifle_m203"};
+    primaryWeapon[] = {"SP_ar15m203"};
     magazines[] =
     {
-        LIST_6("mbg_mag_20Rnd_556x45_M855A1_Stanag"),
+        LIST_6("rhs_mag_20Rnd_556x45_M855A1_Stanag"),
         LIST_1("rhs_mag_m67"),
         LIST_1("rhs_mag_an_m8hc"),
         LIST_8("rhs_mag_M433_HEDP"),
@@ -148,12 +148,12 @@ class ftl : r
 {
     displayName = "Fireteam Leader";
     headgear[] = {"usm_bdu_8point_odg"};
-    primaryWeapon[] = {"mbg_m16a1"};
+    primaryWeapon[] = {"gm_m16a1_blk"};
     scope[] = {};
 	backPack[] = {"usm_pack_st138_prc77"};
     magazines[] =
     {
-        LIST_9("mbg_mag_20Rnd_556x45_M855A1_Stanag"),
+        LIST_9("rhs_mag_20Rnd_556x45_M855A1_Stanag"),
         LIST_1("rhs_mag_m67"),
         LIST_2("rhs_mag_an_m8hc"),
         LIST_2("rhs_mag_m715_Green")
@@ -222,8 +222,14 @@ class rat : r_light
 class dm : r
 {
     displayName = "Designated Marksman";
-    primaryWeapon[] = {"hlc_rifle_M14_Bipod"};
-    scope[] = {"hlc_optic_artel_m14"};
+    primaryWeapon[] = {"srifle_DMR_06_hunter_F"};
+    scope[] = {"gm_blits_ris_blk"};
+    magazines[] =
+    {
+        LIST_9("ACE_20Rnd_762x51_M118LR_Mag"),
+        LIST_2("rhs_mag_m67"),
+        LIST_2("rhs_mag_an_m8hc")
+    };
 };
 class mmgg : ar
 {

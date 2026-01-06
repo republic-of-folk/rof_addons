@@ -136,14 +136,14 @@ class m : car
 class smg : car
 {
     displayName = "Submachinegunner";
-    primaryWeapon[] = {"hlc_wp_xm4"};
+    primaryWeapon[] = {"rhsusf_weap_MP7A2"};
 	attachment[] = {};
-	bipod[] = {};
+	bipod[] = {"rhsusf_acc_rvg_blk"};
     silencer[] = {};
     scope[] = {};
     magazines[] =
     {
-        LIST_6("rhs_mag_30Rnd_556x45_M855A1_Stanag"),
+        LIST_4("rhsusf_mag_40Rnd_46x30_FMJ"),
         LIST_1("rhs_mag_m67"),
         LIST_1("rhs_mag_an_m8hc")
     };
@@ -573,8 +573,8 @@ class vg : smg
     headgear[] = {
         "rhsusf_cvc_helmet","rhsusf_cvc_alt_helmet","rhsusf_cvc_ess"
     };
+    backpack[] = {"rhsusf_assault_eagleaiii_ucp"};
     goggles[] = {};
-    backpackItems[] = {};
     hmd[] = {"rhsusf_ANPVS_15"};
 };
 class pp : smg

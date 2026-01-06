@@ -61,12 +61,11 @@ class r : baseMan
         "B_simc_USMC65_M41_M43_roll",
         "B_simc_USMC65_M41_M43_roll2"
     };
-    primaryWeapon[] = {
-        "hlc_rifle_L1A1SLR"
-    };
+    primaryWeapon[] = {"rhs_weap_l1a1"};
+    silencer[] = {"rhsgref_acc_falMuzzle_l1a1"};
     magazines[] =
     {
-        LIST_9("hlc_20Rnd_762x51_B_fal"),
+        LIST_9("rhs_mag_20Rnd_762x51_m80_fnfal"),
         LIST_2("rhs_mag_m67")
     };
     items[] = {
@@ -86,7 +85,7 @@ class r_light : r
     };
     magazines[] =
     {
-        LIST_6("hlc_20Rnd_762x51_B_fal"),
+        LIST_6("rhs_mag_20Rnd_762x51_m80_fnfal"),
         LIST_1("rhs_mag_m67"),
         LIST_1("rhs_mag_an_m8hc")
     };
@@ -133,9 +132,9 @@ class m : r_light
 class smg : r
 {
     displayName = "Submachinegunner";
-    primaryWeapon[] = {"hlc_smg_mp5a2"};
+    primaryWeapon[] = {"gm_mp2a1_blk"};
     magazines[] = {
-        LIST_8("hlc_30Rnd_9x19_B_MP5"),
+        LIST_8("gm_32Rnd_9x19mm_AP_DM91_mp2_blk"),
         LIST_1("rhs_mag_m67"),
         LIST_1("rhs_mag_an_m8hc")
     };
@@ -175,11 +174,11 @@ class ar : r
 {
     displayName = "Automatic Rifleman";
     vest[] = {"usm_vest_LBE_mg_m"};
-    primaryWeapon[] = {"hlc_rifle_LAR_XMAG"};
+    primaryWeapon[] = {"SP_l4_lmg_walnut"};
     bipod[] = {};
     magazines[] =
     {
-        LIST_3("hlc_50rnd_762x51_M_FAL"),
+        LIST_8("SP_28Rnd_762_L4"),
         LIST_1("rhs_mag_m67"),
         LIST_1("rhs_mag_an_m8hc")
     };
@@ -191,7 +190,7 @@ class aar : r
     backpack[] = {"B_simc_USMC65_M41"};
     backpackItems[] =
     {
-        LIST_2("hlc_50rnd_762x51_M_FAL")
+        LIST_10("SP_28Rnd_762_L4")
     };
 };
 class rat : r_light
@@ -202,16 +201,16 @@ class rat : r_light
 class dm : r
 {
     displayName = "Designated Marksman";
-    scope[] = {"hlc_optic_suit"};
-    silencer[] = {"hlc_muzzle_MAG58_Brake"};
+    scope[] = {"rhsgref_acc_l1a1_l2a2"};
+    silencer[] = {"rhsgref_acc_falMuzzle_l1a1"};
 };
 class mmgg : ar
 {
     displayName = "MMG Gunner";
-    primaryWeapon[] = {"hlc_lmg_m60"};
+    primaryWeapon[] = {"rhs_weap_fnmag"};
     magazines[] =
     {
-        LIST_3("hlc_100Rnd_762x51_Barrier_M60E4"),
+        LIST_3("rhsusf_100Rnd_762x51_m80a1epr"),
         LIST_1("rhs_mag_m67"),
         LIST_1("rhs_mag_an_m8hc"),
         LIST_4("rhsusf_mag_7x45acp_MHP")
@@ -222,7 +221,7 @@ class mmgac : r
     displayName = "MMG Ammo Carrier";
     backpackItems[] =
     {
-        LIST_2("hlc_100Rnd_762x51_Barrier_M60E4")
+        LIST_2("rhsusf_100Rnd_762x51_m80a1epr")
     };
 };
 class mmgag : r
@@ -238,7 +237,7 @@ class mmgag : r
     };
     backpackItems[] =
     {
-        LIST_2("hlc_100Rnd_762x51_Barrier_M60E4")
+        LIST_2("rhsusf_100Rnd_762x51_m80a1epr")
     };
 };
 class hmgg : r_light
@@ -445,12 +444,13 @@ class sn : r
     displayName = "Sniper";
     traits[] += {"camouflageCoef"};
     headgear[] = {"usm_bdu_boonie_tgrstp"};
-    primaryWeapon[] = {"hlc_rifle_M14_Bipod"};
-    scope[] = {"hlc_optic_LRT_m14"};
+    primaryWeapon[] = {"rhs_weap_m24sws_d"};
+    scope[] = {"rhsusf_acc_LEUPOLDMK4"};
+    bipod[] = {"bipod_03_F_oli"};
     sidearmWeapon[] = {"rhsusf_weap_m1911a1"};
     magazines[] =
     {
-        LIST_10("hlc_20Rnd_762x51_B_M14"),
+        LIST_12("rhsusf_5Rnd_762x51_m118_special_Mag"),
         LIST_2("rhs_mag_m67"),
         LIST_4("rhsusf_mag_7x45acp_MHP")
     };

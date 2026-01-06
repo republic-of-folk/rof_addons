@@ -46,12 +46,20 @@ class baseMan {// Weaponless baseclass
 class r : baseMan
 {
     displayName = "Rifleman";
-    vest[] = {"usm_vest_LBE_rm"};
     headgear[] =  {"rhsgref_helmet_M1_bare","rhsgref_helmet_M1_bare_alt01","rhsgref_helmet_M1_painted","rhsgref_helmet_M1_painted_alt01","rhsgref_helmet_M1_liner"};
-    primaryWeapon[] = {"hlc_rifle_L1A1SLR"};
+    vest[] = {"usm_vest_LBE_rm"};
+    backpack[] = {
+        "B_simc_USMC65_M41_M43",
+        "B_simc_USMC65_M41_M43_roll",
+        "B_simc_USMC65_M41_M43_roll2",
+        "B_simc_USMC65_M41_M43_roll2_mitch",
+        "B_simc_USMC65_M41_M43_roll3",
+    };
+    primaryWeapon[] = {"rhs_weap_l1a1_wood"};
+    silencer[] = {"rhsgref_acc_falMuzzle_l1a1"};
     magazines[] =
     {
-        LIST_8("hlc_20Rnd_762x51_B_fal"),
+        LIST_8("rhs_mag_20Rnd_762x51_m80_fnfal"),
         LIST_2("rhs_mag_rgd5"),
         LIST_2("rhs_mag_rdg2_white")
     };
@@ -62,6 +70,7 @@ class r : baseMan
         LIST_1("ACE_epinephrine"),
         LIST_1("ACE_salineIV_500"),
         LIST_1("ACE_splint"),
+        "ACE_EntrenchingTool"
     };
 };
 class r_light : r
@@ -100,7 +109,6 @@ class m : r_light
 {
     displayName = "Medic";
     traits[] += {"medic"};
-    backPack[] = {"rhs_medic_bag"};
     backpackItems[] = {
         LIST_1("ACE_surgicalKit"),
         LIST_1("ACE_personalAidKit"),
@@ -113,12 +121,12 @@ class m : r_light
 class smg : r_light
 {
     displayName = "Submachinegunner";
-    primaryWeapon[] = {"hlc_smg_mp5a3"};
+    primaryWeapon[] = {"gm_mp5a2_blk"};
     silencer[] = {};
     scope[] = {};
     magazines[] =
     {
-        LIST_8("hlc_30Rnd_9x19_B_MP5"),
+        LIST_8("gm_30Rnd_9x19mm_B_DM11_mp5_blk"),
         LIST_2("rhs_mag_rgd5"),
         LIST_2("rhs_mag_rdg2_white")
     };
@@ -128,7 +136,6 @@ class ftl : r
     displayName = "Fireteam Leader";
     vest[] = {"usm_vest_LBE_rmp"};
 	sidearmWeapon[] = {"rhsusf_weap_m1911a1"};
-    backpack[] = {};
     magazines[] +=
     {
         LIST_4("rhsusf_mag_7x45acp_MHP"),
@@ -142,7 +149,7 @@ class sl : ftl
 {
     displayName = "Squad Leader";
 	headgear[] = {"usm_bdu_cap_erdl"};
-    backpack[] = {"usm_pack_st138_prc77"};
+    backpack[] = {"usm_pack_st128_prc77"};
 	Items[] += {
 		"ACE_Maptools","ZSN_Whistle"
 	};
@@ -190,44 +197,42 @@ class rat : r
 class dm : r
 {
     displayName = "Designated Marksman";
-    scope[] = {"hlc_optic_suit"};
-};
-class dmnv: dm
-{
-	displayName = "Designated Marksman (NV)";
-	scope[] = {"hlc_optic_pvs4fal"};
+    scope[] = {"rhsgref_acc_l1a1_l2a2"};
 };
 class mmgg : ar
 {
     displayName = "MMG Gunner";
-    primaryWeapon[] = {"hlc_lmg_m60"};
-    primaryMagazine[] = {"hlc_100Rnd_762x51_M_M60E4"}; // array is not randomized - it's in case of grenade launchers
+    vest[] = {"usm_vest_LBE_mg"};
+    primaryWeapon[] = {"hlc_lmg_M60E4"};
+    primaryMagazine[] = {"rhsusf_100Rnd_762x51_m80a1epr"};
     sidearmWeapon[] = {"rhsusf_weap_m1911a1"};
     scope[] = {};
     magazines[] =
     {
-        LIST_1("hlc_100Rnd_762x51_M_M60E4"),
+        LIST_1("rhsusf_100Rnd_762x51_m80a1epr"),
         LIST_2("rhsusf_mag_7x45acp_MHP")
     };
     backpackItems[] = {
-        LIST_1("hlc_100Rnd_762x51_M_M60E4")
+        LIST_1("rhsusf_100Rnd_762x51_m80a1epr")
     };
     backPack[] = {"usm_pack_762x51_ammobelts_empty"};
 };
 class mmgac : r_light
 {
     displayName = "MMG Ammo Carrier";
+    vest[] = {"usm_vest_LBE_mg"};
     backPack[] = {"rhssaf_alice_smb"};
     backpackItems[] =
     {
-        LIST_3("hlc_100Rnd_762x51_M_M60E4"),
-		LIST_1("hlc_100Rnd_762x51_T_M60E4"),
+        LIST_3("rhsusf_100Rnd_762x51_m80a1epr"),
+		LIST_1("rhsusf_100Rnd_762x51_m62_tracer"),
 		"ACE_Tripod"
     };
 };
 class mmgag : r
 {
     displayName = "MMG Assistant Gunner";
+    vest[] = {"usm_vest_LBE_mg"};
     linkedItems[] =
     {
         "ItemMap",
@@ -238,25 +243,28 @@ class mmgag : r
     backPack[] = {"B_simc_USMC65_M41"};
     backpackItems[] =
     {
-        LIST_1("hlc_100Rnd_762x51_M_M60E4")
+        LIST_1("rhsusf_100Rnd_762x51_m80a1epr")
     };
 	Items[] += {"ACE_Maptools"};
 };
 class hmgg : r_light
 {
     displayName = "HMG Gunner";
-    backPack[] = {"RHS_M2_Gun_Bag"};
+    vest[] = {"usm_vest_LBE_mg"};
+    backpack[] = {"RHS_M2_Gun_Bag"};
 
 };
 class hmgac : r_light
 {
     displayName = "HMG Ammo Carrier";
-    backPack[] = {"RHS_M2_Gun_Bag"};
+    vest[] = {"usm_vest_LBE_mg"};
+    backpack[] = {"RHS_M2_Gun_Bag"};
 };
 class hmgag : r_light
 {
     displayName = "HMG Assistant Gunner";
-    backPack[] = {"RHS_M2_Tripod_Bag"};
+    vest[] = {"usm_vest_LBE_mg"};
+    backpack[] = {"RHS_M2_Tripod_Bag"};
     linkedItems[] =
     {
         "ItemMap",
@@ -307,17 +315,20 @@ class matag : r_light
 class hatg : r_light
 {
     displayName = "HAT Gunner";
-    backPack[] = {"rhs_Tow_Gun_Bag"};
+    vest[] = {"usm_vest_LBE_mg"};
+    backpack[] = {"rhs_Tow_Gun_Bag"};
 };
 class hatac : r_light
 {
     displayName = "HAT Ammo Carrier";
-    backPack[] = {"rhs_Tow_Gun_Bag"};
+    vest[] = {"usm_vest_LBE_mg"};
+    backpack[] = {"rhs_Tow_Gun_Bag"};
 };
 class hatag : r_light
 {
     displayName = "HAT Assistant Gunner";
-    backPack[] = {"rhs_TOW_Tripod_Bag"};
+    vest[] = {"usm_vest_LBE_mg"};
+    backpack[] = {"rhs_TOW_Tripod_Bag"};
     linkedItems[] =
     {
         "ItemMap",
@@ -329,7 +340,8 @@ class hatag : r_light
 class mtrg : r_light
 {
     displayName = "Mortar Gunner";
-    backPack[] = {"I_Mortar_01_weapon_F"};
+    vest[] = {"usm_vest_LBE_mg"};
+    backpack[] = {"I_Mortar_01_weapon_F"};
     linkedItems[] =
     {
         "ItemMap",
@@ -343,7 +355,8 @@ class mtrg : r_light
 class mtrac : r_light
 {
     displayName = "Mortar Ammo Carrier";
-    backPack[] = {"I_Mortar_01_weapon_F"};
+    vest[] = {"usm_vest_LBE_mg"};
+    backpack[] = {"I_Mortar_01_weapon_F"};
 	Items[] += {
 		"ACE_RangeTable_82mm","ACE_Maptools"
 	};
@@ -351,7 +364,8 @@ class mtrac : r_light
 class mtrag : r_light
 {
     displayName = "Mortar Assistant Gunner";
-    backPack[] = {"I_Mortar_01_support_F"};
+    vest[] = {"usm_vest_LBE_mg"};
+    backpack[] = {"I_Mortar_01_support_F"};
     linkedItems[] =
     {
         "ItemMap",
@@ -395,27 +409,22 @@ class sn : r_light
     traits[] += {"camouflageCoef"};
     uniform[] = {"U_B_T_FullGhillie_tna_F"};
 	vest[] = {"V_TacChestrig_grn_F"};
-    primaryWeapon[] = {"hlc_rifle_M21"};
-    primaryMagazine[] = {"hlc_20Rnd_762x51_B_M14"};
-    scope[] = {"hlc_optic_artel_m14"};
-    silencer[] = {"hlc_muzzle_MAG58_Brake"};
+    primaryWeapon[] = {"srifle_DMR_06_hunter_F"};
+    primaryMagazine[] = {"20Rnd_762x51_Mag"};
+    scope[] = {"gm_blits_ris_blk"};
+    silencer[] = {"rhsgref_acc_falMuzzle_l1a1"};
     magazines[] = {
-        LIST_7("hlc_20Rnd_762x51_B_M14"),
+        LIST_7("20Rnd_762x51_Mag"),
         LIST_1("rhs_mag_rdg2_white")
     };
     linkedItems[] += {"rhs_pdu4"};
 	items[] += {"ACE_Maptools","ACE_RangeCard"};
     backpack[] = {"B_simc_USMC65_M41"};
 };
-class snnv : sn
-{
-	displayName = "Sniper (Starlight Scope)";
-	scope[] = {"hlc_optic_pvs4m14"};
-};
 class sp : r_light
 {
     displayName = "Spotter";
-	silencer[] = {"hlc_muzzle_300blk_kac"};
+	silencer[] = {"rhsgref_sdn6_suppressor"};
     traits[] += {"camouflageCoef"};
     uniform[] = {"U_B_T_FullGhillie_tna_F"};
     linkedItems[] += {"rhs_pdu4"};
@@ -531,14 +540,11 @@ class engm : r_light
         LIST_2("rhs_mine_M19_mag")
     };
 };
-class UAV_light : r_light
-{
-    displayName = "UAV Operator (no drone)";
-    traits[] += {"UAVHacker"};
-    linkedItems[] += {"I_UavTerminal"};
-};
-class UAV : UAV_light
+class UAV : r_light
 {
     displayName = "UAV Operator";
+    traits[] += {"UAVHacker"};
+    vest[] = {"usm_vest_LBE_mg"};
     backpack[] = {"I_UAV_01_backpack_F"};
+    linkedItems[] += {"I_UavTerminal"};
 };

@@ -234,7 +234,7 @@ class rat : car
 class dm : r
 {
     displayName = "Designated Marksman";
-    primaryWeapon[] = {"hlc_rifle_M14dmr_Rail"};
+    primaryWeapon[] = {"rhs_weap_m14dmr_Rail"};
     scope[] = {"rhsusf_acc_ACOG3"};
     magazines[] =
     {

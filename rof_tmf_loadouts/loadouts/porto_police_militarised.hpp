@@ -77,12 +77,12 @@ class r : baseMan
 class smg : baseMan
 {
     displayName = "Submachinegunner";
-    primaryWeapon[] = {"hlc_smg_mp5a2"};
+    primaryWeapon[] = {"gm_mp5a3_surefire_blk"};
     scope[] = {};
-    attachment[] = {"hlc_acc_Surefiregrip"};
+    attachment[] = {"gm_surefire_l60_wht_surefire_blk"};
     magazines[] =
     {
-        LIST_8("hlc_30Rnd_9x19_GD_MP5"),
+        LIST_8("gm_30Rnd_9x19mm_B_DM11_mp5_blk"),
         LIST_1("rhs_mag_m67"),
         LIST_1("rhs_mag_an_m8hc")
     };

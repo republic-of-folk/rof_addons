@@ -8,7 +8,7 @@ class baseMan {// Weaponless baseclass
     vest[] = {};
     backpack[] = {};
     headgear[] = {
-        "usm_helmet_pasgt_rms_blk"
+        "usm_helmet_pasgt_ce_blk"
     };
     goggles[] = {
         ""
@@ -64,23 +64,21 @@ class r : baseMan
 {
     displayName = "Rifleman";
 
-    hmd[] = {"NVGoggles_OPFOR"};
+    // hmd[] = {"gm_nsg66_oli"};
 
     vest[] = {"usm_vest_LBE_rmp"};
     backpack[] = {"B_simc_USMC65_M41"};
 
-    primaryWeapon[] = {"hlc_smg_mp5a3"};
-    silencer[] = {"hlc_muzzle_Agendasix"};
-    attachment[] = {"hlc_acc_Surefiregrip"};
+    primaryWeapon[] = {"gm_mp5n_surefire_blk"};
+    attachment[] = {"gm_surefire_l60_wht_surefire_blk"};
+    // silencer[] = {"rhsusf_acc_omega9k"};
     scope[] = {};
 
-    sidearmWeapon[] = {"rhsusf_weap_glock17g4"};
-    sidearmAttachments[] = {"rhsusf_acc_omega9k", "hlc_acc_DBALPL_FL"};
-
+    sidearmWeapon[] = {"rhsusf_weap_m1911a1"};
     magazines[] =
     {
-        LIST_8("hlc_30Rnd_9x19_SD_MP5"),
-        LIST_3("rhsusf_mag_17Rnd_9x19_FMJ"),
+        LIST_8("gm_30Rnd_9x19mm_AP_DM91_mp5a3_blk"),
+        LIST_3("rhsusf_mag_7x45acp_MHP"),
         LIST_2("rhs_mag_m67"),
         LIST_2("rhs_mag_an_m8hc")
     };
@@ -98,8 +96,8 @@ class r_light : r
     displayName = "Rifleman (Light)";
     magazines[] =
     {
-        LIST_6("hlc_30Rnd_9x19_SD_MP5"),
-        LIST_2("rhsusf_mag_17Rnd_9x19_FMJ"),
+        LIST_6("gm_30Rnd_9x19mm_AP_DM91_mp5a3_blk"),
+        LIST_2("rhsusf_mag_7x45acp_MHP"),
         LIST_1("rhs_mag_m67"),
         LIST_1("rhs_mag_an_m8hc")
     };
@@ -118,13 +116,10 @@ class car : r
 {
     displayName = "Shotgunner (Carabinier)";
     primaryWeapon[] = {"rhs_weap_M590_8RD"};
-    sidearmWeapon[] = {"hlc_smg_mp5k"};
-    sidearmAttachments[] = {"hlc_muzzle_Agendasix"};
     magazines[] =
     {
         LIST_8("rhsusf_8Rnd_00Buck"),
         LIST_3("rhsusf_8Rnd_Slug"),
-        LIST_7("hlc_30Rnd_9x19_SD_MP5"),
         LIST_2("rhs_mag_m67"),
         LIST_2("rhs_mag_an_m8hc")
     };
@@ -148,12 +143,9 @@ class smg : r
 {
     displayName = "Submachinegunner";
     vest[] = {"usm_vest_lbv_rm"};
-    primaryWeapon[] = {"hlc_smg_mp5k_PDW"};
-    silencer[] = {};
-    sidearmWeapon[] = {};
     magazines[] =
     {
-        LIST_7("hlc_30Rnd_9x19_B_MP5"),
+        LIST_7("gm_30Rnd_9x19mm_AP_DM91_mp5a3_blk"),
         LIST_2("rhs_mag_an_m8hc")
     };
 };
@@ -170,11 +162,6 @@ class sl : ftl
 {
     displayName = "Squad Leader";
     headgear[] = {"H_Beret_blk"};
-    sidearmWeapon[] = {"rhsusf_weap_m1911a1"};
-    magazines[] +=
-    {
-        LIST_4("rhsusf_mag_7x45acp_MHP")
-    };
     linkedItems[] =
     {
         "ItemMap",
@@ -233,13 +220,12 @@ class rat : r_light
 class dm : r
 {
     displayName = "Designated Marksman";
-    primaryWeapon[] = {"hlc_rifle_M21"};
-    scope[] = {"hlc_optic_artel_m14"};
-    silencer[] = {"hlc_muzzle_MAG58_Brake"};
+    primaryWeapon[] = {"srifle_DMR_06_hunter_F"};
+    scope[] = {"gm_blits_ris_blk"};
     magazines[] =
     {
         LIST_11("rhsusf_20Rnd_762x51_m118_special_Mag"),
-        LIST_3("rhsusf_mag_17Rnd_9x19_FMJ"),
+        LIST_3("rhsusf_mag_7x45acp_MHP"),
         LIST_2("rhs_mag_m67"),
         LIST_2("rhs_mag_an_m8hc")
     };
@@ -517,15 +503,18 @@ class sn : r
 {
     displayName = "Sniper";
     traits[] += {"camouflageCoef"};
-    primaryWeapon[] = {"hlc_rifle_M21"};
-    scope[] = {"hlc_optic_PVS4M14"};
-    silencer[] = {"hlc_muzzle_MAG58_Brake"};
+    vest[] = {"usm_vest_LBE_rmp"};
+    primaryWeapon[] = {"rhs_weap_m24sws_ghillie"};
+    scope[] = {"rhsusf_acc_LEUPOLDMK4_2_d"};
+    bipod[] = {"bipod_03_F_oli"};
+    sidearmWeapon[] = {"rhsusf_weap_m1911a1"};
     magazines[] =
     {
-        LIST_9("hlc_20Rnd_762x51_S_M14"),
-        LIST_3("rhsusf_mag_17Rnd_9x19_FMJ")
+        LIST_12("rhsusf_5Rnd_762x51_m118_special_Mag"),
+        LIST_2("rhs_mag_m67"),
+        LIST_4("rhsusf_mag_7x45acp_MHP")
     };
-    backpack[] = {"B_simc_USMC65_M41"};
+    backpack[] = {};
     backpackItems[] = {};
 };
 class sp : ftl
@@ -569,7 +558,7 @@ class vg : smg
 class pp : smg
 {
     displayName = "Helicopter Pilot";
-    hmd[] = {"NVGoggles_OPFOR"};
+    // hmd[] = {"gm_nsg66_oli"};
     uniform[] = {"usm_bdu_odg"};
     backpack[] = {"usm_pack_st138_prc77"};
     headgear[] = {"rhs_gssh18"};
@@ -581,7 +570,7 @@ class pcc : smg
 
     displayName = "Helicopter Crew Chief";
     traits[] += {"engineer"};
-    hmd[] = {"NVGoggles_OPFOR"};
+    // hmd[] = {"gm_nsg66_oli"};
     uniform[] = {"usm_bdu_odg"};
     backpack[] = {"B_AssaultPack_rgr"};
     headgear[] = {"rhs_gssh18"};
@@ -592,7 +581,7 @@ class pcc : smg
 class pc : smg
 {
     displayName = "Helicopter Crew";
-    hmd[] = {"NVGoggles_OPFOR"};
+    // hmd[] = {"gm_nsg66_oli"};
     uniform[] = {"usm_bdu_odg"};
     headgear[] = {"rhs_gssh18"};
     goggles[] = {"G_Aviator"};

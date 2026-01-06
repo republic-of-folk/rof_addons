@@ -50,11 +50,11 @@ class r : baseMan
     displayName = "Rifleman";
     vest[] = {"usm_vest_LBE_rm"};
     headgear[] =  {"ssh68_khaki"};
-    primaryWeapon[] = {"hlc_rifle_FAL5000"};
-    silencer[] = {"hlc_muzzle_MAG58_Brake"};
+    primaryWeapon[] = {"rhs_weap_l1a1_wood"};
+    silencer[] = {"rhsgref_acc_falMuzzle_l1a1"};
     magazines[] =
     {
-        LIST_8("hlc_20Rnd_762x51_B_fal"),
+        LIST_8("rhs_mag_20Rnd_762x51_m80_fnfal"),
         LIST_2("rhs_mag_rgd5"),
         LIST_2("rhs_mag_rdg2_white")
     };
@@ -72,7 +72,7 @@ class r_light : r
     displayName = "Rifleman (light)";
     magazines[] = 
     {
-        LIST_6("hlc_20Rnd_762x51_B_fal"),
+        LIST_6("rhs_mag_20Rnd_762x51_m80_fnfal"),
         LIST_1("rhs_mag_rgd5"),
         LIST_1("rhs_mag_rdg2_white")
     };
@@ -94,7 +94,7 @@ class g : r_light
 class car : r
 {
     displayName = "Carabinier";
-    primaryWeapon[] = {"hlc_rifle_FAL5061"};
+    primaryWeapon[] = {"rhs_weap_l1a1_wood"};
 };
 class m : car 
 {
@@ -192,7 +192,7 @@ class dm : r
 {
     displayName = "Designated Marksman";
     silencer[] = {};
-    scope[] = {"hlc_optic_suit"};
+    scope[] = {"rhsgref_acc_l1a1_l2a2"};
     bipod[] = {};
 };
 class mmgg : r_light
@@ -395,12 +395,12 @@ class sp : sn
     displayName = "Spotter";
     traits[] += {"camouflageCoef"};
     vest[] = {"rhs_6sh92_radio"};
-    primaryWeapon[] = {"hlc_rifle_FAL5000"};
-    scope[] = {"hlc_optic_suit"};
+    primaryWeapon[] = {"rhs_weap_l1a1_wood"};
+    scope[] = {"rhsgref_acc_l1a1_l2a2"};
     backPack[] = {"rhs_assault_umbts"};
     magazines[] =
     {
-        LIST_7("hlc_20Rnd_762x51_B_fal"),
+        LIST_7("rhs_mag_20Rnd_762x51_m80_fnfal"),
         LIST_2("rhs_mag_rgd5"),
         LIST_2("rhs_mag_rdg2_white"),
         LIST_4("rhs_mag_9x19_17")

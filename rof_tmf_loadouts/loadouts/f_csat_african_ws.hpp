@@ -237,7 +237,7 @@ class dm : r
     bipod[] = {"bipod_02_F_blk"};
     magazines[] =
     {
-        LIST_7("20Rnd_762x51_Mag_blk_lxWS"),
+        LIST_7("ACE_20Rnd_762x51_M118LR_Mag"),
         LIST_2("HandGrenade"),
         LIST_2("SmokeShell"),
         LIST_3("16Rnd_9x21_green_Mag")

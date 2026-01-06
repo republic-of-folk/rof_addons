@@ -528,7 +528,7 @@ class samag : r
 class sn : r
 {
     displayName = "Sharpshooter (M21)";
-    primaryWeapon[] = {"hlc_rifle_M21_Rail"};
+    primaryWeapon[] = {"srifle_DMR_06_hunter_F_Rail"};
     scope[] = {"optic_khs_old"};
     bipod[] = {"bipod_03_f_oli"};
     magazines[] =
